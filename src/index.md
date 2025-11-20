@@ -5,13 +5,13 @@ layout: home
 hero:
   name: "Wiki"
   text: "Yamazaki Lab"
-  tagline: 横浜国立大学<br>材料工学教育プログラム
+  tagline: # 横浜国立大学<br>材料工学教育プログラム
   actions:
     - theme: brand
       text: ホームページ
       link: https://tyamazaki.com/
     - theme: alt
-      text: wiki一覧
+      text: wiki
       link: /wiki-list
 
 features:
@@ -26,24 +26,39 @@ features:
 
 ---
 
-# wiki一覧
+## wiki一覧
 
 ## 計算関連
 
-- VASP v6.5.1
-  - [VASP v6.5.1のインストールメモ](/calc/vasp-install.md)
-  - [VASPを用いたDFT計算](/calc/vasp-dft.md)
-- MAELAS v3.0
-- phonopy v2.44.0
-- Bader charge analysis
-- SPR-KKRのインストール方法
-- Wien2k v23.2のインストール方法
-- mumax3 v3.11のインストール方法
-  - mumax3を用いたLLG計算
-  - mumax+による磁気弾性計算
-- COMSOL v6.4のインストール方法
-- Linux-PCの初期設定
-- 東北大金研スパコン"Masamune-II"
+### VASP
+- [VASP v6.5.1のインストールメモ](calc/vasp-install.md)
+- [VASPを用いたDFT計算](calc/vasp-dft.md)
+- [vaspkit v1.5 メモ](calc/vaspkit-v1.5.md)
+- [phonopy v2.44.0 メモ](calc/phonopy-v2.44.0.md)
+- [MAELAS v3.0 メモ](calc/maelas-v3.0.md)
+- [Bader charge analysis メモ](calc/bader-charge.md)
+
+### SPR-KKR
+- [SPR-KKR v8.6.0 のインストールメモ](calc/spr-kkr-install.md)
+
+### Wien2k
+- [Wien2k v23.2 のインストールメモ](calc/wien2k-install.md)
+
+### mumax3
+- [mumax3 v3.11 のインストールメモ](calc/mumax3-install.md)
+- [mumax3 を用いた LLG 計算](calc/mumax3-llg.md)
+- [拡張版 mumax+ による磁気弾性計算](calc/mumax-plus-magnetoelastic.md)
+
+### COMSOL Multiphysics
+- [COMSOL Multiphysics v6.4 のインストールメモ](calc/comsol-v6.4-install.md)
+
+### Linux-PC の初期設定
+- [Linux-PC 初期設定メモ](calc/linux-pc-setup.md)
+
+### 東北大金研スパコン "Masamune-II"
+- [Masamune-II 利用メモ](calc/masamune-ii.md)
+
+
 
 
 ## 実験関連
