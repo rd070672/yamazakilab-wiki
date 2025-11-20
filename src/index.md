@@ -31,8 +31,8 @@ features:
 ## 計算関連
 
 - VASP v6.5.1
-  - [VASP v6.5.1のインストール方法](/)
-  - [VASPを用いたDFT計算](/)
+  - [VASP v6.5.1のインストールメモ](/calc/vasp-install.md)
+  - [VASPを用いたDFT計算](/calc/vasp-dft.md)
 - MAELAS v3.0
 - phonopy v2.44.0
 - Bader charge analysis
