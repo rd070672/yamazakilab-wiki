@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "山崎研究室"
-  text: "マテリアル機能解析"
+  name: "Wiki"
+  text: "Yamazaki Lab"
   tagline: 横浜国立大学<br>材料工学教育プログラム
   actions:
     - theme: brand
@@ -21,6 +21,7 @@ features:
     details: ラボでの材料合成、プロセス制御、先端計測など、実験技術についてご紹介します。
   - title: データサイエンス
     details: 教師あり／なし学習から深層学習、統計分析、機械学習ポテンシャルなどに至る機械学習の方法論についてご紹介します。
+
 
 
 ---
