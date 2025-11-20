@@ -56,13 +56,16 @@ features:
 - 磁気特性測定システム (MPMS)
 - 集束イオンビーム加工観察装置 (FIB-SEM)
 - 透過電子顕微鏡 (TEM)
-- SPring-8で実験を行うために
-- SPring-8 ~BL25SU XMCD~
-- SPring-8 ~BL14B2 in-situ XAS/XRD~
-- KEK(PF)で実験を行うために
-- KEK(PF) ~BL9C XAFS~
-- NanoTerasuで実験を行うために
-- NanoTerasu ~BL09U HAXPES~
+- SPring-8
+  - 申請と実験準備
+  - SPring-8 BL25SU XMCD
+  - SPring-8 BL14B2 in-situ XAS/XRD
+- KEK(PF)
+  - 申請と実験準備
+  - KEK(PF) BL9C XAFS
+- NanoTerasu
+  - 申請と実験準備
+  - NanoTerasu ~BL09U HAXPES~
 
 ## データサイエンス
 
