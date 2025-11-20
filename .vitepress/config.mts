@@ -35,7 +35,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '計算', link: '/registration' },
       { text: '実験', link: '/timetable' },
-      { text: '機械学習', link: '/about-sponsorship'},
+      { text: 'データサイエンス', link: '/about-sponsorship'},
       { text: 'ラボ運営', items: [
           { text: '2025年度', link: 'https://compphysschool.github.io/homepage2025/index.html'},
           { text: '2024年度', link: 'https://compphysspringschool2024.github.io/homepage2024/'},
@@ -47,7 +47,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '計算', link: '/registration' },
       { text: '実験', link: '/timetable' },
-      { text: '機械学習', link: '/about-sponsorship'},
+      { text: 'データサイエンス', link: '/about-sponsorship'},
       { text: 'ラボ運営', items: [
           { text: '2025年度', link: 'https://compphysschool.github.io/homepage2025/index.html'},
           { text: '2024年度', link: 'https://compphysspringschool2024.github.io/homepage2024/'},
