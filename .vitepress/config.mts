@@ -34,17 +34,18 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'ホームページ', link: 'https://tyamazaki.com' },
-      { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
       { text: '計算', link: '/calc' },
       { text: '実験', link: '/exp' },
       { text: 'データサイエンス', link: '/data'},
+      { text: '情報システム', link: '/system'},
       { text: 'ラボ運営', link: '/lab', items: [
           { text: '2025年度', link: '/'},
           { text: '2024年度', link: '/'},
           { text: '2023年度', link: '/'}
       ]},
       { text: 'その他', link: '/others'},
+      { text: 'ホームページ', link: 'https://tyamazaki.com' },
+      { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
     sidebar: [
       { text: 'Home', link: '/' },
