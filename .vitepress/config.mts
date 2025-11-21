@@ -36,10 +36,10 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'ホームページ', link: 'https://tyamazaki.com' },
       { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
-      { text: '計算', link: '/registration' },
-      { text: '実験', link: '/timetable' },
-      { text: 'データサイエンス', link: '/about-sponsorship'},
-      { text: 'ラボ運営', items: [
+      { text: '計算', link: '/calc' },
+      { text: '実験', link: '/exp' },
+      { text: 'データサイエンス', link: '/data'},
+      { text: 'ラボ運営', link: '/lab', items: [
           { text: '2025年度', link: '/'},
           { text: '2024年度', link: '/'},
           { text: '2023年度', link: '/'}
@@ -48,7 +48,7 @@ export default defineConfig({
     ],
     sidebar: [
       { text: 'Home', link: '/' },
-      { text: '計算', items: [
+      { text: '計算', link: '/calc', items: [
           { text: 'VASP v6.5.1のインストールメモ',  link: '/calc/vasp-install' },
           { text: 'VASPを用いたDFT計算',           link: '/calc/vasp-dft' },
           { text: 'vaspkit v1.5 メモ',             link: '/calc/vaspkit' },
