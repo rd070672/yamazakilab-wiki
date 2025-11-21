@@ -161,7 +161,7 @@ features:
 - 画像 (CNN, VAE, U-net)
 - 時系列 (RNN, LSTM, GRU, Transfomer, TCN)
 - グラフ (GNN, MPNN, GraphSAGE)
-- 物理 (Physics-informed NNs）
+- 物理 (Physics-informed NNs)
 
 ### モデル解釈
 - SHAP値
@@ -209,7 +209,7 @@ features:
 ### ホームページの管理
 - 研究室のウェブサイト
 - 研究室wikiのウェブサイト
-- 
+- Google Analytics
 
 
 <!-- ################################################################################### -->
