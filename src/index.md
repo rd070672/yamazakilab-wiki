@@ -56,15 +56,13 @@ features:
 - [固体力学計算](/calc/comsol-solid.md)
 - [AC/DC計算](/calc/comsol-ac-dc.md)
 - [LLG計算](/calc/comsol-llg.md)
-- [LLG連成計算](/calc/comsol-multi.md)
+- [LLG連成計算](/calc/comsol-multiphys.md)
 
 ### Linux-PC の初期設定
 - [Linux-PC 初期設定メモ](/calc/linux-setup.md)
 
 ### 東北大金研スパコン "Masamune-II"
 - [Masamune-II 利用メモ](/calc/masamune.md)
-
-
 
 
 ## 実験関連
