@@ -9,17 +9,7 @@ export default defineConfig({
   title: "Wiki | Yamazaki Lab",
   description: "山崎研究室における知見や経験をwikiとして共有します",
   head: [
-    // ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-HLYFJVDYL3' }],
-    // [
-    //   'script',
-    //   {},
-    //   `
-    //   window.dataLayer = window.dataLayer || [];
-    //   function gtag(){dataLayer.push(arguments);}
-    //   gtag('js', new Date());
-    //   gtag('config', 'G-HLYFJVDYL3');
-    //   `
-    // ],
+    
     ['script', {}, `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
