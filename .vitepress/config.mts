@@ -86,7 +86,7 @@ export default defineConfig({
           { text: 'クリーンベンチ', link: '/'},
           { text: 'シンク周り', link: '/'},
       ]},
-      { text: 'ホームページ', link: 'https://tyamazaki.com' },
+      { text: 'Website', link: 'https://tyamazaki.com' },
       { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
     socialLinks: [
