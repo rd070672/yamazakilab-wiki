@@ -9,7 +9,7 @@ export default defineConfig({
   title: "Yamazaki Lab Wiki",
   description: "山崎研究室における知見や経験をwikiとして共有します",
   head: [
-    ['script', { async: true, src: 'https://www.googletagmanager.com/ns.html?id=GTM-M4Z2H3LQ' }],
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-HLYFJVDYL3' }],
     [
       'script',
       {},
@@ -17,7 +17,7 @@ export default defineConfig({
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'GTM-M4Z2H3LQ');
+      gtag('config', 'G-HLYFJVDYL3');
       `
     ],
     ["link", { rel: "icon", href: "https://rd070672.github.io/yamazakilab-wiki/images/favicon.png" }],
