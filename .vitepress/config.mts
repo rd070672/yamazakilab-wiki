@@ -40,7 +40,7 @@ export default defineConfig({
       { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
     sidebar: [
-      { text: '計算', link: '/calc', items: [
+      { text: '計算', items: [
           { text: 'VASP v6.5.1のインストールメモ',  link: '/calc/vasp-install' },
           { text: 'VASPを用いたDFT計算',           link: '/calc/vasp-dft' },
           { text: 'vaspkit v1.5 メモ',             link: '/calc/vaspkit' },
@@ -61,16 +61,16 @@ export default defineConfig({
           { text: 'Masamune-II 利用メモ',             link: '/calc/masamune' },
       ]},
 
-      { text: '実験', link: '/exp', items: [
+      { text: '実験', items: [
           { text: '装置類の引っ越し', link: '/'},
           { text: '土禁・フロアマット', link: '/'},
       ]},
 
-      { text: 'データサイエンス', link: '/data', items: [
+      { text: 'データサイエンス', items: [
           { text: '装置類の引っ越し', link: '/'},
           { text: '土禁・フロアマット', link: '/'},
       ]},
-      { text: 'ラボ運営', link: '/lab', items: [
+      { text: 'ラボ運営', items: [
           { text: '装置類の引っ越し', link: '/'},
           { text: '土禁・フロアマット', link: '/'},
           { text: '机・椅子（居室）', link: '/'},
