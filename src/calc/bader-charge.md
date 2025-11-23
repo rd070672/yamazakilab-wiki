@@ -1,4 +1,4 @@
-# Bader charge analysis
+# Bader電荷解析のメモ
 作成日：2025年11月23日
 
 ## 概要

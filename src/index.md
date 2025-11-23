@@ -55,13 +55,13 @@ features:
 
 ## 分子動力学（MD）計算
 - [MDの原理](/calc/md.md)
-- 古典的・機械学習ポテンシャルの選定
+- [MD計算における古典的・機械学習ポテンシャルの選定](/calc/md-potential.md)
 - LAMMPS
-  - [LAMMPS のインストールメモ](/calc/lammps-install.md)
-  - LAMMPS を用いた MD 計算
+  - [LAMMPS のインストールメモ](/calc/md-lammps-install.md)
+  - [LAMMPS を用いた MD 計算](/calc/md-lammps.md)
 - Pythonでのプログラミング
-  - ASE を用いた MD 計算
-  - JAX-MD を用いた MD 計算
+  - [ASE を用いた MD 計算](/calc/md-ase.md)
+  - [JAX を用いた MD 計算](/calc/md-jax.md)
 
 ## モンテカルロ計算
 - [モンテカルロ計算の原理](/calc/mc.md)
@@ -80,8 +80,8 @@ features:
 - [ODE（常微分方程式）の基礎](/calc/ode.md)
 - mumax3
   - [mumax3 v3.11 のインストールメモ](/calc/mumax3-install.md)
-  - mumax3 を用いた LLG 計算
-  - 拡張版 mumax+ による磁気弾性計算
+  - [mumax3 を用いた LLG 計算](/calc/mumax3-llg.md)
+  - [拡張版 mumax+ による磁気弾性計算](/calc/mumaxplus.md)
 - COMSOL
   - [COMSOL Multiphysics のインストールメモ](/calc/comsol-install.md)
   - [COMSOL を用いた LLG 計算](/calc/comsol-llg.md)
