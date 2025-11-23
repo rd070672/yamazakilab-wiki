@@ -119,6 +119,7 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
+  min-width: auto;
 }
 
 /* 検索ボタンの「Ctrl K」キー表示を消す */
