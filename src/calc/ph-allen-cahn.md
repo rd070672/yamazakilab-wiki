@@ -1,16 +1,6 @@
 # Allen–Cahn 法に基づくフェーズフィールド計算例
 作成日：2025年11月23日
 
-この領域は $\Omega = [0,L] \times [0,L]$ とする。
-
-$ \Omega = [0,L] \times [0,L] $
-$$\Omega = [0,L] \times [0,L]$$
-$$ \Omega = [0,L] \times [0,L] $$
-
-$$
-\Omega = [0,L] \times [0,L]
-$$
-
 ## 概要
 - Allen–Cahn 方程式は、**非保存型オーダーパラメータ（相のラベル・結晶方位など）の時間発展**を記述する代表的なフェーズフィールド方程式。
 - 「界面曲率駆動の粒成長」や「2 相界面の移動・消滅」などを扱う簡単なモデルとしてよく使われる。
@@ -43,17 +33,17 @@ $$
       f_\text{bulk}(\phi)
       + f_\text{grad}(\nabla\phi)
     \right)\, dV
-  \]
+  $$
 - バルク自由エネルギー（2 井戸ポテンシャル）：
   $$
     f_\text{bulk}(\phi) = W\,\phi^2(1-\phi)^2
-  \]
+  $$
   - $W > 0$：相間エネルギー障壁の高さ
   - $\phi=0,1$ が安定点になるような形状
 - 勾配エネルギー：
   $$
     f_\text{grad}(\nabla\phi) = \frac{\kappa}{2}|\nabla\phi|^2
-  \]
+  $$
   - $\kappa > 0$：界面エネルギー・界面幅を決める係数
 
 
@@ -65,7 +55,7 @@ $$
     = \frac{\partial f_\text{bulk}}{\partial\phi}
       - \kappa \nabla^2 \phi
     = 2W\phi(1-\phi)(1-2\phi) - \kappa \nabla^2\phi
-  \]
+  $$
 - Allen–Cahn 型時間発展方程式：
   $$
     \frac{\partial\phi}{\partial t}
@@ -74,7 +64,7 @@ $$
       2W\phi(1-\phi)(1-2\phi)
       - \kappa \nabla^2\phi
     \right]
-  \]
+  $$
   - $L > 0$：モビリティ（界面移動の速さに関係）
 - 物理的意味：
   - バルク項：$\phi$ を 0 または 1 に押し戻す（相の安定化）
@@ -92,7 +82,7 @@ $$
     \frac{\partial\phi}{\partial \tilde{t}}
     = \tilde{\nabla}^2\phi
       - \tilde{W}\,\phi(1-\phi)(1-2\phi)
-  \]
+  $$
   のような形にできる（$\tilde{W}$ はスケーリング後の係数）。
 
 
@@ -114,7 +104,7 @@ $$
        \approx \frac{\phi_{i+1,j} + \phi_{i-1,j}
                    + \phi_{i,j+1} + \phi_{i,j-1}
                    - 4\phi_{ij}}{\Delta x^2}
-     \]
+     $$
 
 4. **時間積分**
    - 単純な陽解法（Forward Euler）：
@@ -128,7 +118,7 @@ $$
                 - \kappa\,\nabla^2\phi_{ij}^n
              \right)
            \right]
-     \]
+     $$
    - 安定性のため、$\Delta t$ は拡散方程式レベルの制約
      $\Delta t \lesssim (\Delta x)^2 / (4L\kappa)$
      を参考に小さめに設定。
