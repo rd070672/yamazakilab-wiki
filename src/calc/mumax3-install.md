@@ -1,75 +1,78 @@
-# mumaxのインストール方法
-
+# mumax3 v3.11のインストールメモ
 作成日：2025年11月19日
 
 ## Mumax3 install
-a. https://mumax.github.io/download.html
-b. Linux > Driver ≥ 525.60.13 & 7.5 ≤ CC ≤ 12.0 (CUDA 12.9)
-c. cd mumax3.11.1_linux_cuda12.9
-d. export PATH=$PATH:/home/rc/mumax3.11.1_linux_cuda12.9 in .bashrc
-e. https://github.com/mumax/3/?tab=readme-ov-file
-f. 必要なコンポネント：NVIDIA driver, Go, CUDA, and C
 
+- 公式ダウンロード： https://mumax.github.io/download.html
+- 対応条件： Linux／NVIDIA Driver ≥ 525.60.13
+- 対応 CUDA Compute Capability： 7.5 ≤ CC ≤ 12.0（例：CUDA 12.9 版）
+- `cd mumax3.11.1_linux_cuda12.9` で展開先に移動
+- `.bashrc` に以下を追加：
+  - `export PATH=$PATH:/home/rc/mumax3.11.1_linux_cuda12.9`
+- GitHub ドキュメント： https://github.com/mumax/3/?tab=readme-ov-file
+- 必要コンポーネント：
+  - NVIDIA driver
+  - Go
+  - CUDA
+  - C toolchain
 
 ## Install Go
-a. https://go.dev/doc/install
-b. export PATH=$PATH:/usr/local/go/bin in .bashrc
-c. export PATH=$PATH:/home/rc/go1.25.4.linux-amd64/go/
-d. Download go1.25.4.linux-amd64
-e. Locate on home/rc
 
+- インストール案内：https://go.dev/doc/install
+- `.bashrc` に以下を追加：
+  - `export PATH=$PATH:/usr/local/go/bin`
+  - `export PATH=$PATH:/home/rc/go1.25.4.linux-amd64/go/`
+- `go1.25.4.linux-amd64` をダウンロードして `~/` に配置
 
-## mkdir -p ~/go-packages
+## Go 用ディレクトリ作成
 
-## .bashrcの修正
-    a. # Go (for mumax3)
-    b. export GOROOT="$HOME/go1.25.4.linux-amd64/go" 
-    c. export GOPATH="$HOME/go-packages"
-    d. export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
-    e. source ~/.bashrc
+- `mkdir -p ~/go-packages`
+
+## .bashrc の修正
+
+- Go (for mumax3) 用設定
+- `export GOROOT="$HOME/go1.25.4.linux-amd64/go"`
+- `export GOPATH="$HOME/go-packages"`
+- `export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"`
+- `source ~/.bashrc` を実行して反映
 
 ## インストール作業
-f. mkdir -p $GOPATH/src/github.com/mumax
-g. cd $GOPATH/src/github.com/mumax
-h. git clone https://github.com/mumax/3.git
-i. cd 3
-j. go mod init github.com/mumax/3
-k. go mod tidy
-l. export CUDA_CC=89
-m. make realclean
-n. make
 
-## インストールの確認
-a. $GOPATH/bin/mumax3
-b. which -a mumax3
-    i. /home/rc/go-packages/bin/mumax3
-c. mumax3 -test
-    i. //mumax 3.11.1 [linux_amd64 go1.25.4(gc) CUDA-12.8]
-    ii. //commit hash: 797c22bd
-    iii. //CPU info: INTEL(R) XEON(R) SILVER 4516Y+, Cores: 24, MHz: 799.674
-    iv. //GPU info: NVIDIA GeForce RTX 4090(24088MB), CUDA Driver 12.8, cc=8.9, using cc=89 PTX
-    v. //OS  info: Ubuntu 24.04.3 LTS, Hostname: ty2025
-    vi. //Timestamp: 2025-11-19 18:07:57
-    vii. //(c) Arne Vansteenkiste, Dynamat LAB, Ghent University, Belgium
-    viii. //This is free software without any warranty. See license.txt
-    ix. //********************************************************************//
-    x. //  If you use mumax in any work or publication,                      //
-    xi. //  we kindly ask you to cite the references in references.bib        //
-    xii. //********************************************************************//
-    xiii. 
+- `mkdir -p $GOPATH/src/github.com/mumax`
+- `cd $GOPATH/src/github.com/mumax`
+- `git clone https://github.com/mumax/3.git`
+- `cd 3`
+- `go mod init github.com/mumax/3`
+- `go mod tidy`
+- CUDA Compute Capability 設定：
+  - `export CUDA_CC=89`（例：RTX 4090 → cc 8.9）
+- `make realclean`
+- `make`
+
+## インストール確認
+
+- 実行確認： `$GOPATH/bin/mumax3`
+- パス確認： `which -a mumax3`
+  - 出力例： `/home/rc/go-packages/bin/mumax3`
+- 動作テスト： `mumax3 -test`
+  - バージョン例： `mumax 3.11.1 [linux_amd64 go1.25.4(gc) CUDA-12.8]`
+  - commit hash、CPU/GPU 情報、OS 情報などが表示
+  - 注意書き（license / citation）も表示
 
 ## Mumax+ install
-q. https://mumax.github.io/plus/install.html
-r. Cuda/c++/Conda/Git/CPython/pip/miniconda install
-s. git clone --recursive https://github.com/mumax/plus.git mumaxplus
-t. cd mumaxplus
-u. conda env create -f environment.yml
-v. 2つのToSへの同意（accept）
-w. conda activate mumaxplus
-x. pip install .
-y. 確認
-    a. python examples/standardproblem4.py
 
-
-
-
+- 公式手順： https://mumax.github.io/plus/install.html
+- 必要パッケージ：
+  - CUDA / C++
+  - Conda
+  - Git
+  - CPython / pip
+  - miniconda
+- `git clone --recursive https://github.com/mumax/plus.git mumaxplus`
+- `cd mumaxplus`
+- `conda env create -f environment.yml`
+- ToS 2つに同意 → accept
+- `conda activate mumaxplus`
+- `pip install .`
+- 動作確認：
+  - `python examples/standardproblem4.py`
