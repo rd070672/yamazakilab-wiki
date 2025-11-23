@@ -47,8 +47,8 @@ features:
   - [Wien2kの計算例](/calc/wien2k.md)
 
 ### 第一原理MD計算
-- [第一原理MD計算の原理](/calc/vasp-aimd.md)
-- [AIMDによるアモルファスの計算例](/calc/vasp-aimd-amorphous.md)
+- [第一原理MD計算の原理](/calc/aimd.md)
+- [AIMDによるアモルファスの計算例](/calc/aimd-amorphous.md)
 
 ### 分子動力学（MD）計算
 - [MDの原理](/calc/md.md)
@@ -61,15 +61,16 @@ features:
   - JAX-MD を用いた MD 計算
 
 ### モンテカルロ計算
-- [モンテカルロ計算の原理](/calc/monte-carlo.md)
-- [MC計算による磁性体の計算例](/calc/monte-carlo-mag.md)
-- マルコフ連鎖MC
-- クラスター展開
+- [モンテカルロ計算の原理](/calc/mc.md)
+- [MC計算による磁性体の計算例](/calc/mc-mag.md)
+- [マルコフ連鎖MC](/calc/mcmc.md)
+- [クラスター展開](/calc/mc-cluster.md)
 
 ### フェーズフィール計算
-- フェーズフィール計算の原理
-- Phase Fieldモデル（Cahn–Hilliard）
-- 結晶成長（Allen–Cahn）
+- [フェーズフィール計算の原理](/calc/ph.md)
+- [Allen–Cahn法に基づく計算例](/calc/ph-allen-cahn.md)
+- [Cahn–Hilliard法に基づく計算例](/calc/ph-cahn-hilliard.md)
+
 
 ### 有限要素・有限差分計算
 - FEMとFDMの原理
