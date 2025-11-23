@@ -97,8 +97,8 @@ export default defineConfig({
         ]},
         { text: 'フェーズフィール計算', collapsed: true, items: [
           { text: 'フェーズフィール計算の原理', link: '/calc/pf' },
-          { text: 'Allen–Cahn法に基づく計算例', link: '/calc/pf-allen-cahn' },
-          { text: 'Cahn–Hilliard法に基づく計算例', link: '/calc/pf-cahn-hilliard' },
+          { text: 'Allen-Cahn法に基づく計算例', link: '/calc/pf-allen-cahn' },
+          { text: 'Cahn-Hilliard法に基づく計算例', link: '/calc/pf-cahn-hilliard' },
         ]},
         { text: 'スケーラブル計算', collapsed: true, items: [
           { text: 'FEMとFDMの原理', link: '/calc/fem-fdm' },
