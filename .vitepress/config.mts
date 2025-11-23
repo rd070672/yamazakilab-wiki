@@ -50,13 +50,13 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'ホーム', link: '/' },
       { text: '計算', link: '/#計算' },
       { text: '実験', link: '/#実験' },
       { text: 'データサイエンス', link: '/#データサイエンス'},
-      { text: '情報システム', link: '/#情報システム'},
+      { text: '情報基盤', link: '/#情報基盤'},
       { text: 'ラボ運営', link: '/#ラボ運営'},
-      { text: 'Changelog', link: '/changelog' },
+      { text: '変更ログ', link: '/changelog' },
       // { text: 'Website', link: 'https://tyamazaki.com' },
       // { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
@@ -91,6 +91,12 @@ export default defineConfig({
           { text: '装置類の引っ越し', link: '/'},
           { text: '土禁・フロアマット', link: '/'},
       ]},
+
+      { text: '情報基盤', collapsed: true, items: [
+          { text: '装置類の引っ越し', link: '/'},
+          { text: '土禁・フロアマット', link: '/'},
+      ]},
+
       { text: 'ラボ運営', collapsed: true, items: [
           { text: '装置類の引っ越し', link: '/'},
           { text: '土禁・フロアマット', link: '/'},
@@ -102,13 +108,16 @@ export default defineConfig({
           { text: 'クリーンベンチ', link: '/'},
           { text: 'シンク周り', link: '/'},
       ]},
+
       { text: 'Website', link: 'https://tyamazaki.com' },
       { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
+
     socialLinks: [
       { icon: 'x', link: '/' },
       { icon: 'github', link: 'https://github.com/rd070672/yamazakilab-wiki' }
     ],
+
     footer: {
       copyright: '© 2026 Yamazaki Lab Wiki',
     },

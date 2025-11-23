@@ -5,14 +5,11 @@ title: Changelog
 # Changelog
 
 ## 2025-11-23
-- VitePress Wiki 公開
-- 検索機能（local search）追加
-- Edit this page on GitHub / 最終更新 表示を有効化
+- 更新日、changelog、検索など機能を追加
 
 ## 2025-11-20
 - [計算] VASP インストールメモを追加
-- Masamune-II 利用メモを追加
-
+- [情報基盤] Masamune-II 利用メモを追加
 
 ## 2025-11-19
-- Yamazaki Lab Wiki を作成・公開
+- Yamazaki Lab Wiki を作成・公開（計算物理、VitePressのサイトを参考に）
