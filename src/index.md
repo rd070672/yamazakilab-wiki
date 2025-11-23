@@ -152,7 +152,7 @@ features:
 
 ### 次元削減手法・可視化
 - 線形手法 (PCA, MDS)
-- 非線形的手法 (UMAP, t-SNE)
+- 非線形的手法 (UMAP, t-SNE, isomap)
 - 自己組織化マップ (SOM)
 
 ### 深層学習
