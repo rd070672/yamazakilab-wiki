@@ -47,8 +47,11 @@ features:
   - [Wien2kの計算例](/calc/wien2k.md)
 
 ## 第一原理MD計算
-- [第一原理MD計算の原理](/calc/aimd.md)
+- [第一原理計算に基づくMD計算(AIMD)の原理](/calc/aimd.md)
 - [AIMDによるアモルファスの計算例](/calc/aimd-amorphous.md)
+
+## 第一原理フェーズフィール計算
+- [第一原理計算に基づくフェーズフィールド計算の原理](/calc/dft-pf.md)
 
 ## 分子動力学（MD）計算
 - [MDの原理](/calc/md.md)
@@ -70,7 +73,6 @@ features:
 - [フェーズフィール計算の原理](/calc/ph.md)
 - [Allen–Cahn法に基づく計算例](/calc/ph-allen-cahn.md)
 - [Cahn–Hilliard法に基づく計算例](/calc/ph-cahn-hilliard.md)
-
 
 ## 有限要素・有限差分計算
 - FEMとFDMの原理
