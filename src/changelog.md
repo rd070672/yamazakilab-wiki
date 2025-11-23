@@ -13,4 +13,4 @@ title: Changelog
 - [情報基盤] Masamune-II 利用メモを追加
 
 ## 2025-11-19
-- Yamazaki Lab Wiki を作成・公開（計算物理、VitePressのサイトを参考に）
+- Yamazaki Lab Wiki を作成・公開（計算物理春の学校およびVitePress.devのサイトを参考に）

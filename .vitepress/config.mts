@@ -109,6 +109,7 @@ export default defineConfig({
           { text: 'シンク周り', link: '/'},
       ]},
 
+      { text: 'Changelog', link: '/changelog' },
       { text: 'Website', link: 'https://tyamazaki.com' },
       { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
