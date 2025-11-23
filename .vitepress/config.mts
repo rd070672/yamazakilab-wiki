@@ -64,7 +64,7 @@ export default defineConfig({
     ],
     sidebar: [
       { text: '計算', collapsed: false, items: [
-        { text: '第一原理計算', items: [
+        { text: '第一原理計算', collapsed: true, items: [
           { text: '第一原理計算の原理', link: '/calc/vasp' },
           { text: 'VASP のインストールメモ', link: '/calc/vasp-install' },
           { text: 'VASPの計算例', link: '/calc/vasp-dft' },
@@ -81,7 +81,7 @@ export default defineConfig({
           { text: 'AIMDによるアモルファスの計算例', link: '/calc/aimd-amorphous' },
           { text: '第一原理計算に基づくフェーズフィールド計算の原理', link: '/calc/dft-pf' },
         ]},
-        { text: 'MD計算', items: [
+        { text: 'MD計算', collapsed: true, items: [
           { text: 'MDの原理', link: '/calc/md' },
           { text: 'MD計算における古典的・機械学習ポテンシャルの選定', link: '/calc/md-potential' },
           { text: 'LAMMPS のインストールメモ', link: '/calc/md-lammps-install' },
@@ -89,18 +89,18 @@ export default defineConfig({
           { text: 'ASE を用いた MD 計算', link: '/calc/md-ase' },
           { text: 'JAX を用いた MD 計算', link: '/calc/md-jax' },
         ]},
-        { text: 'モンテカルロ計算', items: [
+        { text: 'モンテカルロ計算', collapsed: true, items: [
           { text: 'モンテカルロ計算の原理', link: '/calc/mc' },
           { text: 'MC計算による磁性体の計算例', link: '/calc/mc-mag' },
           { text: 'マルコフ連鎖MC', link: '/calc/mcmc' },
           { text: 'クラスター展開', link: '/calc/mc-cluster' },
         ]},
-        { text: 'フェーズフィール計算', items: [
+        { text: 'フェーズフィール計算', collapsed: true, items: [
           { text: 'フェーズフィール計算の原理', link: '/calc/pf' },
           { text: 'Allen–Cahn法に基づく計算例', link: '/calc/pf-allen-cahn' },
           { text: 'Cahn–Hilliard法に基づく計算例', link: '/calc/pf-cahn-hilliard' },
         ]},
-        { text: 'スケーラブル計算', items: [
+        { text: 'スケーラブル計算', collapsed: true, items: [
           { text: 'FEMとFDMの原理', link: '/calc/fem-fdm' },
           { text: 'PDE（偏微分方程式）の基礎', link: '/calc/pde' },
           { text: 'ODE（常微分方程式）の基礎', link: '/calc/ode' },
