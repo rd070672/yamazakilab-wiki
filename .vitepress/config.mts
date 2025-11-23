@@ -65,7 +65,7 @@ export default defineConfig({
     sidebar: [
       { text: '計算', collapsed: false, items: [
           { text: '第一原理計算の原理', link: '/calc/vasp' },
-          { text: 'VASP v6.5.1 のインストールメモ', link: '/calc/vasp-install' },
+          { text: 'VASP のインストールメモ', link: '/calc/vasp-install' },
           { text: 'VASPの計算例', link: '/calc/vasp-dft' },
           { text: 'vaspkit メモ', link: '/calc/vaspkit' },
           { text: 'phonopy メモ', link: '/calc/phonopy' },
@@ -73,7 +73,7 @@ export default defineConfig({
           { text: 'Bader電荷解析メモ', link: '/calc/bader-charge' },
           { text: 'SPR-KKR のインストールメモ', link: '/calc/sprkkr-install' },
           { text: 'SPR-KKRの計算例', link: '/calc/sprkkr' },
-          { text: 'Wien2k v23.2 のインストールメモ', link: '/calc/wien2k-install' },
+          { text: 'Wien2k のインストールメモ', link: '/calc/wien2k-install' },
           { text: 'Wien2kの計算例', link: '/calc/wien2k' },
 
           { text: '第一原理計算に基づくMD計算(AIMD)の原理', link: '/calc/aimd' },
@@ -99,7 +99,7 @@ export default defineConfig({
           { text: 'FEMとFDMの原理', link: '/calc/fem-fdm' },
           { text: 'PDE（偏微分方程式）の基礎', link: '/calc/pde' },
           { text: 'ODE（常微分方程式）の基礎', link: '/calc/ode' },
-          { text: 'mumax3 v3.11 のインストールメモ', link: '/calc/mumax3-install' },
+          { text: 'mumax3 のインストールメモ', link: '/calc/mumax3-install' },
           { text: 'mumax3 を用いた LLG 計算', link: '/calc/mumax3-llg' },
           { text: '拡張版 mumax+ による磁気弾性計算', link: '/calc/mumaxplus' },
           { text: 'COMSOL Multiphysics のインストールメモ', link: '/calc/comsol-install' },
