@@ -54,7 +54,7 @@ features:
 - [MDの原理](/calc/md.md)
 - 古典的・機械学習ポテンシャルの選定
 - LAMMPS
-  - [LAMMPS 10 Sep 2025 version のインストールメモ](/calc/lammps-install.md)
+  - [LAMMPS のインストールメモ](/calc/lammps-install.md)
   - LAMMPS を用いた MD 計算
 - Pythonでのプログラミング
   - ASE を用いた MD 計算
@@ -74,7 +74,6 @@ features:
 
 ### 有限要素・有限差分計算
 - FEMとFDMの原理
-- メッシュ生成
 - mumax3
   - [mumax3 v3.11 のインストールメモ](/calc/mumax3-install.md)
   - mumax3 を用いた LLG 計算
@@ -85,8 +84,6 @@ features:
   - COMSOL を用いた AC/DC 計算
   - COMSOL を用いた LLG 計算
   - COMSOL を用いた LLG 連成計算
-- C++でのプログラミング
-  - フェーズフィールとLLG計算による強磁性形状記憶合金の計算
 
 
 <!-- ################################################################################### -->
