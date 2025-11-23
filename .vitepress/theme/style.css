@@ -118,7 +118,11 @@
  * -------------------------------------------------------------------------- */
 
 .DocSearch {
-  /* --docsearch-primary-color: var(--vp-c-brand-1) !important; */
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/* 検索ボタンの「Ctrl K」キー表示を消す */
+.DocSearch-Button-Keys {
   display: none !important;
 }
 
