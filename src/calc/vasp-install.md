@@ -9,14 +9,14 @@
 - curl をインストール： `sudo apt install curl`
 
 ## Intel oneAPI Base Toolkit 
-- 参考URL: https://www.intel.com/.../oneapi/base-toolkit-download.html
+- 参考URL: https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html?packages=oneapi-toolkit&oneapi-toolkit-os=linux&oneapi-lin=apt
 - Download → Linux → APT 手順に従う
 - `sudo apt update`
 - `sudo apt install -y gpg-agent wget`
 - Intel GPG鍵取得：
-  `wget -O- https://apt.repos.intel.com/intel-gpg-keys/... | gpg --dearmor | sudo tee /usr/share/keyrings/oneapi-archive-keyring.gpg`
+  `wget -O- https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB | gpg --dearmor | sudo tee /usr/share/keyrings/oneapi-archive-keyring.gpg`
 - oneAPI リポジトリ追加：
-  `echo "deb [signed-by=...] https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/sources.list.d/oneAPI.list`
+  `echo "deb [signed-by=/usr/share/keyrings/oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main" | sudo tee /etc/apt/sources.list.d/oneAPI.list`
 - `sudo apt update`
 - `sudo apt install intel-oneapi-base-toolkit`
 - `sudo apt -y install cmake pkg-config build-essential`
@@ -26,16 +26,16 @@
 - `oneapi-cli` はテスト画面が開くが閉じて問題なし
 
 ## Intel oneAPI HPC Toolkit 
-- 参考URL: https://www.intel.com/.../oneapi/hpc-toolkit-download.html
+- 参考URL: https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit-download.html?packages=hpc-toolkit&hpc-toolkit-os=linux&hpc-toolkit-lin=apt
 - 公開鍵 syntax エラーは再入力で解決
 
 ## NVIDIA HPC SDK 25.3  
 - 参考URL: https://developer.nvidia.com/nvidia-hpc-sdk-253-downloads
 - CUDA 12.8 bundled
 - NVIDIA鍵取得：
-  `curl https://developer.download.nvidia.com/... | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg`
+  `curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg`
 - リポジトリ追加：
-  `echo 'deb [signed-by=...] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' | sudo tee /etc/apt/sources.list.d/nvhpc.list`
+  `echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' | sudo tee /etc/apt/sources.list.d/nvhpc.list`
 - `sudo apt-get update -y`
 - `sudo apt-get install -y nvhpc-25-3`
 
@@ -87,7 +87,7 @@
 - 再試行： `make DEPS=1 -j18 all`
 
 - `make test` (30–60 min)
-- いくつかのテストが失敗するがインストールは完了
+- いくつかの高度なテスト計算は失敗するがインストールは完了
 
 ## MAELAS インストール  
   https://github.com/pnieves2019/MAELAS

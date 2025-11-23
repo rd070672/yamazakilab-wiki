@@ -121,6 +121,11 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* Home（index.md）だけ検索フォームを非表示にする */
+body:has(.VPHome) .VPNavBarSearch.search {
+  display: none !important;
+}
+
 /* 検索ボタンの「Ctrl K」キー表示を消す */
 /* .DocSearch-Button-Keys {
   display: none !important;
