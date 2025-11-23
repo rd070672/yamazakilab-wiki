@@ -122,15 +122,15 @@
 }
 
 /* 検索ボタンの「Ctrl K」キー表示を消す */
-.DocSearch-Button-Keys {
+/* .DocSearch-Button-Keys {
   display: none !important;
-}
+} */
 
 /* 検索ボタンの幅を調整 */
-.VPNavBarSearch .DocSearch-Button {
-  width: 300px;      /* 好きな値に。例: 220〜260px */
-  /* justify-content: flex-start; */
-}
+/* .VPNavBarSearch .DocSearch-Button {
+  width: 300px;
+  justify-content: flex-start;
+} */
 
 /**
  * Hero Area

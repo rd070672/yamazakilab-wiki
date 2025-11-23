@@ -119,7 +119,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: '© 2026 Yamazaki Lab Wiki',
+      copyright: '© 2026- Yamazaki Lab',
     },
   },
 
