@@ -261,4 +261,6 @@ features:
 - 家電類の準備
 
 
+---
+
 <!--@include: ./changelog.md-->

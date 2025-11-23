@@ -10,7 +10,9 @@ title: Changelog
 - Edit this page on GitHub / 最終更新 表示を有効化
 
 ## 2025-11-20
-- VASP インストールメモを追加
+- [計算] VASP インストールメモを追加
 - Masamune-II 利用メモを追加
 
-…という感じで追記していく
+
+## 2025-11-19
+- Yamazaki Lab Wiki を作成・公開
