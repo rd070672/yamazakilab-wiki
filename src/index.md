@@ -203,7 +203,7 @@ features:
 - リモートアクセス (Anydesk)
 - データ管理 (NAS)
 - [所有ワクステ (SHIMA/TANI/MORI/MBN)](/sys/workstations.md)
-- [購入後の初期設定](/sys/initial.md)
+- [購入後の初期設定](/sys/setup.md)
 
 ## ソフトウェア管理
 - 無料・有料ライセンス
