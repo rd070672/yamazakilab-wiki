@@ -52,14 +52,14 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'ホーム', link: '/' },
-      { text: 'Wikiについて', link: '/about' },
+      { text: 'Home', link: '/' },
+      { text: 'About', link: '/about' },
       { text: '計算', link: '/#計算' },
       { text: '実験', link: '/#実験' },
       { text: 'データサイエンス', link: '/#データサイエンス'},
       { text: '情報基盤', link: '/#情報基盤'},
       { text: 'ラボ運営', link: '/#ラボ運営'},
-      { text: '変更ログ', link: '/changelog' },
+      { text: 'Changelog', link: '/changelog' },
       // { text: 'Website', link: 'https://tyamazaki.com' },
       // { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
