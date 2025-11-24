@@ -128,9 +128,9 @@ features:
 - 回路設計
 
 ## 放射光施設
-- [放射光の基礎](/exp/sy.md)
-- [放射光の光学設計の基礎](/exp/sy-optics.md)
-- [軟X線と硬X線の基礎](/exp/sy-soft-hard.md)
+- [放射光の基礎](/exp/sr.md)
+- [放射光の光学設計の基礎](/exp/sr-optics.md)
+- [軟X線と硬X線の基礎](/exp/sr-soft-hard.md)
 - SPring-8の申請と実験準備
   - XMCDの基礎
   - BL25SU XMCD
