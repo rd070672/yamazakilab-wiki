@@ -6,7 +6,6 @@
 - KEK Photon Factory「放射光と物質科学」：https://www2.kek.jp/imss/pf/about/sr/pf1.html 
 - NanoTerasu / 「3GeV高輝度放射光施設NanoTerasuの概要説明」：https://www.mext.go.jp/content/20250527-mxt_kibanken01-000042783_06.pdf
 
----
 
 ## 1. 軟X線・硬X線とは何か
 

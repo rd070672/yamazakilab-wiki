@@ -58,10 +58,12 @@ export default defineConfig({
       { text: 'データサイエンス', link: '/#データサイエンス'},
       { text: '情報基盤', link: '/#情報基盤'},
       { text: 'ラボ運営', link: '/#ラボ運営'},
-      { text: 'Changelog', link: '/changelog' },
-      { text: 'About', link: '/about' },
-      { text: 'Website', link: 'https://tyamazaki.com' },
-      // { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
+      { text: 'その他', items: [
+        { text: 'Changelog', link: '/changelog' },
+        { text: 'About', link: '/about' },
+        { text: 'Website', link: 'https://tyamazaki.com' },
+        { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
+      ]},
     ],
     sidebar: [
       { text: '計算', collapsed: false, items: [
