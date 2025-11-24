@@ -53,6 +53,7 @@ export default defineConfig({
 
     nav: [
       { text: 'ホーム', link: '/' },
+      { text: 'Wikiについて', link: '/about' },
       { text: '計算', link: '/#計算' },
       { text: '実験', link: '/#実験' },
       { text: 'データサイエンス', link: '/#データサイエンス'},

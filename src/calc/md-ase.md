@@ -1,5 +1,9 @@
 # ASE を用いた MD 計算
-作成日：2025年11月23日
+
+## 参考にしたドキュメント
+- ASE documentation
+  - https://ase-lib.org/ase/md.html
+
 
 ## 概要
 - ASE（Atomic Simulation Environment）は Python ベースの原子シミュレーション用フレームワークであり、
@@ -57,22 +61,22 @@ from ase import units
 from ase.md.velocitydistribution import MaxwellBoltzmannDistribution
 from ase.io import Trajectory
 
-- 1. 構造定義（例：アルミニウムのバルク）
-  - atoms = bulk("Al", "fcc", a=4.05) * (3, 3, 3)  (※) 3x3x3 supercell
+# 1. 構造定義（例：アルミニウムのバルク）
+  - atoms = bulk("Al", "fcc", a=4.05) * (3, 3, 3)  # 3x3x3 supercell
 
-- 2. calculator を設定
-  - atoms.calc = EMT()  (※) 実材料では EAM や LAMMPS などを使う方が良い
+# 2. calculator を設定
+  - atoms.calc = EMT()  # 実材料では EAM や LAMMPS などを使う方が良い
 
-- 3. 初期速度の付与（目標温度 T）
+# 3. 初期速度の付与（目標温度 T）
   - T = 300  # K
   - MaxwellBoltzmannDistribution(atoms, temperature_K=T)
 
-- 4. MD 積分器の設定（Langevin：NVT）
+# 4. MD 積分器の設定（Langevin：NVT）
   - timestep = 1.0 * units.fs
-  - friction = 0.02  (※) 1/fs 程度（経験的に選ぶ）
+  - friction = 0.02  # 1/fs 程度（経験的に選ぶ）
   - dyn = Langevin(atoms, timestep, temperature_K=T, friction=friction)
 
-- 5. トラジェクトリ出力
+# 5. トラジェクトリ出力
   - traj = Trajectory("al_md.traj", "w", atoms)
 
 def print_status(a=atoms, step=[0]):
@@ -87,12 +91,15 @@ dyn.attach(traj.write, interval=10)
 
 # 6. MD 実行（ステップ数 N）
 - dyn.run(5000)
-  - 上記はあくまで「構造 → calculator → 積分器 → 出力」の流れを示す簡易例であり、
-  - 実材料の精密計算には、適切なポテンシャル（EAM/ML/DFT 等）とパラメータを選ぶ必要がある。
+```
 
-## ASE での MD 計算フロー（実務イメージ）
+- 上記はあくまで「構造 → calculator → 積分器 → 出力」の流れを示す簡易例であり、
+- 実材料の精密計算には、適切なポテンシャル（EAM/ML/DFT 等）とパラメータを選ぶ必要がある。
+
+## ASE での MD 計算フロー
 - 系と目的の整理
   - 例：Fe–B アモルファスのメルトクエンチ、拡散係数の評価、格子欠陥の移動など。
+
 - ポテンシャル・calculator の選定
   - まずは LAMMPS 等に存在する EAM, MEAM, ReaxFF などの候補を調査。
   - 既存ポテンシャルが不十分なら ML ポテンシャルや DFT AIMD を検討。
@@ -128,7 +135,7 @@ dyn.attach(traj.write, interval=10)
   - VASP/GPAW 等の calculator を接続し、少数原子・短時間の AIMD を実行。
   - 得られた構造から ML ポテンシャル学習用のデータを生成する用途にも使える。
 
-## 実務的な注意点
+## 注意点
 - 単位系
   - ASE 内部ではエネルギーは eV、距離は Å を基本単位として扱うことが多い。
   - 時間は ase.units.fs などを用いて明示する。
@@ -144,3 +151,8 @@ dyn.attach(traj.write, interval=10)
 - 再現性
   - 乱数シード（初期速度）や入力条件は明示的に記録する。
   - Git + Python スクリプトとしてワークフローを管理しておくと後から追跡しやすい。
+
+
+---
+
+#### Created: 2025-11-24
