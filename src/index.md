@@ -33,64 +33,57 @@ features:
 ## 計算 {#計算}
 第一原理計算、数値計算、スパコンを用いた大規模計算を中心に、材料科学・物性物理の研究に不可欠な計算科学の基盤を整理する。環境構築やソフトウェアのインストール方法だけでなく、代表的な計算手法の考え方や典型的な計算事例までを俯瞰し、材料物性の理解からデータ駆動型解析までを一貫して扱うことを目的とする。
 
-## 第一原理計算
+### 第一原理計算
 - [第一原理計算の原理](/calc/vasp.md)
-- VASP
-  - [VASP のインストールメモ](/calc/vasp-install.md)
-  - [VASP の計算例](/calc/vasp-dft.md)
-    - [vaspkit メモ](/calc/vaspkit.md)
-    - [phonopy メモ](/calc/phonopy.md)
-    - [MAELAS メモ](/calc/maelas.md)
-    - [Bader 電解解析メモ](/calc/bader.md)
-- SPR-KKR
-  - [SPR-KKR のインストールメモ](/calc/sprkkr-install.md)
-  - [SPR-KKR の計算例](/calc/sprkkr.md)
-- Wien2k
-  - [Wien2k のインストールメモ](/calc/wien2k-install.md)
-  - [Wien2k の計算例](/calc/wien2k.md)
+- [VASP のインストールメモ](/calc/vasp-install.md)
+- [VASP の計算例](/calc/vasp-dft.md)
+- [vaspkit メモ](/calc/vaspkit.md)
+- [phonopy メモ](/calc/phonopy.md)
+- [MAELAS メモ](/calc/maelas.md)
+- [Bader 電解解析メモ](/calc/bader.md)
+- [SPR-KKR のインストールメモ](/calc/sprkkr-install.md)
+- [SPR-KKR の計算例](/calc/sprkkr.md)
+- [Wien2k のインストールメモ](/calc/wien2k-install.md)
+- [Wien2k の計算例](/calc/wien2k.md)
 
-## 第一原理分子動力学 (AIMD) 計算
+### 第一原理分子動力学 (AIMD) 計算
 - [第一原理計算に基づく MD 計算の原理](/calc/aimd.md)
 - [AIMD によるアモルファスの計算例](/calc/aimd-amorphous.md)
 
-## 第一原理フェーズフィール計算
+### 第一原理フェーズフィール計算
 - [第一原理計算に基づくフェーズフィールド計算の原理](/calc/dft-pf.md)
 
-## 分子動力学（MD）計算
+### 分子動力学（MD）計算
 - [MD の原理](/calc/md.md)
 - [MD 計算における古典的・機械学習ポテンシャルの選定](/calc/md-potential.md)
-- LAMMPS
-  - [LAMMPS のインストールメモ](/calc/md-lammps-install.md)
-  - [LAMMPS を用いた MD 計算](/calc/md-lammps.md)
-- Pythonでのプログラミング
-  - [ASE を用いた MD 計算](/calc/md-ase.md)
-  - [JAX を用いた MD 計算](/calc/md-jax.md)
+- [LAMMPS のインストールメモ](/calc/md-lammps-install.md)
+- [LAMMPS を用いた MD 計算](/calc/md-lammps.md)
+- [ASE を用いた MD 計算](/calc/md-ase.md)
+- [JAX を用いた MD 計算](/calc/md-jax.md)
 
-## モンテカルロ計算
+### モンテカルロ計算
 - [モンテカルロ計算の原理](/calc/mc.md)
 - [MC 計算による磁性体の計算例](/calc/mc-mag.md)
 - [マルコフ連鎖MC](/calc/mcmc.md)
 - [クラスター展開](/calc/mc-cluster.md)
 
-## フェーズフィール計算
+### フェーズフィール計算
 - [フェーズフィール計算の原理](/calc/pf.md)
 - [Allen–Cahn 法に基づく計算例](/calc/pf-allen-cahn.md)
 - [Cahn–Hilliard 法に基づく計算例](/calc/pf-cahn-hilliard.md)
 
-## マルチフィジックス計算
+### マルチフィジックス計算
 - [FEM と FDM の原理](/calc/fem-fdm.md)
 - [PDE（偏微分方程式）の基礎](/calc/pde.md)
 - [ODE（常微分方程式）の基礎](/calc/ode.md)
-- mumax3
-  - [mumax3 のインストールメモ](/calc/mumax3-install.md)
-  - [mumax3 を用いた LLG 計算](/calc/mumax3-llg.md)
-  - [拡張版 mumax+ による磁気弾性計算](/calc/mumaxplus.md)
-- COMSOL
-  - [COMSOL Multiphysics のインストールメモ](/calc/comsol-install.md)
-  - [COMSOL を用いた LLG 計算](/calc/comsol-llg.md)
-  - [COMSOL を用いた 電磁場-LLG 連成計算](/calc/comsol-maxwell-llg.md)
-  - [COMSOL を用いた 弾性場-LLG 連成計算](/calc/comsol-maelas-llg.md)
-  - [COMSOL を用いた 相変態解析](/calc/comsol-pf.md)
+- [mumax3 のインストールメモ](/calc/mumax3-install.md)
+- [mumax3 を用いた LLG 計算](/calc/mumax3-llg.md)
+- [拡張版 mumax+ による磁気弾性計算](/calc/mumaxplus.md)
+- [COMSOL Multiphysics のインストールメモ](/calc/comsol-install.md)
+- [COMSOL を用いた LLG 計算](/calc/comsol-llg.md)
+- [COMSOL を用いた 電磁場-LLG 連成計算](/calc/comsol-maxwell-llg.md)
+- [COMSOL を用いた 弾性場-LLG 連成計算](/calc/comsol-maelas-llg.md)
+- [COMSOL を用いた 相変態解析](/calc/comsol-pf.md)
 
 
 <!-- ################################################################################### -->
