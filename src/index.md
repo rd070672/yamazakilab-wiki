@@ -47,16 +47,17 @@ features:
 - [Wien2k のインストールメモ](/calc/wien2k-install.md)
 - [Wien2k の計算例](/calc/wien2k.md)
 
-### 第一原理分子動力学 (AIMD) 計算
+### 第一原理分子動力学計算
 - [第一原理計算に基づく MD 計算の原理](/calc/aimd.md)
 - [AIMD によるアモルファスの計算例](/calc/aimd-amorphous.md)
 
-### 第一原理フェーズフィール計算
+### 第一原理フェーズフィールド計算
 - [第一原理計算に基づくフェーズフィールド計算の原理](/calc/dft-pf.md)
 
-### 分子動力学（MD）計算
+### 分子動力学計算
 - [MD の原理](/calc/md.md)
 - [MD 計算における古典的・機械学習ポテンシャルの選定](/calc/md-potential.md)
+- [機械学習ポテンシャルの基礎](/calc/ml-potential.md)
 - [LAMMPS のインストールメモ](/calc/md-lammps-install.md)
 - [LAMMPS を用いた MD 計算](/calc/md-lammps.md)
 - [ASE を用いた MD 計算](/calc/md-ase.md)
@@ -68,8 +69,8 @@ features:
 - [マルコフ連鎖MC](/calc/mcmc.md)
 - [クラスター展開](/calc/mc-cluster.md)
 
-### フェーズフィール計算
-- [フェーズフィール計算の原理](/calc/pf.md)
+### フェーズフィールド計算
+- [フェーズフィールド計算の原理](/calc/pf.md)
 - [Allen–Cahn 法に基づく計算例](/calc/pf-allen-cahn.md)
 - [Cahn–Hilliard 法に基づく計算例](/calc/pf-cahn-hilliard.md)
 
@@ -99,8 +100,12 @@ features:
 - PLD
 - MBE
 
-## 熱処理・加工プロセス
+## 熱処理・試料加工
 - 赤外線ランプ炉
+- フォトリソグラフィ
+- 電子線リソグラフィ (EBL)
+- ドライエッチング / ウェットエッチング
+- ワイヤーボンディング・パッケージング
 
 ## 磁気計測
 - バルクハウゼンノイズ計測装置 (MBN)
@@ -119,17 +124,22 @@ features:
 ## 汎用機器・治具設計
 - 3Dプリンター
 - アルミフレーム設計
+- DAQ (Data Acquisition) ボード
+- 回路設計
 
 ## 放射光施設
-- SPring-8
-  - 申請と実験準備
+- [放射光の基礎](/exp/sy.md)
+- [放射光の光学設計の基礎](/exp/sy-optics.md)
+- [軟X線と硬X線の基礎](/exp/sy-soft-hard.md)
+- SPring-8の申請と実験準備
+  - XMCDの基礎
   - BL25SU XMCD
-  - BL14B2 in-situ XAS/XRD
-- KEK(PF)
-  - 申請と実験準備
+  - XAFSの基礎
+  - BL14B2 in-situ XAFS/XRD
+- KEK(PF)申請と実験準備
   - BL9C XAFS
-- NanoTerasu
-  - 申請と実験準備
+- NanoTerasuの申請と実験準備
+  - HAXPESの基礎
   - BL09U HAXPES
 
 
@@ -149,6 +159,10 @@ features:
 - スペクトル解析
 - 位相学的データ解析 (TDA)
 
+## 材料データベース
+- Pymatgen
+- OQMD (The Open Quantum Materials Database)
+
 ## 教師あり学習（回帰・分類）
 - 決定木系手法
 - アンサンブル学習（Bagging, Boosting）
@@ -158,11 +172,11 @@ features:
 - 非線形的手法 (UMAP, t-SNE, isomap)
 - 自己組織化マップ (SOM)
 
-## 深層学習
+## 深層学習フレームワーク
 - 画像 (CNN, VAE, U-net)
 - 時系列 (RNN, LSTM, GRU, Transfomer, TCN)
 - グラフ (GNN, MPNN, GraphSAGE)
-- 物理 (Physics-informed NNs)
+- 物理モデル (Physics-informed Neural Networks, PiNNs)
 
 ## モデル解釈
 - SHAP値
@@ -174,6 +188,7 @@ features:
 - ベイズ最適化（BO）
 - アクティブラーニング（AL）
 - 逆問題・最適化
+- 遺伝的アルゴリズム
 
 ## その他
 - 機械学習ポテンシャル
