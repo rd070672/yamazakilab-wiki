@@ -4,26 +4,26 @@ layout: home
 
 hero:
   name: "Wiki"
-  text: "Yamazaki Lab"
+  text: "tyamazaki" #"Yamazaki Lab"
   tagline: # 横浜国立大学<br>材料工学教育プログラム
   actions:
     - theme: brand
       text: Website
-      link: https://tyamazaki.com/
+      link: / # https://tyamazaki.com/
 
     - theme: alt
       text: Github
-      link: https://github.com/rd070672/yamazakilab-wiki
+      link: / # https://github.com/rd070672/yamazakilab-wiki
 
 features:
   - title: 計算
-    details: 第一原理計算、数値計算、スパコンを用いた大規模計算を中心に、環境構築からインストール方法、典型的な計算手法、解析実例まで幅広く紹介します。材料物性の理論的理解からデータ駆動型の解析まで、計算科学に基づく総合的知見を共有します。
+    details: 第一原理計算・数値計算・スパコン計算を軸に、環境構築から代表的手法、解析例までを紹介します。材料物性の理解とデータ駆動解析につながる計算科学の要点をまとめます。
 
   - title: 実験
-    details: ラボでの材料合成、熱処理やプロセス制御、磁気計測・放射光解析を含む先端計測技術など、実験科学の基礎から応用までを体系的に説明します。再現性の高い測定のコツや装置構築のノウハウなど、研究環境の整備に直結する情報を提供します。
+    details: 材料合成・熱処理・プロセス制御から、磁気計測・放射光解析までを整理します。再現性を高める手順や装置運用のコツなど、実験で役立つ知見を共有します。
 
   - title: データサイエンス
-    details: 教師あり・教師なし学習から深層学習、統計的解析、機械学習ポテンシャルの構築など、多様なデータ科学手法を紹介します。材料研究への応用例や実装方法、モデル解釈のポイントまで、データ駆動型科学を体系的に理解できる内容です。
+    details: 機械学習・統計解析・深層学習、機械学習ポテンシャルまでを扱います。材料応用の実例と実装、モデル解釈の勘所をまとめます。
 
 ---
 
@@ -80,8 +80,9 @@ features:
 
 ### マルチフィジックス計算
 - [FEM と FDM の原理](/calc/fem-fdm.md)
-- [PDE（偏微分方程式）の基礎](/calc/pde.md)
-- [ODE（常微分方程式）の基礎](/calc/ode.md)
+- [常微分方程式 (ODE) の基礎](/calc/ode.md)
+- [偏微分方程式 (PDE) の基礎](/calc/pde.md)
+- [ボロノイ分割法](/calc/volonoi.md)
 - [mumax3 のインストールメモ](/calc/mumax3-install.md)
 - [mumax3 を用いた LLG 計算](/calc/mumax3-llg.md)
 - [拡張版 mumax+ による磁気弾性計算](/calc/mumaxplus.md)
@@ -89,7 +90,7 @@ features:
 - [COMSOL を用いた LLG 計算](/calc/comsol-llg.md)
 - [COMSOL を用いた 電磁場-LLG 連成計算](/calc/comsol-maxwell-llg.md)
 - [COMSOL を用いた 弾性場-LLG 連成計算](/calc/comsol-maelas-llg.md)
-- [COMSOL を用いた 相変態解析](/calc/comsol-pf.md)
+- [COMSOL を用いた 相変化解析](/calc/comsol-pf.md)
 
 
 <!-- ################################################################################### -->
@@ -97,7 +98,6 @@ features:
 
 
 ## 実験 {#実験}
-材料合成、熱処理、磁気計測、構造解析、そして放射光実験まで、材料研究に必要な実験技術を体系的に扱います。薄膜作製から微細構造観察、磁気特性評価、X線分光・回折までの幅広い手法をカバーし、装置運用のポイントや再現性の高い測定のための実践的ノウハウもまとめています。
 
 ### 材料合成
 - 多元スパッタ装置
@@ -174,7 +174,7 @@ features:
 - [計測インフォ](/data/info-measure.md)
 - [プロセスインフォ](/data/info-process.md)
 - [物理インフォ](/data/info-physics.md)
-- [物理インフォマティクスにおける PINNs とその発展形](/data/info-physics-2.md)
+- [物理インフォにおける PINNs とその発展形](/data/info-physics-2.md)
 
 ### 教師あり学習
 - 勾配ブースティング
@@ -190,7 +190,13 @@ features:
 - 時系列 (RNN, LSTM, GRU, Transfomer, TCN)
 - グラフ (GNN, MPNN, GraphSAGE, message-passing)
 
-###　最適化手法
+### 説明可能 AI (XAI)
+- 特徴量重要度・寄与分解 (SHAP, LIMEなど)
+- Attention機構
+- Grad-CAM
+- シンボリック回帰
+
+### 最適化手法
 - 実験計画法（DOE）
 - ベイズ最適化（BO）
 - アクティブラーニング（AL）
@@ -202,7 +208,7 @@ features:
 - [機械学習ポテンシャルのFine tuning](/data/fine-tuning.md)
 
 ### その他
-- モデル解釈手法(SHapley、PDPなど)
+- [ニューラルネットワーク入門](/data/neural-network.md)
 - [テンソルネットワーク入門](/data/tensor-network.md)
 - サロゲートモデル
 - リザバーコンピューティング
@@ -226,6 +232,7 @@ features:
 
 ### サーバー・HPC管理
 - Linuxの基本
+- CPU / GPU / TPU
 - リモートアクセス (Anydesk)
 - データ管理 (NAS)
 - [所有ワクステ (SHIMA/TANI/MORI/MBN)](/sys/workstations.md)

@@ -4,11 +4,11 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 
-  base: '/yamazakilab-wiki/',
+  base: '/tyamazaki/',
   srcDir: 'src',
-  title: "Yamazaki Lab | Wiki",
+  title: "tyamazaki | Wiki",
   description: "山崎研究室における知見や経験をwikiとして共有します",
-  lastUpdated: {text: '最終更新', formatOptions: {dateStyle: 'short', timeStyle: 'medium'}},
+  lastUpdated: {text: 'Last updated', formatOptions: {dateStyle: 'short', timeStyle: 'medium'}},
   cleanUrls: true,
   markdown: {
     math: true,
@@ -46,10 +46,10 @@ export default defineConfig({
 
     returnToTopLabel: 'Return to top',
 
-    editLink: {
-      pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
-      text: 'Edit this page on GitHub'
-    },
+    // editLink: {
+    //   pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
+    //   text: 'Edit this page on GitHub'
+    // },
 
     nav: [
       { text: 'ホーム', link: '/' },
@@ -61,8 +61,8 @@ export default defineConfig({
       { text: 'その他', items: [
         { text: 'About', link: '/about' },
         { text: 'Changelog', link: '/changelog' },
-        { text: 'Website', link: 'https://tyamazaki.com' },
-        { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
+        // { text: 'Website', link: 'https://tyamazaki.com' },
+        // { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
       ]},
     ],
     sidebar: [
@@ -109,8 +109,9 @@ export default defineConfig({
         ]},
         { text: 'マルチフィジックス計算', collapsed: true, items: [
           { text: 'FEM と FDM の原理', link: '/calc/fem-fdm' },
-          { text: 'PDE (偏微分方程式) の基礎', link: '/calc/pde' },
-          { text: 'ODE (常微分方程式) の基礎', link: '/calc/ode' },
+          { text: '常微分方程式 (ODE) の基礎', link: '/calc/ode' },
+          { text: '偏微分方程式 (PDE) の基礎', link: '/calc/pde' },
+          { text: 'ボロノイ分割法', link: '/calc/volonoi' },
           { text: 'mumax3 のインストールメモ', link: '/calc/mumax3-install' },
           { text: 'mumax3 を用いた LLG 計算', link: '/calc/mumax3-llg' },
           { text: '拡張版 mumax+ による磁気弾性計算', link: '/calc/mumaxplus' },
@@ -118,51 +119,51 @@ export default defineConfig({
           { text: 'COMSOL を用いた LLG 計算', link: '/calc/comsol-llg' },
           { text: 'COMSOL を用いた 電磁場-LLG 連成計算', link: '/calc/comsol-maxwell-llg' },
           { text: 'COMSOL を用いた 弾性場-LLG 連成計算', link: '/calc/comsol-maelas-llg' },
-          { text: 'COMSOL を用いた 相変態解析', link: '/calc/comsol-pf' },
+          { text: 'COMSOL を用いた 相変化解析', link: '/calc/comsol-pf' },
         ]},
       ]},
 
       { text: '実験', collapsed: true, items: [
-          { text: '装置類の引っ越し', link: '/'},
-          { text: '土禁・フロアマット', link: '/'},
+          // { text: '装置類の引っ越し', link: '/'},
+          // { text: '土禁・フロアマット', link: '/'},
       ]},
 
       { text: 'データサイエンス', collapsed: true, items: [
-          { text: '装置類の引っ越し', link: '/'},
-          { text: '土禁・フロアマット', link: '/'},
+          // { text: '装置類の引っ越し', link: '/'},
+          // { text: '土禁・フロアマット', link: '/'},
       ]},
 
       { text: '情報基盤', collapsed: true, items: [
-          { text: '装置類の引っ越し', link: '/'},
-          { text: '土禁・フロアマット', link: '/'},
+          // { text: '装置類の引っ越し', link: '/'},
+          // { text: '土禁・フロアマット', link: '/'},
       ]},
 
       { text: 'ラボ運営', collapsed: true, items: [
-          { text: '装置類の引っ越し', link: '/'},
-          { text: '土禁・フロアマット', link: '/'},
-          { text: '机・椅子（居室）', link: '/'},
-          { text: '机・椅子（実験室）', link: '/'},
-          { text: 'Wi-Fiのセットアップ', link: '/'},
-          { text: '家電類', link: '/'},
-          { text: 'サーバールーム', link: '/'},
-          { text: 'クリーンベンチ', link: '/'},
-          { text: 'シンク周り', link: '/'},
+          // { text: '装置類の引っ越し', link: '/'},
+          // { text: '土禁・フロアマット', link: '/'},
+          // { text: '机・椅子（居室）', link: '/'},
+          // { text: '机・椅子（実験室）', link: '/'},
+          // { text: 'Wi-Fiのセットアップ', link: '/'},
+          // { text: '家電類', link: '/'},
+          // { text: 'サーバールーム', link: '/'},
+          // { text: 'クリーンベンチ', link: '/'},
+          // { text: 'シンク周り', link: '/'},
       ]},
 
-      { text: 'Home', link: '/' },
+      // { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
       { text: 'Changelog', link: '/changelog' },
-      { text: 'Website', link: 'https://tyamazaki.com' },
-      { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
+      // { text: 'Website', link: 'https://tyamazaki.com' },
+      // { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
     ],
 
     socialLinks: [
       { icon: 'x', link: '/' },
-      { icon: 'github', link: 'https://github.com/rd070672/yamazakilab-wiki' }
+      { icon: 'github', link: '/' }
     ],
 
     footer: {
-      copyright: '© 2026- Yamazaki Lab',
+      copyright: '© 2026- tyamazaki.com',
     },
   },
 
