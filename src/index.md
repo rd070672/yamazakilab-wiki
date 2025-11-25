@@ -153,14 +153,6 @@ features:
 ## データサイエンス {#データサイエンス}
 統計解析、機械学習、深層学習、次元削減、TDA、機械学習ポテンシャルなど、材料データ解析に必要な手法を総合的に扱います。画像・時系列・グラフデータの処理からモデル解釈、物性予測、最適化まで、データ駆動型材料研究を支える実用的なアプローチを整理しています。
 
-### マテリアルズ・インフォマティクス
-- [4つのインフォマティクス](/data/info.md)
-- [材料インフォ](/data/info-materials.md)
-- [計測インフォ](/data/info-measure.md)
-- [プロセスインフォ](/data/info-process.md)
-- [物理インフォ](/data/info-physics.md)
-- [物理インフォマティクスにおける PINNs とその発展形](/data/info-physics-2.md)
-
 ### 統計的データ処理
 - [統計学の基礎](/data/statistics.md)
 - ブートストラップ、ベイズ統計
@@ -173,6 +165,14 @@ features:
 ### 材料データベース
 - Pymatgen
 - OQMD (The Open Quantum Materials Database)
+
+### マテリアルズ・インフォマティクス
+- [4つのインフォマティクス](/data/info.md)
+- [材料インフォ](/data/info-materials.md)
+- [計測インフォ](/data/info-measure.md)
+- [プロセスインフォ](/data/info-process.md)
+- [物理インフォ](/data/info-physics.md)
+- [物理インフォマティクスにおける PINNs とその発展形](/data/info-physics-2.md)
 
 ### 教師あり学習（回帰・分類）
 - 決定木系手法
