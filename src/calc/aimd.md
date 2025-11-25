@@ -3,7 +3,7 @@
 ## 参考ドキュメント  
 - J. Park et al., ["AIMD study and experimental verification of Ge-doped Fe80P13C7 amorphous soft magnetic alloys, Journal of Non-Crystalline Solids, 624, 2024, 122724.](https://www.sciencedirect.com/science/article/abs/pii/S0022309323005896)
 - Liquid Si - Standard MD - [VASP Wiki](https://www.vasp.at/wiki/index.php/Liquid_Si_-_Standard_MD)
---- 
+
 
 ## 概要
 - 第一原理分子動力学（Ab Initio Molecular Dynamics, AIMD）は、  

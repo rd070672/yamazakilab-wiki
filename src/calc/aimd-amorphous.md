@@ -1,11 +1,8 @@
 # 第一原理 MD 計算によるアモルファスの計算例
 
-## 参考ドキュメント  
-- “How to build amorphous Al2O3 using the AIMD method implemented in VASP? (VASP)”（StackExchange）
-- “Ab Initio Molecular Dynamics Simulations of Amorphous Metal Sulfides as Cathode Materials for Lithium–Sulfur Batteries” (JPCC, 2023)
-- “Structural, electronic, and dielectric properties of amorphous Zr⁢O2 from ab initio molecular dynamics” (PhysRevB, 2005) — 融解‐急冷プロトコルについて記載。
-
---- 
+## 参考ドキュメント
+- J. Park et al., ["AIMD study and experimental verification of Ge-doped Fe80P13C7 amorphous soft magnetic alloys, Journal of Non-Crystalline Solids, 624, 2024, 122724.](https://www.sciencedirect.com/science/article/abs/pii/S0022309323005896)
+- Liquid Si - Standard MD - [VASP Wiki](https://www.vasp.at/wiki/index.php/Liquid_Si_-_Standard_MD)
 
 ## 概要  
 - 第一原理 MD (AIMD) を用して、結晶構造を加熱して融解 (melt) → 急冷 (quench) してアモルファス構造を作成する手法。

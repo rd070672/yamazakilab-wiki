@@ -3,8 +3,6 @@
 #### 参考ドキュメント
 - [Micromagnetic Simulation with COMSOL Multiphysics](https://www.comsol.com/blogs/micromagnetic-simulation-with-comsol-multiphysics)
 
----
-
 ## 概要
 - COMSOL Multiphysics では電磁界（Maxwell 方程式）と磁化ダイナミクス（LLG 方程式）を同時に解く連成計算 を構築できる。
 - 典型的な構成は
@@ -18,7 +16,6 @@
   - LLG から得られる磁化 $\mathbf{M} = M_s\mathbf{m}$ が Maxwell 方程式側の B–H 関係や磁化電流としてフィードバックする  
   という双方向連成となる。
 
----
 
 ## 方程式レベルの整理（Maxwell + LLG）
 
@@ -61,8 +58,6 @@
     \mathbf{H}_\text{eff} = \mathbf{H} + \mathbf{H}_\text{ex} + \mathbf{H}_\text{ani} + \dots
   $$
 
----
-
 ## COMSOL での連成の考え方
 
 ### 1. Maxwell 側（Magnetic Fields インターフェース）
@@ -102,8 +97,6 @@
   - 電流・コイル → Maxwell → H → LLG → M → Maxwell → …  
     という双方向連成がタイムステップごとに繰り返される。
 
----
-
 ## 典型的なセットアップ手順
 
 1. **モデルとパラメータの準備**
@@ -138,20 +131,6 @@
    - 磁束密度 B、磁場 H、電流密度 J の分布を可視化。
    - 磁化ベクトルの分布・時間発展を矢印プロットやスライスで表示。
    - 平均磁化・コイル電圧・損失などを 1D プロットで解析。
-
----
-
-## Maxwell–LLG 連成の典型的な応用
-
-- 高周波コア・トランスの損失解析
-  - コイルで駆動される磁性コア内部の H・B・J 分布を Maxwell で解き、
-  - LLG により局所磁化ダイナミクスと履歴・ダンピングを考慮した磁化応答を評価。
-- 磁気デバイス（MRAM, スピントルク振動子など）の電磁界連成
-  - 電流駆動による Oersted 磁場と、LLG による磁化スイッチング・プリセッションを同時計算。
-- 渦電流と磁化の共存
-  - 高導電率材料における渦電流の分布・損失と、磁化のダイナミクスを一体として扱う。
-
----
 
 ## 備考
 
