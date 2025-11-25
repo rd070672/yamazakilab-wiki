@@ -29,13 +29,13 @@
 - 久保亮五（1957）により一般形式が確立された。
 - 基本的な考え方：
 
-\[
+$$
 \text{応答} = \int_0^\infty \Phi(t) \, F(t)\, dt
-\]
+$$
 
 ここで  
-- \( F(t) \)：外部摂動（例：電場）  
-- \( \Phi(t) \)：相関関数（物質が持つ「ゆらぎ」の性質）
+- $ F(t) $：外部摂動（例：電場）  
+- $ \Phi(t) $：相関関数（物質が持つ「ゆらぎ」の性質）
 
 → 「平衡ゆらぎ」から非平衡応答を計算する理論である点が本質。
 
@@ -49,28 +49,28 @@
 
 ### 2.2 何が計算できるか
 
-- 周波数依存光学伝導率 \( \sigma(\omega) \)
-- DC 電気伝導率 \( \sigma_{\text{DC}} \)
-- 反射率・吸収係数・誘電関数 \( \varepsilon(\omega) \)
+- 周波数依存光学伝導率 $ \sigma(\omega) $
+- DC 電気伝導率 $ \sigma_{\text{DC}} $
+- 反射率・吸収係数・誘電関数 $ \varepsilon(\omega) $
 
 → DFT（VASP, OpenMX, WIEN2k, ABINIT など）で一般的に実装されている。
 
 
 ## 3. 基本式のイメージ
 
-\[
+$$
 \sigma(\omega) =
 \frac{2\pi e^2}{3m^2\Omega \omega}
 \sum_{n,m,\mathbf{k}}
 \left(f_{n\mathbf{k}} - f_{m\mathbf{k}}\right)
 \left| \langle n\mathbf{k} | \mathbf{p} | m\mathbf{k} \rangle \right|^2
 \delta(E_{m\mathbf{k}} - E_{n\mathbf{k}} - \hbar\omega)
-\]
+$$
 
 意味：
 
-- 占有数差 \( f_{n\mathbf{k}} - f_{m\mathbf{k}} \)：電子が動けるか  
-- 行列要素 \( \langle n|p|m \rangle \)：遷移の強さ  
+- 占有数差 $ f_{n\mathbf{k}} - f_{m\mathbf{k}} $：電子が動けるか  
+- 行列要素 $ \langle n|p|m \rangle $：遷移の強さ  
 - δ関数：エネルギー保存  
 - すべての状態を足し合わせることで輸送応答が得られる
 
@@ -79,13 +79,13 @@
 
 ## 4. DC伝導率との関係
 
-\[
+$$
 \sigma_{\text{DC}} = \lim_{\omega \to 0} \sigma(\omega)
-\]
+$$
 
 注意点：
 
-- 完全結晶では散乱が無いため形式上 \(\sigma_{\text{DC}}\to\infty\)
+- 完全結晶では散乱が無いため形式上 $\sigma_{\text{DC}}\to\infty$
 - 実際には
   - 有限寿命（ブロードニング）
   - 不規則性・温度ゆらぎ・欠陥
@@ -113,7 +113,7 @@
    - 例：AIMD で液体・アモルファス・高温状態を取得
 2. 固有状態の計算（DFT）
 3. 遷移行列要素を評価
-4. \(\sigma(\omega)\) を算出
+4. $\sigma(\omega)$ を算出
 5. 温度平均・スナップショット平均
 6. 必要に応じて DC 伝導率に外挿
 
