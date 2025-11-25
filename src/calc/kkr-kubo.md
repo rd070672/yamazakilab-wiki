@@ -49,9 +49,9 @@ $$
 
 ### 2.2 何が計算できるか
 
-- 周波数依存光学伝導率 $ \sigma(\omega) $
-- DC 電気伝導率 $ \sigma_{\text{DC}} $
-- 反射率・吸収係数・誘電関数 $ \varepsilon(\omega) $
+- 周波数依存光学伝導率 $\sigma(\omega)$
+- DC 電気伝導率 $\sigma_{\text{DC}}$
+- 反射率・吸収係数・誘電関数 $\varepsilon(\omega)$
 
 → DFT（VASP, OpenMX, WIEN2k, ABINIT など）で一般的に実装されている。
 
@@ -69,8 +69,8 @@ $$
 
 意味：
 
-- 占有数差 $ f_{n\mathbf{k}} - f_{m\mathbf{k}} $：電子が動けるか  
-- 行列要素 $ \langle n|p|m \rangle $：遷移の強さ  
+- 占有数差 $f_{n\mathbf{k}} - f_{m\mathbf{k}}$：電子が動けるか  
+- 行列要素 $\langle n|p|m \rangle$：遷移の強さ  
 - δ関数：エネルギー保存  
 - すべての状態を足し合わせることで輸送応答が得られる
 

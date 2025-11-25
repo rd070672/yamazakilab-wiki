@@ -161,7 +161,8 @@ features:
 ### 統計量・特徴量
 - [統計学入門](/data/statistics.md)
 - [ベイズ統計入門](/data/bayes.md)
-- スペクトル解析
+- [時系列解析](/data/temporal.md)
+- [スペクトル解析](/data/spectral.md)
 - [直積・アダマール積](/data/product.md)
 - [パーシステントホモロジー入門](/data/persistent.md)
 
