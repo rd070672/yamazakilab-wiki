@@ -94,9 +94,9 @@ export default defineConfig({
         ]},
         { text: 'モンテカルロ計算', collapsed: true, items: [
           { text: 'モンテカルロ計算の原理', link: '/calc/mc' },
-          { text: 'MC計算による磁性体の計算例', link: '/calc/mc-mag' },
           { text: 'マルコフ連鎖MC', link: '/calc/mcmc' },
           { text: 'クラスター展開', link: '/calc/mc-cluster' },
+          { text: 'MC計算による磁性体の計算例', link: '/calc/mc-mag' },
         ]},
         { text: 'フェーズフィール計算', collapsed: true, items: [
           { text: 'フェーズフィール計算の原理', link: '/calc/pf' },
