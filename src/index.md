@@ -132,14 +132,16 @@ features:
 - [放射光の光学設計の基礎](/exp/sr-optics.md)
 - [軟X線と硬X線の基礎](/exp/sr-soft-hard.md)
 - SPring-8の申請と実験準備
-  - XMCDの基礎
-  - BL25SU XMCD
-  - XAFSの基礎
+  - [XMCDの基礎](/exp/sr-xmcd.md)
+  - BL25SU XMCD (X線磁気円二色性)
+  - [PEHの基礎](/exp/sr-peh.md)
+  - BL25SU PEH (光電子ホログラフィー)
+  - [XAFSの基礎](/exp/sr-xafs.md)
   - BL14B2 in-situ XAFS/XRD
 - KEK(PF)申請と実験準備
   - BL9C XAFS
 - NanoTerasuの申請と実験準備
-  - HAXPESの基礎
+  - [HAXPESの基礎](/exp/sr-haxpes.md)
   - BL09U HAXPES
 
 
