@@ -2,11 +2,16 @@
 
 ## 参考ドキュメント
 
-- 放射光施設の講義ノート・テキスト  
-  （SPring-8, PF, ESRF などの「XMCD 入門」資料）
+- 放射光施設の講義ノート・テキスト  「中村哲也、SPring-8における磁性材料研究」
+  - https://support.spring8.or.jp/Doc_workshop/PDF_090317/magnetic_2.pdf
 - Thole, Carra らによる XMCD サムルールの原著論文
-- X 線磁気円二色性を扱った教科書・レビュー
-  （例：X-ray Magnetic Circular Dichroism and its Applications など）
+  - P. Carra, B. T. Thole, M. Altarelli, and X. Wang, X-ray circular dichroism and local magnetic fields, Phys.Rev.Lett.70, 694
+ (1993).
+  - C.T.Chen,Y.U. Idzerda,H.-J.Lin,N.V.Smith,G.Meigs, E. Chaban, G. H. Ho, E. Pellegrin, and F. Sette, Experimental confirmation of the x-ray magnetic circular dichroism sum rules for iron and cobalt, Phys.Rev.Lett.75, 152 (1995).
+  - B. T. Thole, P. Carra, F. Sette, and G. van der Laan, X-ray circular dichroism as a probe of orbital magnetization, Phys.
+ Rev. Lett. 68, 1943 (1992).
+- イリジウム添加による鉄-コバルト合金の磁気特性の増強メカニズムを解明：
+  - https://www.tus.ac.jp/today/archive/20250307_2573.html
 
 ## 概要
 
@@ -49,7 +54,7 @@ XMCD は
 
 - XAS（X-ray Absorption Spectroscopy）
 
-の一種で、「偏光」を変えたときの差分を見ているという位置づけです。
+の一種で、「偏光」を変えたときの差分を見ています。
 
 - XAS（平均スペクトル）
   - 右円偏光と左円偏光の平均
@@ -89,7 +94,7 @@ XMCD は
 によって決まります。
 
 
-## 4. XMCD が生じる物理的な仕組み（イメージ）
+## 4. XMCD が生じる物理的な仕組み
 
 円偏光 X 線は
 
@@ -115,7 +120,6 @@ XMCD は
 
 というのが基本的なイメージです。
 
----
 
 ## 5. 実験配置とシグナル定義
 
@@ -142,7 +146,6 @@ XMCD = μ⁺ − μ⁻
 
 などを考えて、どちらを主に反転させるかを決めます。
 
----
 
 ## 6. 検出モード（TEY, TFY, 透過など）
 
@@ -169,9 +172,8 @@ XMCD は、XAS と同様に複数の検出モードで測定できます。
 
 を意識してモードを選ぶことが重要です。
 
----
 
-## 7. XMCD サムルールの概要（何がわかるか）
+## 7. XMCD サムルールの概要
 
 3d 遷移金属 L2,3 吸収端の XMCD では
 
@@ -179,8 +181,8 @@ XMCD は、XAS と同様に複数の検出モードで測定できます。
 
 を用いることで、
 
-- 軌道モーメント m_orb
-- 有効スピンモーメント m_spin^eff
+- 軌道モーメント $\m_orb$
+- 有効スピンモーメント $\m_spin^eff$
 
 を、スペクトルの積分から求めることができます。
 
@@ -192,7 +194,7 @@ XMCD は、XAS と同様に複数の検出モードで測定できます。
 
 などを組み合わせることで、比率として
 
-- m_orb / m_spin
+- $\m_orb$ / $\m_spin$
 - 元素ごとのモーメントの大きさ
 
 を推定するという考え方です。
@@ -205,7 +207,6 @@ XMCD は、XAS と同様に複数の検出モードで測定できます。
 
 など、慎重な前処理が必要になります。
 
----
 
 ## 8. 実験の流れと注意点（実務的な観点）
 
@@ -233,11 +234,11 @@ XMCD 測定の典型的な流れ：
 注意点：
 
 - 円偏光度（右・左の偏光純度）が 100% でない場合、その補正が必要。
+  - SPring-8 BL25SUの場合、96%程度
 - TEY では帯電（チャージアップ）に注意。
 - TFY では自己吸収や再吸収による「ピークつぶれ」に注意。
 - 強磁場を使う場合、ビーム位置の揺らぎや試料の機械的揺れにも注意。
 
----
 
 ## 9. XMCD の利点と限界
 
