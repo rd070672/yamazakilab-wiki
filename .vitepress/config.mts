@@ -6,7 +6,7 @@ export default defineConfig({
 
   base: '/yamazakilab-wiki/',
   srcDir: 'src',
-  title: "Wiki | Yamazaki Lab",
+  title: "Yamazaki Lab | Wiki",
   description: "山崎研究室における知見や経験をwikiとして共有します",
   lastUpdated: {text: '最終更新', formatOptions: {dateStyle: 'short', timeStyle: 'medium'}},
   cleanUrls: true,
@@ -149,6 +149,7 @@ export default defineConfig({
           { text: 'シンク周り', link: '/'},
       ]},
 
+      { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
       { text: 'Changelog', link: '/changelog' },
       { text: 'Website', link: 'https://tyamazaki.com' },

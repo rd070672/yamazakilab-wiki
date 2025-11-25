@@ -60,8 +60,6 @@ features:
 
 ### 分子動力学計算
 - [MD の原理](/calc/md.md)
-- [MD 計算における古典的・機械学習ポテンシャルの選定](/calc/md-potential.md)
-- [機械学習ポテンシャルの基礎](/calc/ml-potential.md)
 - [LAMMPS のインストールメモ](/calc/md-lammps-install.md)
 - [LAMMPS を用いた MD 計算](/calc/md-lammps.md)
 - [ASE を用いた MD 計算](/calc/md-ase.md)
@@ -178,9 +176,9 @@ features:
 - [物理インフォ](/data/info-physics.md)
 - [物理インフォマティクスにおける PINNs とその発展形](/data/info-physics-2.md)
 
-### 教師あり学習（回帰・分類）
-- 決定木系手法
-- アンサンブル学習（Bagging, Boosting）
+### 教師あり学習
+- 勾配ブースティング
+- アンサンブル学習
 
 ### 次元削減手法・可視化
 - 線形手法 (PCA, MDS)
@@ -190,26 +188,24 @@ features:
 ### 深層学習フレームワーク
 - 画像 (CNN, VAE, U-net)
 - 時系列 (RNN, LSTM, GRU, Transfomer, TCN)
-- グラフ (GNN, MPNN, GraphSAGE)
-- 物理モデル (Physics-informed Neural Networks, PiNNs)
+- グラフ (GNN, MPNN, GraphSAGE, message-passing)
 
-### モデル解釈
-- SHAP値
-- 部分依存プロット（PDP）
-- Feature importance
-
-###　実験計画・最適化
+###　最適化手法
 - 実験計画法（DOE）
 - ベイズ最適化（BO）
 - アクティブラーニング（AL）
-- 逆問題・最適化
 - 遺伝的アルゴリズム
 
+### 機械学習ポテンシャル
+- [MD 計算における古典的・機械学習ポテンシャルの選定](/data/md-potential.md)
+- [機械学習ポテンシャルの基礎](/data/ml-potential.md)
+- [機械学習ポテンシャルのFine tuning](/data/fine-tuning.md)
+
 ### その他
-- 機械学習ポテンシャル
-- ファインチューニング
+- モデル解釈手法(SHapley、PDPなど)
 - [テンソルネットワーク入門](/data/tensor-network.md)
 - サロゲートモデル
+- リザバーコンピューティング
 
 
 <!-- ################################################################################### -->
