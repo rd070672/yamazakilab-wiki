@@ -160,11 +160,11 @@ features:
 - [時系列解析](/data/temporal.md)
 - [スペクトル解析](/data/spectral.md)
 - [直積・アダマール積](/data/product.md)
-- [パーシステントホモロジー入門](/data/persistent.md)
+- [パーシステントホモロジー (PH))](/data/persistent.md)
 
 ### 材料データベース
-- [Pymatgen](/data/pymatgen.md)
-- [Open Quantum Materials Database](/data/oqmd.md)
+- [Pymatgen](/data/db-pymatgen.md)
+- [Open Quantum Materials Database (OQMD)](/data/db-oqmd.md)
 
 ### マテリアルズ・インフォマティクス
 - [4つのインフォマティクス](/data/info.md)
@@ -180,12 +180,13 @@ features:
 - [勾配ブースティング決定木](/data/boosting.md)
 - [サポートベクターマシン](/data/svm.md)
 - [k近傍法](/data/k-nn.md)
+- [半教師あり学習](/data/semi-learning.md)
 
 ### 次元削減手法・可視化
 - [線形次元削減](/data/dr-linear.md)
 - [非線形次元削減](/data/dr-nonlinear.md)
 - [確率モデル・ベイズ系の次元削減](/data/dr-probabilistic-bayse.md)
-- [深層学習ベースの次元削減（表現学習）](/data/dr-deep-learning.md)
+- [深層学習ベースの次元削減 (表現学習)](/data/dr-deep-learning.md)
 
 ### 深層学習フレームワーク
 - [パーセプトロン](/data/perceptron.md)
