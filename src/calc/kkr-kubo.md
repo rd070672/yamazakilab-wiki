@@ -2,26 +2,14 @@
 
 ## 参考ドキュメント
 
-- 京都大学 計算物性物理講義資料  
-  「電気伝導の第一原理計算（Kubo–Greenwood 法）」解説スライド  
+- 京都大学 計算物性物理講義資料「電気伝導の第一原理計算（Kubo–Greenwood 法）」解説スライド  
   https://www.math.kyoto-u.ac.jp/~tanaka/solid-state/kubo-greenwood.html
 
-- 東北大学 金属材料研究所 量子材料理論グループ  
-  「線形応答理論の基礎」講義ノート（物性理論）  
+- 東北大学 金属材料研究所 量子材料理論グループ「線形応答理論の基礎」講義ノート（物性理論）  
   https://www.imr.tohoku.ac.jp/education/linear-response.html
 
-- 理化学研究所 R-CCS  
-  「第一原理計算による光学応答と輸送係数」数値計算セミナー資料  
-  https://www.r-ccs.riken.jp/outreach/seminar/firstprinciples-optical-response.pdf
-
-- OpenMX 日本語マニュアル  
-  「電気伝導率と Kubo–Greenwood 公式の利用」  
+- OpenMX 日本語マニュアル「電気伝導率と Kubo–Greenwood 公式の利用」  
   http://www.openmx-square.org/openmx_man_jp/node215.html
-
-- VASP 日本語解説サイト  
-  「LOPTICS/LEPSILON と Kubo–Greenwood 光学応答計算」  
-  https://vaspj.org/vasp_optics_kubo_greenwood
-
 
 ## 1. 線形応答理論とは何か
 
@@ -34,8 +22,8 @@ $$
 $$
 
 ここで  
-- $ F(t) $：外部摂動（例：電場）  
-- $ \Phi(t) $：相関関数（物質が持つ「ゆらぎ」の性質）
+- $F(t)$：外部摂動（例：電場）  
+- $\Phi(t)$：相関関数（物質が持つ「ゆらぎ」の性質）
 
 → 「平衡ゆらぎ」から非平衡応答を計算する理論である点が本質。
 

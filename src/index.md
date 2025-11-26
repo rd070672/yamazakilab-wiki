@@ -61,6 +61,7 @@ features:
 
 ### 分子動力学計算
 - [MD の原理](/calc/md.md)
+- [MD 計算における古典的・機械学習ポテンシャルの選定](/calc/md-potential.md)
 - [LAMMPS のインストールメモ](/calc/md-lammps-install.md)
 - [LAMMPS を用いた MD 計算](/calc/md-lammps.md)
 - [ASE を用いた MD 計算](/calc/md-ase.md)
@@ -151,7 +152,7 @@ features:
 
 
 ## データサイエンス {#データサイエンス}
-機械学習・統計解析・深層学習、機械学習ポテンシャルなど、材料データ解析に必要な手法を扱います。材料応用の実例と実装、モデル解釈の勘所をまとめます。
+機械学習、統計解析、深層学習、機械学習ポテンシャルなど、材料データ解析に必要な手法を扱います。材料応用の実例と実装、モデル解釈の勘所をまとめます。
 
 ### 統計量・特徴量
 - [統計学入門](/data/statistics.md)
@@ -200,13 +201,12 @@ features:
 - MatterGen
 
 ### 最適化手法
-- 実験計画法（DOE）
-- ベイズ最適化（BO）
-- アクティブラーニング（AL）
-- 遺伝的アルゴリズム
+- [実験計画法（DOE）](/data/doe.md)
+- [ベイズ最適化（BO）](/data/bo.md)
+- [アクティブラーニング（AL）](/data/active-learning.md)
+- [遺伝的アルゴリズム](/data/genetic-algorithm.md)
 
 ### 機械学習ポテンシャル
-- [MD 計算における古典的・機械学習ポテンシャルの選定](/data/md-potential.md)
 - [機械学習ポテンシャルの基礎](/data/ml-potential.md)
 - [機械学習ポテンシャルのFine tuning](/data/fine-tuning.md)
 - [汎用機械学習ポテンシャル](/data/ml-potential-all.md)

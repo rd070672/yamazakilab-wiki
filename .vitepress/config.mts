@@ -88,8 +88,7 @@ export default defineConfig({
           { text: 'CALPHAD法', link: '/calc/calphad' },
         ]},
         { text: 'MD 計算', collapsed: true, items: [
-          { text: 'MD の原理', link: '/calc/md' },
-          { text: 'MD 計算における古典的・機械学習ポテンシャルの選定', link: '/calc/md-potential' },{ text: '機械学習ポテンシャルの基礎', link: '/calc/ml-potential' },
+          { text: 'MD 法の原理', link: '/calc/md' },
           { text: 'LAMMPS のインストールメモ', link: '/calc/md-lammps-install' },
           { text: 'LAMMPS を用いた MD 計算', link: '/calc/md-lammps' },
           { text: 'ASE を用いた MD 計算', link: '/calc/md-ase' },
@@ -107,6 +106,7 @@ export default defineConfig({
           { text: 'フェーズフィール計算の原理', link: '/calc/pf' },
           { text: 'Allen-Cahn 法に基づく計算例', link: '/calc/pf-allen-cahn' },
           { text: 'Cahn-Hilliard 法に基づく計算例', link: '/calc/pf-cahn-hilliard' },
+          { text: 'デンドライト成長シミュレーション', link: '/calc/dendrite' },
         ]},
         { text: 'マルチフィジックス計算', collapsed: true, items: [
           { text: 'FEM と FDM の原理', link: '/calc/fem-fdm' },
@@ -151,7 +151,7 @@ export default defineConfig({
           // { text: 'シンク周り', link: '/'},
       ]},
 
-      // { text: 'Home', link: '/' },
+      { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
       { text: 'Changelog', link: '/changelog' },
       // { text: 'Website', link: 'https://tyamazaki.com' },
@@ -188,7 +188,6 @@ export default defineConfig({
       ]
     },
     ssr: {
-      // KaTeX を外部バンドルしないように
       noExternal: ['katex']
     }
   }
