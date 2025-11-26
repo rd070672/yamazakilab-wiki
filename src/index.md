@@ -206,13 +206,13 @@ features:
 - [MD 計算における古典的・機械学習ポテンシャルの選定](/data/md-potential.md)
 - [機械学習ポテンシャルの基礎](/data/ml-potential.md)
 - [機械学習ポテンシャルのFine tuning](/data/fine-tuning.md)
-- [汎用機械学習ポテンシャル](/data/ml-potentialal-all.md)
+- [汎用機械学習ポテンシャル](/data/ml-potential-all.md)
 
 ### その他
 - [ニューラルネットワーク](/data/neural-network.md)
 - [リカレントニューラルネットワーク](/data/recurrent-neural-network.md)
 - [テンソルネットワーク](/data/tensor-network.md)
-- サロゲートモデル
+- [サロゲートモデル](/data/surrogate.md)
 - [リザバーコンピューティング](/data/reservoir.md)
 - [物理リザバー](/data/reservoir-physical.md)
 
