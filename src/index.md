@@ -164,7 +164,7 @@ features:
 
 ### 材料データベース
 - [Pymatgen](/data/pymatgen.md)
-- [Open Quantum Materials Database](/data/oqmd1.md)
+- [Open Quantum Materials Database](/data/oqmd.md)
 
 ### マテリアルズ・インフォマティクス
 - [4つのインフォマティクス](/data/info.md)
@@ -175,9 +175,12 @@ features:
 - [物理インフォにおける PINNs とその発展形](/data/info-physics-2.md)
 - [AI4Science](/data/info-ai4science.md)
 
-### 教師あり学習
-- 勾配ブースティング
-- アンサンブル学習
+### 教師あり学習（予測・分類）
+- 決定木アンサンブル学習
+- 勾配ブースティング（XGBoost / LightGBM / CatBoost）
+- アンサンブル学習（Bagging / Boosting / Stacking）
+- サポートベクターマシン（SVM, SVR）
+- k近傍法（k-NN）
 
 ### 次元削減手法・可視化
 - 線形手法 (PCA, MDS)
@@ -185,9 +188,11 @@ features:
 - 自己組織化マップ (SOM)
 
 ### 深層学習フレームワーク
-- 画像モデル (CNN, VAE, U-netなど)
-- 時系列モデル (RNN, LSTM, GRU, Transfomer, TCN)
-
+- [パーセプトロン](/data/perceptron.md)
+- [ニューラルネットワーク](/data/nn.md)
+- [畳み込みニューラルネットワーク](/data/cnn.md)
+- [リカレントニューラルネットワーク](/data/rnn.md)
+- [グラフニューラルネットワーク](/data/gnn.md)
 
 ### 説明可能 AI (XAI)
 - [特徴量重要度・寄与分解 (SHAP, LIMEなど)](/data/importance.md)
@@ -196,15 +201,16 @@ features:
 - [シンボリック回帰](/data/symbolic.md)
 
 ### 生成 AI 
-- [変分オートエンコーダー（VAE）](/data/vae.md)
+- [GANとDiffusionモデル](/data/gan-diffusion.md)
+- [変分オートエンコーダー(VAE)](/data/vae.md)
 - [Transformer](/data/transformer.md)
 - [材料科学分野におけるLLM](/data/mat-llm.md)
 
 ### 最適化手法
-- [実験計画法（DOE）](/data/doe.md)
-- [ベイズ最適化（BO）](/data/bo.md)
-- [アクティブラーニング（AL）](/data/active-learning.md)
-- [遺伝的アルゴリズム](/data/genetic-algorithm.md)
+- [実験計画法(DOE)](/data/doe.md)
+- [ベイズ最適化(BO)](/data/bo.md)
+- [アクティブラーニング(AL)](/data/active-learning.md)
+- [遺伝的アルゴリズム(GA)](/data/genetic-algorithm.md)
 
 ### 機械学習ポテンシャル
 - [機械学習ポテンシャルの基礎](/data/ml-potential.md)
@@ -212,13 +218,11 @@ features:
 - [汎用機械学習ポテンシャル](/data/ml-potential-all.md)
 
 ### その他
-- [ニューラルネットワーク](/data/nn.md)
-- [リカレントニューラルネットワーク](/data/rnn.md)
-- [グラフニューラルネットワーク (GNN, MPNN, GraphSAGE, message-passing)](/data/gnn.md)
-- [テンソルネットワーク](/data/tensor-network.md)
 - [サロゲートモデル](/data/surrogate.md)
 - [リザバーコンピューティング](/data/reservoir.md)
 - [物理リザバー](/data/reservoir-physical.md)
+- [テンソルネットワーク](/data/tensor-network.md)
+- [逆設計モデル](/data/inverse.md)
 
 
 <!-- ## 情報基盤
