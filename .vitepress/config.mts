@@ -46,10 +46,10 @@ export default defineConfig({
 
     returnToTopLabel: 'Return to top',
 
-    // editLink: {
-    //   pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
-    //   text: 'Edit this page on GitHub'
-    // },
+    editLink: {
+      pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
+      text: 'Edit this page on GitHub'
+    },
 
     nav: [
       { text: 'ホーム', link: '/' },
@@ -71,6 +71,7 @@ export default defineConfig({
           { text: '第一原理計算の原理', link: '/calc/vasp' },
           { text: 'VASP のインストールメモ', link: '/calc/vasp-install' },
           { text: 'VASP の計算例', link: '/calc/vasp-dft' },
+          { text: 'VASPにおけるWannier90と計算例', link: '/calc/wannier90' },
           { text: 'vaspkit メモ', link: '/calc/vaspkit' },
           { text: 'phonopy メモ', link: '/calc/phonopy' },
           { text: 'MAELAS メモ', link: '/calc/maelas' },

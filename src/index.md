@@ -35,6 +35,7 @@ features:
 - [第一原理計算の原理](/calc/vasp.md)
 - [VASP のインストールメモ](/calc/vasp-install.md)
 - [VASP の計算例](/calc/vasp-dft.md)
+- [VASPにおけるWannier90と計算例](/calc/wannier90.md)
 - [vaspkit メモ](/calc/vaspkit.md)
 - [phonopy メモ](/calc/phonopy.md)
 - [MAELAS メモ](/calc/maelas.md)
@@ -69,11 +70,19 @@ features:
 
 ### モンテカルロ計算
 - [モンテカルロ計算の原理](/calc/mc.md)
-- [マルコフ連鎖 MC 法](/calc/mcmc.md)
-- [逆 MC 法](/calc/mc-inverse.md)
-- [運動論的 MC 法](/calc/mc-kinetic.md)
+- [マルコフ連鎖モンテカルロ法](/calc/mcmc.md)
+- [逆モンテカルロ法](/calc/mc-inverse.md)
+- [運動論的モンテカルロ法](/calc/mc-kinetic.md)
+- [量子モンテカルロ法](/calc/mc-quantum.md)
+- [グランドカノニカルモンテカルロ法](/calc/mc-grand-canonical.md)
+- [レプリカ交換モンテカルロ法](/calc/mc-exchange.md)
 - [クラスター展開モデル](/calc/mc-cluster.md)
 - [MC 計算による磁性体の計算例](/calc/mc-mag.md)
+- [REMCによるスピングラス解析](/calc/spin-glass.md)
+- [原子論的スピンモデル](/calc/atomic-spin-model.md)
+- [密度行列繰り込み群法](/calc/density-matrix.md)
+- [テンソルネットワーク-1](/calc/tensor-network-1.md)
+- [テンソルネットワーク-2](/calc/tensor-network-2.md)
 
 ### フェーズフィールド計算
 - [フェーズフィールド計算の原理](/calc/pf.md)
@@ -223,7 +232,6 @@ features:
 - [サロゲートモデル](/data/surrogate.md)
 - [リザバーコンピューティング](/data/reservoir.md)
 - [物理リザバー](/data/reservoir-physical.md)
-- [テンソルネットワーク](/data/tensor-network.md)
 - [逆設計モデル](/data/inverse.md)
 
 
