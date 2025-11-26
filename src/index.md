@@ -162,7 +162,7 @@ features:
 
 ### 材料データベース
 - [Pymatgen](/data/pymatgen.md)
-- [OQMD（The Open Quantum Materials Database）](/data/oqmd.md)
+- [Open Quantum Materials Database](/data/oqmd1.md)
 
 ### マテリアルズ・インフォマティクス
 - [4つのインフォマティクス](/data/info.md)
