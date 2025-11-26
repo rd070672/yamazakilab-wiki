@@ -85,6 +85,7 @@ export default defineConfig({
           { text: '第一原理計算 MD 計算の原理', link: '/calc/aimd' },
           { text: 'AIMD によるアモルファスの計算例', link: '/calc/aimd-amorphous' },
           { text: '第一原理計算フェーズフィールド計算の原理', link: '/calc/dft-pf' },
+          { text: 'CALPHAD法', link: '/calc/calphad' },
         ]},
         { text: 'MD 計算', collapsed: true, items: [
           { text: 'MD の原理', link: '/calc/md' },

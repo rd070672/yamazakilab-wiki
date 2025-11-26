@@ -78,6 +78,7 @@ features:
 - [フェーズフィールド計算の原理](/calc/pf.md)
 - [Allen–Cahn 法に基づく計算例](/calc/pf-allen-cahn.md)
 - [Cahn–Hilliard 法に基づく計算例](/calc/pf-cahn-hilliard.md)
+- [デンドライト成長シミュレーション](/calc/dendrite.md)
 
 ### マルチフィジックス計算
 - [FEM と FDM の原理](/calc/fem-fdm.md)
