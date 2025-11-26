@@ -4,8 +4,6 @@
 
 - pymatgen 公式ドキュメント
   - https://pymatgen.org/
-- pymatgen Usage
-  - https://pymatgen.org/usage.html
 - Materials Project API：Getting Started
   - https://docs.materialsproject.org/downloading-data/using-the-api/getting-started
 - MateriApps: pymatgen を使った Materials Project のデータ収集
