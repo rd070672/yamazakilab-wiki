@@ -1,5 +1,7 @@
 # 物理インフォマティクス（Physics Informatics）
 
+4つのインフォマティクスのうち、「物理インフォマティクス」について概説する。
+
 ## 参考にしたドキュメント
 - MathWorks, Physics-Informed Neural Networks (PINNs) とは  
   https://jp.mathworks.com/discovery/physics-informed-neural-networks.html
@@ -9,7 +11,7 @@
 
 ## 1. 物理インフォマティクスとは何か
 
-- 物理インフォマティクス（Physical / Physics Informatics）は、
+- 物理インフォマティクス（Physics Informatics）は、
   - 物理法則に基づく数値モデル（DFT, MD, フェーズフィールド, PDE, FEM など）と
   - データ駆動モデル（機械学習・統計モデル）
   を統合し、
@@ -35,7 +37,7 @@
 
 ## 2. 対象とスコープ
 
-このページでの「物理インフォマティクス」は、特に材料・デバイスにおいて
+「物理インフォマティクス」は、特に材料・デバイスにおいて
 
 - 物理モデル
   - 電子構造：第一原理計算（DFT, GW, DMFT など）
@@ -94,10 +96,10 @@
   - ベイズ最適化・パラメータ推定・制御設計と組み合わせやすい形にする。
 
 
-## 4. Physics-informed Machine Learning（PIML）の位置づけ
+## 4. Physics-informed Neural Networks（PINNs）の位置づけ
 
 物理インフォマティクスの中核的なトピックの一つが、  
-Physics-informed Machine Learning（PIML）／Physics-informed Neural Networks（PINNs）である。
+Physics-informed Neural Networks（PINNs）／Physics-informed Machine Learning（PIML）である。
 
 ### 4.1 基本アイデア
 
@@ -112,7 +114,7 @@ Physics-informed Machine Learning（PIML）／Physics-informed Neural Networks�
   - マクスウェル方程式を満たすように電磁場分布の NN を学習
   - 拡散方程式を満たすように温度場・濃度場の NN を学習
 
-### 4.2 メリットのイメージ
+### 4.2 メリット
 
 - 少量データでも：
   - 物理法則が強い正則化として働き、
@@ -125,13 +127,13 @@ Physics-informed Machine Learning（PIML）／Physics-informed Neural Networks�
     格子の粗い領域を埋める・高速 surrogate として使う、など。
 
 
-## 5. 物理インフォマティクスの代表的なワークフロー
+## 5. 代表的なワークフロー
 
-物理インフォマティクスの実務的な流れを、典型的なパターンとして整理すると：
+物理インフォマティクスの実行的な流れを、典型的なパターンとして整理すると：
 
 ### 5.1 物理モデル駆動のデータ生成＋サロゲートモデル
 
-1. 高忠実度モデルの選定
+1. 高忠実度モデルの選定行
    - DFT / MD / フェーズフィールド / LLG / FEM など、
      物理的に信頼できるモデルを決める。
 
@@ -175,29 +177,7 @@ Physics-informed Machine Learning（PIML）／Physics-informed Neural Networks�
   - 各スケールでの不確かさを評価しつつ、全体として整合したモデルを組む。
 
 
-## 6. 材料・計測・プロセスインフォマティクスとの関係
-
-- 材料インフォマティクス
-  - 組成・構造・物性の関係をデータ駆動で扱う。
-  - 物理インフォマティクスが提供する
-    - DFT/MD/マイクロ磁気からの物性データ
-    - 有効ハミルトニアン・エネルギー地形の情報  
-    を特徴量・教師データとして活用できる。
-
-- 計測インフォマティクス
-  - 実験データを前処理・特徴抽出し、  
-    物理モデルの検証・パラメータ同定のための「観測量」を準備する。
-  - 物理インフォマティクスは、これら観測量を再現するシミュレーションや PIML モデルを構築する。
-
-- プロセスインフォマティクス
-  - プロセス条件 → 構造・性能の関係を統計モデル・ML で扱う。
-  - 物理インフォマティクスは、
-    - フェーズフィールド・FEM などを用いて
-      「プロセス→ミクロ組織→特性」の因果構造を与え、
-    - プロセスインフォマティクス側のモデルに「物理的な解釈」「外挿耐性」を補う。
-
-
-## 7. 注意点・限界
+## 6. 注意点・限界
 
 - モデルの妥当性
   - 物理モデル自身が近似（擬ポテンシャル、交換相関汎関数、均質近似など）を含むため、
@@ -217,7 +197,7 @@ Physics-informed Machine Learning（PIML）／Physics-informed Neural Networks�
   - モデル構築の各段階で「どの物理をどこまで使うか」を意識して設計する必要がある。
 
 
-## 8. まとめ
+## 7. まとめ
 
 - 本ページ「物理インフォマティクス」では、
   - DFT～MD～フェーズフィールド～FEM といった物理モデルのレイヤー構造と、
@@ -234,9 +214,4 @@ Physics-informed Machine Learning（PIML）／Physics-informed Neural Networks�
   - 物理インフォマティクス：  
     「なぜその材料・プロセス・計測でその結果になるのか？」を  
     物理法則＋データで説明し、  
-    上記 3 つのインフォマティクスを貫く「物理的バックボーン」を提供する。
-
-- 今後の個別ページでは、
-  - DFT / MD / フェーズフィールド / LLG / FEM の基礎と、
-  - それらを活用した PIML / サロゲートモデリングの具体例
-  を整理し、研究・教育・開発で再利用しやすい形にまとめていくことを想定している。
+    上記 3 つのインフォマティクスを貫く「物理的背景」を提供する。

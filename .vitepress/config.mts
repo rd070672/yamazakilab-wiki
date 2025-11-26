@@ -99,7 +99,7 @@ export default defineConfig({
           { text: 'マルコフ連鎖 MC 法', link: '/calc/mcmc' },
           { text: 'インバース MC 法', link: '/calc/mc-inverse' },
           { text: '運動論的 MC 法', link: '/calc/mc-kinetic' },
-          { text: 'クラスター展開', link: '/calc/mc-cluster' },
+          { text: 'クラスター展開モデル', link: '/calc/mc-cluster' },
           { text: 'MC計算による磁性体の計算例', link: '/calc/mc-mag' },
         ]},
         { text: 'フェーズフィール計算', collapsed: true, items: [
@@ -163,7 +163,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: '© 2026- tyamazaki.com',
+      copyright: '© 2025- tyamazaki.com',
     },
   },
 
