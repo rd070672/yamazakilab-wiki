@@ -190,10 +190,10 @@ features:
 
 
 ### 説明可能 AI (XAI)
-- 特徴量重要度・寄与分解 (SHAP, LIMEなど)
+- [特徴量重要度・寄与分解 (SHAP, LIMEなど)](/data/importance.md)
 - [Attention機構](/data/attention.md)
 - [Grad-CAM](/data/gradcam.md)
-- シンボリック回帰
+- [シンボリック回帰](/data/symbolic.md)
 
 ### 生成 AI 
 - [変分オートエンコーダー（VAE）](/data/vae.md)
