@@ -135,15 +135,13 @@ features:
 - [磁気弾性効果の基本方程式と定式化](/calc/magneto-elasticity.md)
 <!-- - [mumax3 のインストールメモ](/calc/mumax3-install.md) -->
 - [mumax による LLG マイクロ磁化・磁気弾性シミュレーション](/calc/mumax3-llg.md)
-<!-- - [拡張版 mumax+ による磁気弾性計算](/calc/mumaxplus.md) -->
 <!-- - [COMSOL Multiphysics のインストールメモ](/calc/comsol-install.md) -->
 - [COMSOL を用いた LLG 計算と連成解析](/calc/comsol-llg.md)
-<!-- - [COMSOL を用いた 電磁場-LLG 連成計算](/calc/comsol-maxwell-llg.md)
-- [COMSOL を用いた 弾性場-LLG 連成計算](/calc/comsol-maelas-llg.md) -->
-
-- [COMSOL を用いた LLG 計算と連成解析](/calc/scalable.md)
+- [離散化とスケーラブル解法](/calc/scalable.md)
 
 - [有限要素法によるマイクロマグ計算の自作コード](/calc/fem-llg.md)
+- [反磁界（静磁界）計算手法の検討](/calc/demag-compare.md)
+- [3次元線形弾性のHex8有限要素ソルバ](/calc/fem-solver.md)
 
 ## 実験 {#実験}
 材料合成・熱処理・プロセス制御から、磁気計測・放射光解析までを整理します。再現性を高める手順や装置運用のコツなど、実験で役立つ知見を共有します。
