@@ -70,11 +70,11 @@ features:
 ### 第一原理分子動力学計算
 - [第一原理分子動力学（AIMD）の原理](/calc/aimd.md)
 - [アモルファス計算のためのAIMD活用](/calc/aimd-amorphous.md)
-- [距離秩序で読み解くアモルファス](/calc/amorphous.md)
-- [アモルファスの局所物性と計算手法](/calc/amorphous-calc.md)
+- [アモルファスの距離秩序と物理](/calc/amorphous.md)
+- [アモルファスの構造と物性の計算手法](/calc/amorphous-calc.md)
 - [アモルファスの構造解析手法](/calc/amorphous-analysis.md)
 - [アモルファス固体の力学](/calc/amorphous-solid.md)
-- [計算科学に基づくアモルファス固体の力学](/calc/amorphous-solid-calc.md)
+- [アモルファス固体の力学の計算方法](/calc/amorphous-solid-calc.md)
 - [アモルファスにおける局所磁気モーメント](/calc/amorphous-moment.md)
 
 ### 第一原理フェーズフィールド計算
@@ -93,7 +93,6 @@ features:
 - [MD 計算と機械学習](/calc/md-machine-learning.md)
 - [LAMMPS による MD 計算](/calc/md-lammps.md)
 - [ASE・JAX による MD 計算](/calc/md-ase-jax.md)
-- [計算科学で読み解くスピングラス](/calc/spin-glass-calc.md)
 
 ### モンテカルロ計算
 - [モンテカルロ計算の原理と系統](/calc/mc.md)
@@ -120,8 +119,8 @@ features:
 - [フェーズフィールド計算の原理](/calc/pf.md)
 - [フェーズフィールド法の数値解法](/calc/pf-calc.md)
 - [Allen–Cahn 法で記述する金属組織シミュレーション](/calc/pf-allen-cahn.md)
+- [デンドライト成長のPFシミュレーション](/calc/dendrite.md)
 - [Cahn–Hilliard 方程式で記述する金属組織シミュレーション](/calc/pf-cahn-hilliard.md)
-- [デンドライト成長のフェーズフィールドシミュレーション](/calc/dendrite.md)
 - [Phase-Field Crystal（PFC）法の理論](/calc/phase-field-crystal.md)
 
 ### マルチフィジックス計算
@@ -194,15 +193,25 @@ features:
 - DAQ (Data Acquisition) ボード
 - 回路設計 -->
 
-### 放射光施設
-- [放射光の物理](/exp/sr.md)
-- [放射光ビームラインの光学設計](/exp/sr-optics.md)
-- [X線吸収分光（XAS）とX線磁気円二色性（XMCD）の原理](/exp/sr-xmcd.md)
-- [光電子ホログラフィー（PEH）](/exp/sr-peh.md)
-- [硬X線光電子分光（HAXPES）の原理](/exp/sr-haxpes.md)
-- [共鳴軟Ｘ線非弾性散乱分光（RIXS）の原理](/exp/sr-rixs.md)
-- [スピン・角度分解光電子分光（SARPES）の原理](/exp/sr-sarpes.md)
-- [アモルファスの構造・物性解析](/exp/sr-amorphous.md)
+### 放射光計測
+- 基礎
+  - [放射光（シンクロトロン放射）の基礎](/exp/sr.md)
+  - [放射光ビームラインの光学設計](/exp/sr-optics.md)
+  - [放射光による構造解析](/exp/sr-structure.md)
+  - [放射光によるダイナミクス解析](/exp/sr-dynamics.md)
+  - [アモルファスの構造・物性解析](/exp/sr-amorphous.md)
+  - [フェルミの黄金律](/exp/fermi-golden-rule.md)
+  - [選択則とクレプシュ・ゴルダン係数](/exp/clebsh-gordan.md)
+- 各手法
+  - [X線吸収微細構造（XAFS）の原理](/exp/sr-xafs.md)
+  - [光電子ホログラフィー（PEH）](/exp/sr-peh.md)
+  - [小角X線散乱（SAXS）の原理](/exp/sr-saxs.md)
+  - [硬X線光電子分光（HAXPES）の原理](/exp/sr-haxpes.md)
+  - [共鳴軟Ｘ線非弾性散乱分光（RIXS）の原理](/exp/sr-rixs.md)
+  - [コヒーレント回折イメージング（CDI）の原理](/exp/sr-cdi.md)
+  - [X線磁気円二色性（XMCD）の原理](/exp/sr-xmcd.md)
+  - [スピン・角度分解光電子分光（SARPES）の原理](/exp/sr-sarpes.md)
+  - [X線自由電子レーザー（XFEL）の原理](/exp/sr-xfel.md)
 
 
 ## データサイエンス {#データサイエンス}
