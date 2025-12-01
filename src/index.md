@@ -201,7 +201,7 @@ features:
   - [放射光によるダイナミクス解析](/exp/sr-dynamics.md)
   - [アモルファスの構造・物性解析](/exp/sr-amorphous.md)
   - [フェルミの黄金律](/exp/fermi-golden-rule.md)
-  - [選択則とクレプシュ・ゴルダン係数](/exp/clebsh-gordan.md)
+  - [選択則とクレプシュ・ゴルダン係数](/exp/clebsch-gordan.md)
 - 各手法
   - [X線吸収微細構造（XAFS）の原理](/exp/sr-xafs.md)
   - [光電子ホログラフィー（PEH）](/exp/sr-peh.md)
