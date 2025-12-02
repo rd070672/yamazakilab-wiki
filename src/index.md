@@ -67,7 +67,7 @@ features:
 - [線形応答理論とKubo–Greenwood法](/calc/kkr-kubo.md)
 - [非平衡グリーン関数（NEGF）と量子輸送](/calc/negf.md)
 - [ダイソン方程式と多体電子状態の記述](/calc/dyson-derivation.md)
-- [ファインマンダイアグラム入門](/data/feynman-diagram.md)
+- [ファインマンダイアグラム入門](/calc/feynman-diagram.md)
 - [AkaiKKRによる不規則系電子状態計算](/calc/akaikkr.md)
 - [SPR-KKRによる磁性計算](/calc/sprkkr.md)
 - [Ju-KKRによる局所電子状態計算](/calc/jukkr.md)
@@ -296,7 +296,7 @@ features:
 ### 最適化手法
 - [実験計画法(DOE)](/data/doe.md)
 - [ベイズ最適化(BO)](/data/bo.md)
-- [アクティブラーニング(AL)](/data/active-learning.md)
+- [アクティブラーニングと能動学習](/data/active-learning.md)
 - [遺伝的アルゴリズム(GA)](/data/genetic-algorithm.md)
 
 ### 機械学習ポテンシャル
