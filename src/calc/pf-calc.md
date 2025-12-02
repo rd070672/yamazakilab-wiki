@@ -1,8 +1,8 @@
-# フェーズフィールド法の数値解法：空間離散・時間積分・エネルギー安定化の設計指針
+# フェーズフィールド法の数値解法
 
 フェーズフィールド方程式は、自由エネルギー汎関数の勾配流として構造が決まるため、数値解法にも保存則と散逸則を反映させることが重要である。離散化の選択は、界面幅の解像、非線形性、連成場、計算資源の制約により支配される。
 
-## 参考ドキュメント（3件）
+## 参考ドキュメント
 1) Phase-Field Recommended Practices Guide: Numerical Implementation（NIST）
 https://pages.nist.gov/pf-recommended-practices/bp-guide-gh/ch2-numerical-implementation.html
 2) L. Q. Chen, Applications of semi-implicit Fourier-spectral method to phase-field equations, Computer Physics Communications (1998)
@@ -11,7 +11,7 @@ https://www.sciencedirect.com/science/article/abs/pii/S001046559700115X
 https://www.material.nagoya-u.ac.jp/PFM/docs/Lecture_H20/H20_Chapter_11.pdf
 
 
-## 1. 支配方程式と数値的な難しさ
+## 1. 支配方程式
 代表例は、非保存のAllen–Cahn（AC）型と、保存量を扱うCahn–Hilliard（CH）型である。
 - AC（反応拡散型）
   $$

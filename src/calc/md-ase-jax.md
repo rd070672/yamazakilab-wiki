@@ -1,4 +1,4 @@
-# ASE と JAX-MD による MD 計算：計算エンジン設計、学習ポテンシャル連携、解析の定石
+# ASE と JAX-MD による MD 計算
 
 ASE は「原子構造（Atoms）＋計算器（Calculator）＋ワークフロー」を統一する枠組みであり、JAX-MD は「自動微分可能でGPU/TPUに適したMD」を関数合成として実装する枠組みである。両者を使い分けることで、MDの計算規模・拡張性・学習との接続性を整理して設計できる。
 
@@ -10,7 +10,7 @@ ASE は「原子構造（Atoms）＋計算器（Calculator）＋ワークフロ�
 3. 大阪大学 精密工学専攻（千里）STATE Senri Wiki: ASE tutorial（日本語）
    https://www-cp.prec.eng.osaka-u.ac.jp/puki_state/index.php?ASE_tutorial_jp=
 
-## 1. 全体像：ASE と JAX-MD が担う層
+## 1. 全体像
 - 計算の核（力の計算）
   - 古典ポテンシャル、反応力場、機械学習ポテンシャル、第一原理（外部計算）
 - 時間発展（積分器）
@@ -22,7 +22,7 @@ ASE は「原子構造（Atoms）＋計算器（Calculator）＋ワークフロ�
 
 ASE は「外部コードや多様なポテンシャルを同じAPIで回す」ことに強い。JAX-MD は「高速ベクトル化・JIT・自動微分により、学習や最適化とMDを直結する」ことに強い。
 
-## 2. ASE による MD：Calculator 設計がすべてを決める
+## 2. ASE による MD
 ### 2.1 基本コンセプト
 - Atoms：原子種、座標、セル、周期境界条件、速度などを保持する
 - Calculator：与えられた Atoms に対して、エネルギー・力・（必要なら）応力を返す
@@ -34,7 +34,7 @@ ASE は「外部コードや多様なポテンシャルを同じAPIで回す」�
 \]
 であり、ASE では「U と F を返せるか」が Calculator の最小要件になる。
 
-### 2.2 ASE の MD 機能（典型）
+### 2.2 ASE の MD 機能
 - NVE：Velocity Verlet
 - NVT：Langevin など（中心質量の扱いなど細部の既定挙動に注意する）
 - 出力：Trajectory（.traj）や XYZ、各種フォーマットへの write で整理できる
@@ -48,7 +48,7 @@ ASE は「外部コードや多様なポテンシャルを同じAPIで回す」�
 - 極大規模・多数レプリカの「完全GPU常駐MD」を、最小のオーバーヘッドで回す用途には向きにくい（外部エンジン呼び出しで補う設計が多い）
 - 計算の妥当性は Calculator に依存するため、ポテンシャル適用範囲外の外挿で破綻しうる
 
-## 3. JAX-MD による MD：関数合成・JIT・自動微分が核である
+## 3. JAX-MD による MD
 ### 3.1 基本コンセプト
 JAX-MD はデータを配列として保持し、状態（positions, velocities など）を「関数で次状態へ写像する」設計をとる。
 - エネルギー関数：E(positions; θ)
@@ -75,7 +75,7 @@ m\dot{\mathbf v} = \mathbf F(\mathbf r) - \gamma m \mathbf v + \sqrt{2\gamma m k
 - 乱数・確率積分・再現性・統計収束の扱いは、JAXのPRNG設計と整合させて設計する必要がある
 - 高精度物性（障壁、界面エネルギー、輸送係数）では、参照計算・検証設計が支配的である
 
-## 4. 使い分けガイド（目的別）
+## 4. 使い分けガイド
 |目的|推奨の主役|理由|
 |---|---|---|
 |外部DFT/古典MD/MLポテンシャルを統一的に回したい|ASE|Calculator 抽象化で差し替えが容易である|
@@ -84,7 +84,7 @@ m\dot{\mathbf v} = \mathbf F(\mathbf r) - \gamma m \mathbf v + \sqrt{2\gamma m k
 |ポテンシャルや制御パラメータを軌道目的で最適化したい|JAX-MD|軌道を含む微分可能計算として扱える|
 |大型系の生産計算を堅牢に回したい|ASE＋外部エンジン / あるいはJAX-MD|ASEは外部エンジン統合、JAX-MDはGPU設計が得意である（目的に合わせる）|
 
-## 5. 連携パターン（ASE と JAX-MD を一緒に使う）
+## 5. 連携パターン
 ### 5.1 ASE を入出力・構造生成に用い、JAX-MD を時間発展に用いる
 - ASE：欠陥・表面スラブ・組成モデルの生成、初期構造の読み書き、トラジェクトリ整理
 - JAX-MD：positions を配列として受け取り、積分器で長時間シミュレーション
@@ -94,12 +94,12 @@ m\dot{\mathbf v} = \mathbf F(\mathbf r) - \gamma m \mathbf v + \sqrt{2\gamma m k
 - JAX で定義した energy_fn を用意し、ASE Calculator の get_forces/get_potential_energy に接続する
 - ASE の MD（VelocityVerlet/Langevin など）をそのまま利用しつつ、力だけ JAX で計算する
 
-### 5.3 データ生成（ASE＋外部DFT）→ 学習（JAX）→ 生産計算（ASE or JAX-MD）
+### 5.3 データ生成 → 学習（JAX）→ 生産計算（ASE or JAX-MD）
 - ASE で参照データ（構造、E/F/σ）を揃える（外部計算器との連携が強い）
 - JAX で MLIP を学習し、検証セットで外挿を評価する
 - 生産計算は、要件に応じて ASE（可搬性と統合）または JAX-MD（高速・微分可能）に流す
 
-## 6. 最小テンプレート（概念コード）
+## 6. テンプレート
 ### 6.1 ASE：外部計算器を差し替えて同じMDを回す
 ```
 atoms = read("init.structure")

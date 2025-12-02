@@ -1,6 +1,14 @@
-# モンテカルロ法の原理と主要ファミリー：確率サンプリングで「平均」を計算する
+# モンテカルロ法の基礎
 
 モンテカルロ法は、乱数サンプリングによって期待値や分布を推定し、解析的に扱いにくい多自由度系でも統計量を評価する方法である。相互作用エネルギー（ハミルトニアン）さえ定義できれば、平衡物性・相転移・自由エネルギー差・希少事象・反応/拡散過程まで同一の枠組みで扱えるのが特徴である。
+
+## 参考ドキュメント
+- W. K. Hastings, Monte Carlo Sampling Methods Using Markov Chains and Their Applications, Biometrika 57, 97 (1970). 
+　https://academic.oup.com/biomet/article-abstract/57/1/97/284580
+- 伊庭 幸人, モンテカルロ法入門（講義資料） 
+　https://www.ism.ac.jp/~iba/kougi_2006_ism/c20061.pdf
+- KEK 計算科学センター, IsingモデルのMonte Carloシミュレーション（資料） 
+　https://research.kek.jp/group/practice/SummerSchool08/TEXT/text2.pdf
 
 ## 1. 基本原理：期待値を標本平均で近似する
 計算したい量を確率変数 $X$ の関数 $f(X)$ の期待値として書く。
@@ -63,7 +71,7 @@ $$
 
 とすれば、所望の定常分布を実現できる。
 
-### 3.4 最小限の疑似コード（概念）
+### 3.4 疑似コード
 ```
 Initialize x
 for t = 1..Nstep:
@@ -160,10 +168,16 @@ $$
 - モンテカルロ法は、確率分布に従う標本を生成して期待値を標本平均で推定する計算法である。重要度サンプリングと MCMC により、多自由度系の平衡統計量や自由エネルギー、希少事象、さらに遷移率に基づく時間発展まで統一的に扱える。  
 - 手法選択の要点は、(i) どの分布をサンプルするか（アンサンブル、バイアス、交換）と (ii) 相関・停滞をどう抑えるか（クラスター、一般化アンサンブル、kMC）であり、収束診断と誤差評価が信頼性を支える。
 
-## 参考ドキュメント
-- N. Metropolis et al., Equation of State Calculations by Fast Computing Machines, J. Chem. Phys. 21, 1087 (1953). https://pubs.aip.org/aip/jcp/article/21/6/1087/202680/Equation-of-State-Calculations-by-Fast-Computing
-- W. K. Hastings, Monte Carlo Sampling Methods Using Markov Chains and Their Applications, Biometrika 57, 97 (1970). https://academic.oup.com/biomet/article-abstract/57/1/97/284580
-- 伊庭 幸人, モンテカルロ法入門（講義資料） https://www.ism.ac.jp/~iba/kougi_2006_ism/c20061.pdf
-- KEK 計算科学センター, IsingモデルのMonte Carloシミュレーション（資料） https://research.kek.jp/group/practice/SummerSchool08/TEXT/text2.pdf
-- F. Wang and D. P. Landau, Determining the density of states for classical statistical models, Phys. Rev. E 64, 056101 (2001). https://link.aps.org/doi/10.1103/PhysRevE.64.056101
-- A. F. Voter, Introduction to the Kinetic Monte Carlo Method（解説） https://helper.ipam.ucla.edu/publications/matut/matut_5898_preprint.pdf
+## 参考文献
+- N. Metropolis et al., Equation of State Calculations by Fast Computing Machines, J. Chem. Phys. 21, 1087 (1953). 
+　https://pubs.aip.org/aip/jcp/article/21/6/1087/202680/Equation-of-State-Calculations-by-Fast-Computing
+- W. K. Hastings, Monte Carlo Sampling Methods Using Markov Chains and Their Applications, Biometrika 57, 97 (1970). 
+　https://academic.oup.com/biomet/article-abstract/57/1/97/284580
+- 伊庭 幸人, モンテカルロ法入門（講義資料） 
+　https://www.ism.ac.jp/~iba/kougi_2006_ism/c20061.pdf
+- KEK 計算科学センター, IsingモデルのMonte Carloシミュレーション（資料） 
+　https://research.kek.jp/group/practice/SummerSchool08/TEXT/text2.pdf
+- F. Wang and D. P. Landau, Determining the density of states for classical statistical models, Phys. Rev. E 64, 056101 (2001). 
+　https://link.aps.org/doi/10.1103/PhysRevE.64.056101
+- A. F. Voter, Introduction to the Kinetic Monte Carlo Method（解説） 
+　https://helper.ipam.ucla.edu/publications/matut/matut_5898_preprint.pdf

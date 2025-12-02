@@ -1,5 +1,4 @@
-# WIEN2k の計算例（SCF と DOS／バンド構造解析）
-
+# WIEN2k の計算例
 
 ## 参考リンク  
 - WIEN2k ユーザーガイド： http://www.wien2k.at/reg_user/textbooks/usersguide.pdf

@@ -1,15 +1,15 @@
-# フェーズフィールド計算の原理：自由エネルギー勾配流としての組織形成・相変態モデル
+# フェーズフィールド計算の原理
 
 フェーズフィールド法は、界面を明示的に追跡せず、自由エネルギー汎関数の減少則に基づいて相・組織の時間発展を連続体として解く数理モデルである。秩序変数と保存量の選び方により、相分離、凝固、析出、粒成長、固相変態などを同一の枠組みで記述できる。
 
 
 ## 参考ドキュメント
 1) Cahn, J. W. and Hilliard, J. E., Free Energy of a Nonuniform System. I. Interfacial Free Energy, Journal of Chemical Physics (1958)
-https://pubs.aip.org/aip/jcp/article/28/2/258/74794/Free-Energy-of-a-Nonuniform-System-I-Interfacial
+  https://pubs.aip.org/aip/jcp/article/28/2/258/74794/Free-Energy-of-a-Nonuniform-System-I-Interfacial
 2) Boettinger, W. J., Warren, J. A., Beckermann, C., and Karma, A., Phase-field simulation of solidification, Annual Review of Materials Research (2002)
-https://iro.uiowa.edu/esploro/outputs/journalArticle/Phase-field-simulation-of-solidification/9984064566902771
+  https://iro.uiowa.edu/esploro/outputs/journalArticle/Phase-field-simulation-of-solidification/9984064566902771
 3) 小山敏幸, フェーズフィールド法, 応用物理 94巻1号 (2025)
-https://www.jstage.jst.go.jp/article/oubutsu/94/1/94_10/_article/-char/ja/
+  https://www.jstage.jst.go.jp/article/oubutsu/94/1/94_10/_article/-char/ja/
 
 
 ## 1. 基本アイデア
@@ -18,7 +18,7 @@ https://www.jstage.jst.go.jp/article/oubutsu/94/1/94_10/_article/-char/ja/
 
 界面追跡を不要にする代償として、界面幅 $W$ を有限にとる。その結果、幾何学的な界面条件は「自由エネルギー汎関数＋運動学（勾配流）」に置き換わる。
 
-## 2. 自由エネルギー汎関数（最小化される対象）
+## 2. 自由エネルギー汎関数
 典型的には、体積自由エネルギー密度 $f$ と、勾配エネルギー（界面エネルギー）からなる。
 
 単一秩序変数の例：
@@ -88,7 +88,7 @@ $\varepsilon^*$ は固有ひずみ（ミスフィット、変態ひずみ等）�
 
 薄界面極限では、界面幅を大きくしても、適切な補正（反トラップ流など）により自由境界問題の再現性を保つ流儀がある。
 
-## 6. 数値解法の要点（安定・精度・計算量）
+## 6. 数値解法の安定・精度・計算量
 フェーズフィールドは非線形かつ剛性（界面で急峻）であり、離散化と時間積分の選択が支配的である。
 
 ### 6.1 空間離散化
@@ -107,10 +107,10 @@ $\varepsilon^*$ は固有ひずみ（ミスフィット、変態ひずみ等）�
 - モビリティの温度依存や拡散係数の濃度依存を落とすと、運動学が不自然になる
 - 境界条件（周期、Neumann、Dirichlet）が物理と整合していない
 
-## 7. 検証と再現性（ベンチマークの利用）
+## 7. 検証と再現性
 異なる実装間で結果を比較するには、標準問題（ベンチマーク）を用いるのが有効である。初期条件、無次元化、界面幅、時間積分、出力指標を揃えて比較する。
 
-## 8. 適用例（代表的なテーマ）
+## 8. 適用例
 - 凝固：デンドライト、共晶、偏析、溶質トラップ
 - 相分離・析出：スピノーダル分解、核生成、粗大化
 - 粒成長：多結晶の粒界移動、異方性粒界エネルギー
