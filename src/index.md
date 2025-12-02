@@ -32,7 +32,6 @@ features:
 第一原理計算・数値計算・スパコン計算を軸に、環境構築から数値解法、解析例までを紹介します。材料物性の理解とデータ駆動解析につながる計算科学の基礎をまとめます。
 
 ### 第一原理計算
-- 基礎
 - [量子力学とシュレーディンガー方程式](/calc/dft-basis.md)
 - [ブラケット記法の体系](/calc/bra-ket.md)
 - [バンドアンフォールディング](/calc/dft-unfolding.md)
@@ -245,7 +244,7 @@ features:
 - [時系列解析](/data/temporal.md)
 - [スペクトル解析](/data/spectral.md)
 - [直積・アダマール積](/data/product.md)
-- [パーシステントホモロジー (PH))](/data/persistent.md)
+- [パーシステントホモロジーと位相的データ解析)](/data/persistent.md)
 
 ### 材料データベース
 - [Materials Project（材料データベース）](/data/db-materials-project.md)
@@ -267,10 +266,10 @@ features:
 - [半教師あり学習](/data/semi-learning.md)
 
 ### 次元削減手法・可視化
-- [線形次元削減](/data/dr-linear.md)
-- [非線形次元削減](/data/dr-nonlinear.md)
-- [確率モデル・ベイズ系の次元削減](/data/dr-probabilistic-bayse.md)
-- [深層学習ベースの次元削減 (表現学習)](/data/dr-deep-learning.md)
+- [線形次元削減（PCAなど）](/data/dr-linear.md)
+- [非線形次元削減（U-MAPなど）](/data/dr-nonlinear.md)
+- [確率モデル・ベイズ推論による次元削減](/data/dr-probabilistic-bayse.md)
+- [深層学習ベースの次元削減 (VAEなど)](/data/dr-deep-learning.md)
 
 ### 深層学習フレームワーク
 - [パーセプトロン](/data/perceptron.md)
@@ -283,7 +282,7 @@ features:
 ### 説明可能 AI (XAI)
 - [特徴量重要度・寄与分解 (SHAP, LIMEなど)](/data/importance.md)
 - [アテンション機構と解釈性](/data/attention.md)
-- [Grad-CAM](/data/gradcam.md)
+- [Grad-CAMと局所的説明](/data/gradcam.md)
 - [シンボリック回帰](/data/symbolic.md)
 
 ### 生成 AI 
@@ -301,7 +300,7 @@ features:
 
 ### 機械学習ポテンシャル
 - [機械学習ポテンシャルの基礎](/data/ml-potential.md)
-- [機械学習ポテンシャルのFine tuning](/data/fine-tuning.md)
+- [機械学習ポテンシャルの転移学習](/data/fine-tuning.md)
 - [汎用機械学習ポテンシャル](/data/ml-potential-all.md)
 
 ### その他
@@ -319,6 +318,7 @@ features:
 - GUIツール (OriginPro, Igor)
 - クラウド (Colab)
 - IDE (Visual studio Code, Cursor) 
+- [エッジコンピューティング](/sys/edge-computing.md)
 
 ### プログラミング(Python)
 - [For文の高速化](/sys/python-for.md)

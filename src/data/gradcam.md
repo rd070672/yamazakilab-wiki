@@ -1,6 +1,6 @@
-# Grad-CAM（Gradient-weighted Class Activation Mapping）
+# Grad-CAMと局所的説明
 
-Grad-CAMは、畳み込みニューラルネットワーク（CNN）が入力画像のどこを根拠に特定クラスを予測したかをヒートマップとして可視化する手法である。材料科学では、組織画像や破壊進展、欠陥検出などに用いることで、モデルが「どの組織特徴に依存して判断しているか」を解析する枠組みとして位置づけられる。
+Grad-CAM（Gradient-weighted Class Activation Mapping）は、畳み込みニューラルネットワーク（CNN）が入力画像のどこを根拠に特定クラスを予測したかをヒートマップとして可視化する手法である。材料科学では、組織画像や破壊進展、欠陥検出などに用いることで、モデルが「どの組織特徴に依存して判断しているか」を解析する枠組みとして位置づけられる。
 
 ## 参考ドキュメント
 - Selvaraju et al., Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization, ICCV 2017.
