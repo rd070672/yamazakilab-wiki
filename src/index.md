@@ -274,15 +274,15 @@ features:
 
 ### 深層学習フレームワーク
 - [パーセプトロン](/data/perceptron.md)
-- [ニューラルネットワーク](/data/nn.md)
-- [畳み込みニューラルネットワーク](/data/cnn.md)
-- [時間畳み込みネットワーク](/data/tcn.md)
-- [リカレントニューラルネットワーク](/data/rnn.md)
-- [グラフニューラルネットワーク](/data/gnn.md)
+- [ニューラルネットワーク（NN）](/data/nn.md)
+- [畳み込みニューラルネットワーク（CNN）](/data/cnn.md)
+- [時間畳み込みネットワーク（TCN）](/data/tcn.md)
+- [リカレントニューラルネットワーク（RNN）](/data/rnn.md)
+- [グラフニューラルネットワーク（GNN）](/data/gnn.md)
 
 ### 説明可能 AI (XAI)
 - [特徴量重要度・寄与分解 (SHAP, LIMEなど)](/data/importance.md)
-- [Attention機構](/data/attention.md)
+- [アテンション機構と解釈性](/data/attention.md)
 - [Grad-CAM](/data/gradcam.md)
 - [シンボリック回帰](/data/symbolic.md)
 
