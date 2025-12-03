@@ -61,7 +61,7 @@ export default defineConfig({
       { text: 'その他', items: [
         { text: 'About', link: '/about' },
         { text: 'Changelog', link: '/changelog' },
-        { text: 'Website', link: 'https://tyamazaki.com' },
+        { text: 'Website', link: '/' },
         { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
       ]},
     ],
