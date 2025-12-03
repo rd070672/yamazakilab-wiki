@@ -1,4 +1,4 @@
-# スーパーコンピュータ MASAMUNE-II の使い方
+# スーパーコンピュータ 東北大学MASAMUNE-II の使い方
 
 ## 参考ドキュメント 
 - [MASAMUNE-弐ユーザーマニュアル](https://www.sc.imr.tohoku.ac.jp/masamune/manual/)

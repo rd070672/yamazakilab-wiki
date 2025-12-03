@@ -343,6 +343,11 @@ features:
 - 研究室wikiのウェブサイト(Github pages, VitePress)
 - アクセス解析 (GA4, GTM)
 
+## その他
+- [2025年ノーベル物理学賞](/other/nobel2025-phys.md)
+- [2025年ノーベル化学賞](/other/nobel2025-chem.md)
+- [2024年ノーベル物理学賞](/other/nobel2024-phys.md)
+- [2024年ノーベル化学賞](/other/nobel2024-chem.md)
 
 
 <!-- ## ラボ運営 {#ラボ運営}
