@@ -239,6 +239,10 @@ features:
 ## データサイエンス {#データサイエンス}
 機械学習、統計解析、深層学習、機械学習ポテンシャルなど、材料データ解析に必要な手法を扱います。材料応用の実例と実装、モデル解釈の勘所をまとめます。
 
+### 教科書
+- [bishopパターン認識と機械学習](/data/bishop-prml.md)
+- [bishop深層学習](/data/bishop-deep-learning.md)
+
 ### 統計量・特徴量
 - [統計学入門](/data/statistics.md)
 - [ベイズ統計入門](/data/bayes.md)
