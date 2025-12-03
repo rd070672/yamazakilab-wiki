@@ -269,8 +269,8 @@ qsub -I -q IP_001 -l select=1:ncpus=4:mem=16gb
 JupyterLabはローカルPCのブラウザで使い、計算環境側では計算ノード上にJupyterサーバを立ち上げる形になる。外部から直接ポートへ入れないため、SSHトンネルでローカルへ転送する。
 
 ### 10.2 SSHトンネル
-```
-ssh -L 8888:localhost:8888 your_user@super1.example
+```bash
+# ssh -L 8888:localhost:8888 your_user@super1.example
 ```
 
 この上で、計算環境側で jupyter lab --no-browser --port 8888 のように起動し、ローカルの http://localhost:8888 へ接続する流れになる。正確な手順は公式のJupyterLab手順に従うこと。
