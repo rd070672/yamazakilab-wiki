@@ -273,7 +273,7 @@ JupyterLabはローカルPCのブラウザで使い、計算環境側では計�
 # ssh -L 8888:localhost:8888 your_user@super1.example
 ```
 
-この上で、計算環境側で jupyter lab --no-browser --port 8888 のように起動し、ローカルの http://localhost:8888 へ接続する流れになる。正確な手順は公式のJupyterLab手順に従うこと。
+この上で、計算環境側で jupyter lab --no-browser --port 8888 のように起動し、ローカルの localhost へ接続する流れになる。正確な手順は公式のJupyterLab手順に従うこと。
 
 ## 11. ジョブの状態確認と操作
 
