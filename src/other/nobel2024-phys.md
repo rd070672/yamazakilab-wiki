@@ -1,9 +1,9 @@
 # 2024年ノーベル物理学賞
-### 人工ニューラルネットワークによる機械学習
-
-![alt text](image-3.png)
+人工ニューラルネットワークによる機械学習
 
 2024年ノーベル物理学賞は、人工ニューラルネットワークによる機械学習を、統計物理と多体系の視点で基礎づけた研究に与えられた賞である。連想記憶（Hopfield）と確率的生成モデル（Boltzmann machine）を、エネルギー地形と分配関数の言語で捉えることが要点である。
+
+![alt text](image-3.png)
 
 ## 参考ドキュメント
 - NobelPrize.org, Press release: The Nobel Prize in Physics 2024

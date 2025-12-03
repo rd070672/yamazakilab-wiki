@@ -1,8 +1,9 @@
-# 2025年ノーベル化学賞：金属有機構造体（MOF）と空間を設計する化学
-
-![alt text](image-2.png)
+# 2025年ノーベル化学賞
+金属有機構造体（MOF）と空間を設計する化学
 
 2025年ノーベル化学賞は、分子を「作る」だけでなく、分子の並び方によって内部空間を持つ結晶を「設計する」化学を確立した点を讃えるものである。金属有機構造体（metal–organic frameworks; MOF）は、吸着・分離・貯蔵・触媒などで「空間そのもの」を機能として使える材料群である。
+
+![alt text](image-2.png)
 
 ## 参考ドキュメント
 1. Nobel Prize in Chemistry 2025: Press release, NobelPrize.org
