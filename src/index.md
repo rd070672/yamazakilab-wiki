@@ -232,15 +232,15 @@ features:
 - [Bishop - パターン認識と機械学習](/data/bishop-prml.md)
 - [Bishop - 深層学習](/data/bishop-deep-learning.md)
 
-### 数理・統計・情報入門
-- [機械学習のための線形代数入門](/data/basis-linear-algebra.md)
-- [機械学習のための微積分入門](/data/basis-calculus.md)
-- [機械学習のためのベクトル解析入門](/data/basis-vector-analysis)
-- [機械学習のための複素解析入門](/data/basis-complex-analysis)
-- [機械学習のための多変量解析入門](/data/basis-multivariate-analysis)
-- [機械学習のための確率・統計入門](/data/basis-propability)
-- [機械学習のための最適化入門](/data/basis-optimization)
-- [機械学習のための情報理論入門](/data/basis-information-theory)
+### 機械学習のための数理・統計・情報
+- [機線形代数入門](/data/basis-linear-algebra.md)
+- [微積分入門](/data/basis-calculus.md)
+- [解析入門](/data/basis-vector-analysis)
+- [複素解析入門](/data/basis-complex-analysis)
+- [多変量解析入門](/data/basis-multivariate-analysis)
+- [確率・統計入門](/data/basis-propability)
+- [最適化入門](/data/basis-optimization)
+- [情報理論入門](/data/basis-information-theory)
 
 ### 特徴量エンジニアリング
 - [時系列解析](/data/temporal.md)

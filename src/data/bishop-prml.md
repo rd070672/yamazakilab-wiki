@@ -1,10 +1,10 @@
-# パターン認識と機械学習
-＋
+# パターン認識と機械学習 (Bishop, 2006)
+**Pattern Recognition and Machine Learning (Bishop, Springer 2006)**
 
 本書は、パターン認識と機械学習を「確率モデル」と「ベイズ的推論」を中核にして統一的に説明する教科書である。回帰・分類・密度推定・次元削減・時系列・モデル結合までを、同じ数理語彙で横断することを目的とする。
 
 ## 参考ドキュメント
-1. Christopher M. Bishop, Pattern Recognition and Machine Learning, Springer（書誌情報ページ）
+1. Christopher M. Bishop, Pattern Recognition and Machine Learning, Springer
    https://link.springer.com/book/9780387310732
 2. Pattern Recognition and Machine Learning（PDF, Microsoft Research）
    https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
@@ -47,7 +47,7 @@ $$
   $$
   で与える。
 
-### 2.3 意思決定（decision）
+### 2.3 意思決定
 誤分類率最小化や期待損失最小化は、事後確率に基づく規則として表される。損失関数 $L(t,\hat{t})$ に対し、
 $$
 \hat{t}(x)=\arg\min_{\hat{t}}\;\mathbb{E}[L(t,\hat{t})\mid x]

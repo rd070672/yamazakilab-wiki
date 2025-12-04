@@ -94,7 +94,7 @@ XMCDは元素選択的にスピン・軌道磁気モーメント（和則）を�
 
 | 手法 | 見える主量 | 強い対象 | 得意な点 | 注意点 |
 |---|---|---|---|---|
-| $^{57}$Feメスバウアー | 超微細磁場分布、サイト分布 | Fe主体合金 | 局所分布を取りやすい | 換算係数・解析モデル依存 |
+| $^{57}$ Feメスバウアー | 超微細磁場分布、サイト分布 | Fe主体合金 | 局所分布を取りやすい | 換算係数・解析モデル依存 |
 | XMCD | 元素別スピン/軌道モーメント | 多元系薄膜/バルク | 元素選択性が高い | 和則、背景、自己吸収 |
 | 中性子散乱 | 相関長、ダイナミクス | バルク | 空間相関に強い | 試料量、同位体など |
 | μSR | 局所磁場と緩和 | ガラス的磁性 | 時間窓の補完 | 解析モデル依存 |
@@ -192,7 +192,7 @@ Bader、PAW投影、原子球などで $m_i$ の絶対値は変わり得る。�
 
 アモルファスにおける局所磁気モーメントは、局所構造・化学短距離秩序・内部応力が作る局所電子状態の多様性により、単一値ではなく分布として現れる量である。実験（メスバウアー、XMCD、散乱、μSR、NMR）と計算（構造生成、スピン分極DFT、非共線/SOC、スピン模型やDLM系）を組み合わせ、$m_i$ 分布と局所構造指標の条件付き相関、さらに空間連結性まで評価することで、巨視的磁化や凍結・不可逆性の起源がスケール一貫で説明可能になるのである。
 
-## 関連研究
+### 参考資料
 - Distribution of iron moments in a-Fe glass by first-principles（J. Appl. Phys. 69, 5460, 1991）：https://pubs.aip.org/aip/jap/article/69/8/5460/500902/Distribution-of-iron-moments-in-a-Fe-glass-by
 - First-principles study of amorphous Fe–B alloys（2012）：https://www.sciencedirect.com/science/article/abs/pii/S0921452611010969
 - structural–magnetic relationship in amorphous Fe（ab initio MD, 2019）：https://www.sciencedirect.com/science/article/abs/pii/S0022309319301711

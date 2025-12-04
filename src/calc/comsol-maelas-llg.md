@@ -1,12 +1,10 @@
 # COMSOL を用いた 弾性場–LLG 連成計算
 
-#### 参考ドキュメント
-- [Micromagnetic Simulation with COMSOL Multiphysics](https://www.comsol.com/blogs/micromagnetic-simulation-with-comsol-multiphysics)
+### 参考ドキュメント
+- Micromagnetic Simulation with COMSOL Multiphysics
+  https://www.comsol.com/blogs/micromagnetic-simulation-with-comsol-multiphysics
 
-
-## 概要
-- COMSOL Multiphysics では  
-  Solid Mechanics（弾性場） と LLG 方程式（磁化ダイナミクス）を連成することで、
+COMSOL Multiphysics ではSolid Mechanics（弾性場） と LLG 方程式（磁化ダイナミクス）を連成することで、
   - 磁歪（magnetostriction）による 磁化 → ひずみ・応力
   - 磁気弾性結合による ひずみ・応力 → 有効磁場 → 磁化
   を同時に扱うことができる。
@@ -65,7 +63,7 @@
   - 例：$\;F_\text{me} \propto -\tfrac{3}{2}\lambda_s \sigma_{ij} m_i m_j\;$ など。
 
 
-## COMSOL での実装方針（概念）
+## COMSOL での実装
 
 ### 1. 物理インターフェース
 - **Solid Mechanics**（構造力学・弾性場）
@@ -107,18 +105,18 @@
    - Global Parameters に  
      `Ms, gamma, alpha, A_ex, Ku, lambda100, lambda111, C11, C12, C44` などを定義。
 
-2. **ジオメトリ・メッシュの作成**
+2. ジオメトリ・メッシュの作成
    - 薄膜・ナノバー・共振子などの形状を作る。
    - メッシュは、磁区幅と弾性波長を両方考慮して設定。
 
-3. **Solid Mechanics の設定**
+3. Solid Mechanics の設定
    - 材料プロパティ：弾性定数・密度を設定。
    - 境界条件：固定端 / 自由端 / 荷重 / 基板拘束など。
    - 磁歪ひずみ：
      - 「Initial strain」や「User-defined strain」として  
        `eps_mag_xx(mx,my,mz)`, `eps_mag_xy(mx,my,mz)` を式で入れる。
 
-4. **LLG PDE（General Form PDE）の設定**
+4. LLG PDE（General Form PDE）の設定
    - 依存変数 `mx, my, mz` を定義。
    - 有効磁場 `Hx_eff, Hy_eff, Hz_eff` を Variables で定義  
      （外部磁場 + 交換場 + 異方性場 + 磁気弾性場）。
@@ -131,18 +129,18 @@
      などを記述。
    - 初期条件として `mx0,my0,mz0` を設定（単一ドメインや磁壁など）。
 
-5. **スタディ（Time Dependent）の設定**
+5. スタディ（Time Dependent）の設定
    - Solid Mechanics と PDE（LLG）両方を同じ「Time Dependent」スタディに含める。
    - 時間範囲（例：0〜数 ns〜µs）と最大時間ステップを設定。
    - 連成ソルバを用いて時間発展を解かせる。
 
-6. **ポストプロセス**
+6. ポストプロセス
    - 磁化分布（`mx,my,mz`）と、ひずみ・応力分布（`eps_xx, sigma_xx` など）を可視化。
    - 全体の磁気エネルギー・弾性エネルギー・磁気弾性エネルギーの時間変化をプロット。
    - 特定位置の変位・磁化の時間応答を取り出し、フーリエ解析で共鳴周波数を抽出。
 
 
-## 実務的な注意点
+## 注意点
 
 - 時間スケールの違い
   - 弾性波（音速）と磁化プリセッション（GHz 領域）の時間スケールの関係を考慮し、時間ステップと解析時間を設定する。

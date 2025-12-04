@@ -284,15 +284,15 @@ export default defineConfig({
           { text: 'Bishop - 深層学習', link: '/data/bishop-deep-learning' },
         ]},
 
-        { text: '数理・統計・情報入門', collapsed: true, items: [
-          { text: '機械学習のための線形代数入門', link: '/data/basis-linear-algebra' },
-          { text: '機械学習のための微積分入門', link: '/data/basis-calculus' },
-          { text: '機械学習のためのベクトル解析入門', link: '/data/basis-vector-analysis' },
-          { text: '機械学習のための複素解析入門', link: '/data/basis-complex-analysis' },
-          { text: '機械学習のための多変量解析入門', link: '/data/basis-multivariate-analysis' },
-          { text: '機械学習のための確率・統計入門', link: '/data/basis-propability' },
-          { text: '機械学習のための最適化入門', link: '/data/basis-optimization' },
-          { text: '機械学習のための情報理論入門', link: '/data/basis-information-theory' },
+        { text: '機械学習のための数理・統計・情報', collapsed: true, items: [
+          { text: '線形代数入門', link: '/data/basis-linear-algebra' },
+          { text: '微積分入門', link: '/data/basis-calculus' },
+          { text: 'ベクトル解析入門', link: '/data/basis-vector-analysis' },
+          { text: '複素解析入門', link: '/data/basis-complex-analysis' },
+          { text: '多変量解析入門', link: '/data/basis-multivariate-analysis' },
+          { text: '確率・統計入門', link: '/data/basis-propability' },
+          { text: '最適化入門', link: '/data/basis-optimization' },
+          { text: '情報理論入門', link: '/data/basis-information-theory' },
         ]},
 
         { text: '特徴量エンジニアリング', collapsed: true, items: [

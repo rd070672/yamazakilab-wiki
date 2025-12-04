@@ -1,6 +1,6 @@
-# 非線形次元削減（Nonlinear Dimensionality Reduction）
+# 非線形次元削減
 
-非線形次元削減は、高次元データが低次元多様体（manifold）上に分布するという仮定の下で、近傍関係や確率的類似度を保ちながら低次元へ埋め込む方法群である。材料科学では、スペクトル・回折・構造記述子・画像特徴などの複雑な変動を、相・欠陥・局所構造・プロセス軌跡として可視化・整理するために用いられる。
+非線形次元削減（Nonlinear Dimensionality Reduction）は、高次元データが低次元多様体（manifold）上に分布するという仮定の下で、近傍関係や確率的類似度を保ちながら低次元へ埋め込む方法群である。材料科学では、スペクトル・回折・構造記述子・画像特徴などの複雑な変動を、相・欠陥・局所構造・プロセス軌跡として可視化・整理するために用いられる。
 
 ## 参考ドキュメント
 - van der Maaten & Hinton, Visualizing Data using t-SNE (JMLR, 2008)
@@ -9,10 +9,7 @@
   https://arxiv.org/abs/1802.03426
 - Tenenbaum, de Silva, Langford, A Global Geometric Framework for Nonlinear Dimensionality Reduction (Science, 2000)
   https://www.science.org/doi/10.1126/science.290.5500.2319
-- データ解析入門10 <t-SNEによる次元削減>（日本語, PDF）
-  https://www.orist.jp/dl/22-14.pdf
-- データ解析入門11 <UMAPによる次元削減>（日本語, PDF）
-  https://orist.jp/technicalsheet/22-16.pdf
+
 
 
 ## 1. 位置づけ
@@ -160,3 +157,9 @@ t-SNE/UMAPはパラメータで見え方が変わるため、同じ結論が保�
 
 ## まとめ
 非線形次元削減は、多様体仮説と近傍関係の保持を軸に、高次元材料データを可視化・整理するための中核技術である。材料科学での成否は、モデルそのものよりも表現・距離・前処理・安定性確認に依存し、目的（クラスタ分離か、連続軌跡か、大域形状か）に応じて t-SNE/UMAP/Isomap/LLE/Diffusion Maps などを使い分けることが要点である。
+
+### 参考資料
+- データ解析入門10 <t-SNEによる次元削減>（日本語, PDF）
+  https://www.orist.jp/dl/22-14.pdf
+- データ解析入門11 <UMAPによる次元削減>（日本語, PDF）
+  https://orist.jp/technicalsheet/22-16.pdf

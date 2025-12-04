@@ -151,11 +151,11 @@ $$
 - 開放系か閉鎖系か：散乱（開放）では $\hat{S}$ の統計、閉鎖では $\hat{H}$ の準位統計が中心となり、同じ言葉でも対象が異なる。
 - 無秩序平均：単一サンプルの揺らぎ構造と、配置平均での普遍性の議論は区別する。
 
-## 10. まとめ
+## まとめ
 
 量子カオス理論は、固体量子系の複雑さを、準位統計（RMT普遍性）、固有状態の典型性（ETH）、非平衡での情報混合（スクランブリング、OTOC）、および輸送ゆらぎ（散乱行列統計）として定量化する枠組みである。相互作用・無秩序・SOC・外場などの要素は、個別の現象を多様に見せつつも、対称性クラスと普遍統計へ収斂させる役割を持ち、緩和・熱化・輸送といった物性の理解を統一的に進める基盤となるのである。
 
-## 関連研究
+### 参考資料
 - O. Bohigas, M.-J. Giannoni, C. Schmit, Characterization of chaotic quantum spectra and universality of level fluctuation laws, Phys. Rev. Lett. 52, 1 (1984)
   https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.52.1
 - M. V. Berry, M. Tabor, Level clustering in the regular spectrum, Proc. R. Soc. A 356, 375–394 (1977)

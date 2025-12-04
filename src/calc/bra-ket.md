@@ -34,7 +34,7 @@ $$
 固体物理では、座標基底だけでなく、Bloch 基底、原子軌道基底、Wannier 基底など複数の基底が日常的に現れるため、「状態そのもの」と「表示」を区別できる Dirac 記法は特に相性がよい。
 
 ### 1.2 ket と bra：双対空間と随伴
-ket は $\mathcal{H}$ のベクトル、bra は双対空間 $\mathcal{H}^\*$(厳密には共役双対) の線形汎関数である。ket $|\psi\rangle$ に対応する bra は随伴（共役転置）で
+ket は $\mathcal{H}$ のベクトル、bra は双対空間 $\mathcal{H}^*$(厳密には共役双対) の線形汎関数である。ket $|\psi\rangle$ に対応する bra は随伴（共役転置）で
 
 $$
 |\psi\rangle \ \mapsto\ \langle\psi|,\qquad
@@ -53,7 +53,7 @@ $$
 量子力学の慣習として、内積は一般に ket 側に線形、bra 側に共役線形で扱われる（数学の流儀と逆になる場合がある）。この選択により
 
 $$
-\langle\phi|\psi\rangle = \langle\psi|\phi\rangle^\*,\qquad
+\langle\phi|\psi\rangle = \langle\psi|\phi\rangle^*,\qquad
 \langle\psi|\psi\rangle \ge 0
 $$
 
@@ -155,7 +155,7 @@ $$
 
 ### 1.8 誤りやすい点
 1. $\langle\phi|\psi\rangle$ の複素共役を落とす  
-   $\langle\psi|\phi\rangle$ は一般に $\langle\phi|\psi\rangle$ と等しくなく、$\langle\psi|\phi\rangle=\langle\phi|\psi\rangle^\*$ である。
+   $\langle\psi|\phi\rangle$ は一般に $\langle\phi|\psi\rangle$ と等しくなく、$\langle\psi|\phi\rangle=\langle\phi|\psi\rangle^*$ である。
 
 2. 内積の「線形側」の流儀を混同する  
    文献により、どちらの引数が線形かの約束が異なる。記号の変換だけでなく、共役の位置で齟齬が出る。
