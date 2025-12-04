@@ -247,6 +247,9 @@ features:
 ### 数理・統計量・特徴量
 - [機械学習のための線形代数入門](/data/basis-linear-algebra.md)
 - [機械学習のための微積分入門](/data/basis-calculus.md)
+- [機械学習のための多変量解析入門](/data/basis-multivariate-analysis)
+- [機械学習のための確率・統計入門](/data/basis-propability)
+- [機械学習のための情報理論入門](/data/basis-information-theory)
 - [統計学入門](/data/statistics.md)
 - [ベイズ統計入門](/data/bayes.md)
 - [時系列解析](/data/temporal.md)
