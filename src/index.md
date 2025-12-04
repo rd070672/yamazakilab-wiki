@@ -47,6 +47,7 @@ features:
 - [局在電子系の磁性](/calc/localized-electron-magnetism.md)
 - [遍歴電子系の磁性](/calc/itinerant-electron-magnetism.md)
 - [遍歴電子系のストーナー条件](/calc/stoner.md)
+- [RKKY相互作用と磁気秩序](/calc/rkky.md)
 - [スピン軌道相互作用と行列要素](/calc/spin-orbit-coupling.md)
 - [マグノン-フォノン相互作用の計算](/calc/magnon-phonon.md)
 - [ベリー位相とトポロジカル応答の計算](/calc/berry.md)
