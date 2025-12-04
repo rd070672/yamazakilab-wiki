@@ -170,7 +170,7 @@ features:
 ### 熱処理・試料加工
 - [フォトリソグラフィの化学](/exp/photo-lithography.md)
 - [マスクレス露光装置の物理](/exp/maskless-lithography.md)
-- [鏡面研磨のノウハウ](/exp/mechanical-polishing.md)
+- [鏡面研磨のノウハウ](/exp/millor-polishing.md)
 
 ### 磁気計測
 - [軟磁性体の物理](/exp/softmag-phys.md)
@@ -221,6 +221,7 @@ features:
 
 ### 中性子散乱
 - [中性子ビームの基本](/exp/neutron.md)
+- [中性子回折・小角中性子散乱の基礎と応用](/exp/neutron-diff-scat.md)
 - [中性子散乱による磁気秩序解析](/exp/neutron-mag.md)
 
 

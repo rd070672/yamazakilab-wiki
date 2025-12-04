@@ -90,7 +90,7 @@ export default defineConfig({
           { text: 'マグノン-フォノン相互作用の計算', link: '/calc/magnon-phonon' },
           { text: 'ベリー位相とトポロジカル応答の計算', link: '/calc/berry' },
           { text: 'ベリー曲率に基づく異常ホール効果・異常ネルンスト効果の第一原理計算', link: '/calc/ahe-ane-calc' },
-
+        
           { text: '第一原理計算の基本原理', link: '/calc/dft' },
           { text: '第一原理計算を支える数値解法', link: '/calc/dft-calc' },
           { text: '第一原理計算ソフトウェアと特徴', link: '/calc/dft-software' },
@@ -119,7 +119,9 @@ export default defineConfig({
           { text: '量子アニーリング', link: '/calc/quantum-annealing' },
           { text: '量子コンピュータの物理', link: '/calc/quantum-computer' },
           { text: '量子コンピュータ開発動向と展望', link: '/calc/quantum-computer-trend' },
+        ]},
 
+        { text: '第一原理分子動力学計算', collapsed: true, items: [
           { text: '第一原理分子動力学（AIMD）の原理', link: '/calc/aimd' },
           { text: 'AIMDによるアモルファス設計', link: '/calc/aimd-amorphous' },
           { text: 'アモルファスの距離秩序と物理', link: '/calc/amorphous' },
@@ -128,22 +130,30 @@ export default defineConfig({
           { text: 'アモルファス固体の力学', link: '/calc/amorphous-solid' },
           { text: 'アモルファス固体の力学の計算方法', link: '/calc/amorphous-solid-calc' },
           { text: 'アモルファスにおける局所磁気モーメント', link: '/calc/amorphous-moment' },
+        ]},
 
+        { text: '第一原理計算フェーズフィールド計算', collapsed: true, items: [
           { text: '第一原理計算に基づくフェーズフィールド計算', link: '/calc/dft-pf' },
+        ]},
 
+        { text: '熱力学計算', collapsed: true, items: [
           { text: 'CALPHAD法（計算熱力学）による状態図・相平衡予測', link: '/calc/calphad' },
           { text: '平衡状態図の読み方', link: '/calc/phase-diagram' },
           { text: 'ランダウ理論と自由エネルギー', link: '/calc/landau' },
           { text: 'Ginzburg–Landau理論による相転移と空間秩序の記述', link: '/calc/landau-gl-theory' },
           { text: 'ギブス自由エネルギーに基づく合金設計', link: '/calc/gibbs-alloy' },
+        ]},
 
+        { text: '分子動力学計算', collapsed: true, items: [
           { text: 'MD の原理', link: '/calc/md' },
           { text: 'MD の数値解法', link: '/calc/md-calc' },
           { text: 'MD 計算における原子間ポテンシャル選定', link: '/calc/md-potential' },
           { text: 'MD 計算と機械学習', link: '/calc/md-machine-learning' },
           { text: 'LAMMPS による MD 計算', link: '/calc/md-lammps' },
           { text: 'ASE・JAX による MD 計算', link: '/calc/md-ase-jax' },
+        ]},
 
+        { text: 'モンテカルロ計算', collapsed: true, items: [
           { text: 'モンテカルロ法の基礎', link: '/calc/mc' },
           { text: 'モンテカルロ法の数値解法', link: '/calc/mc-calc' },
           { text: '密度行列繰り込み群法', link: '/calc/density-matrix' },
@@ -160,14 +170,18 @@ export default defineConfig({
           { text: '計算科学で読み解くスピングラス', link: '/calc/spin-glass-calc' },
           { text: 'アモルファス磁性におけるスピングラス', link: '/calc/spin-glass-amorphous' },
           { text: '量子スピングラス', link: '/calc/spin-glass-quantum' },
+        ]},
 
+        { text: 'フェーズフィールド計算', collapsed: true, items: [
           { text: 'フェーズフィールド計算の原理', link: '/calc/pf' },
           { text: 'フェーズフィールド法の数値解法', link: '/calc/pf-calc' },
           { text: 'Allen–Cahn 法で記述する金属組織シミュレーション', link: '/calc/pf-allen-cahn' },
           { text: 'デンドライト成長のPFシミュレーション', link: '/calc/dendrite' },
           { text: 'Cahn–Hilliard 方程式で記述する金属組織シミュレーション', link: '/calc/pf-cahn-hilliard' },
           { text: 'フェーズフィールドクリスタル（PFC）法の基礎と応用', link: '/calc/phase-field-crystal' },
+        ]},
 
+        { text: 'マルチフィジックス計算', collapsed: true, items: [
           { text: '有限差分法の原理と数値解法', link: '/calc/fdm' },
           { text: '有限要素法の原理', link: '/calc/fem' },
           { text: '有限要素法の数値解法', link: '/calc/fem-calc' },
@@ -191,6 +205,223 @@ export default defineConfig({
           { text: 'FEniCSによる変分形式ベース有限要素解析', link: '/calc/fenics' },
         ] },
       ] },
+
+      { text: '実験', collapsed: true, items: [
+        { text: '材料合成', collapsed: true, items: [
+          { text: '物理蒸着法（PVD）による薄膜形成の基礎', link: '/exp/pvd' },
+          { text: '化学気相成長法（CVD）による薄膜形成の基礎', link: '/exp/cvd' },
+        ]},
+
+        { text: '熱処理・試料加工', collapsed: true, items: [
+          { text: 'フォトリソグラフィの化学', link: '/exp/photo-lithography' },
+          { text: 'マスクレス露光装置の物理', link: '/exp/maskless-lithography' },
+          { text: '鏡面研磨のノウハウ', link: '/exp/mechanical-polishing' },
+        ]},
+
+        { text: '磁気計測', collapsed: true, items: [
+          { text: '軟磁性体の物理', link: '/exp/softmag-phys' },
+          { text: '軟磁性体の高周波特性評価', link: '/exp/softmag-rf' },
+          { text: '高周波計測技術', link: '/exp/softmag-rf-phys' },
+          { text: '信号アナライザーの測定原理', link: '/exp/softmag-rf-measurement' },
+          { text: '低ノイズ・高感度な電圧測定技術', link: '/exp/low-noise' },
+          { text: 'プリアンプの物理と基礎', link: '/exp/pre-amp' },
+          { text: '振動試料型磁力計（VSM）による磁化測定の基礎', link: '/exp/vsm' },
+          { text: '磁気特性測定システム（MPMS）とSQUID磁力計の基礎', link: '/exp/mpms' },
+          { text: '磁気光学カー効果顕微鏡（MOKE）による磁区構造・磁化ダイナミクス観察入門', link: '/exp/moke' },
+          { text: 'パワーエレクトロニクス用受動素子', link: '/exp/power-electronics-mag' },
+          { text: 'パワーエレクトロニクス用半導体デバイス', link: '/exp/power-electronics-semicon' },
+        ]},
+
+        { text: '構造・化学状態解析', collapsed: true, items: [
+          { text: 'X線回折装置 (XRD)の基礎', link: '/exp/xrd' },
+          { text: 'リードベルド解析', link: '/exp/xrd-rietveld' },
+          { text: 'X線光電子分光法 (XPS)', link: '/exp/xps' },
+          { text: '電子後方散乱回折 (EBSD)', link: '/exp/ebsd' },
+          { text: '透過型電子顕微鏡（TEM）', link: '/exp/tem' },
+          { text: '5D-STEMの基礎', link: '/exp/5d-stem' },
+          { text: '電子線ホログラフィーの基礎', link: '/exp/electron-holography' },
+        ]},
+
+        { text: '汎用機器・治具設計', collapsed: true, items: [
+          { text: '電磁界シールドの基礎', link: '/exp/mag-shield' },
+          { text: '3Dプリンターと造形技術', link: '/exp/3d-printer' },
+        ]},
+
+        { text: '放射光計測', collapsed: true, items: [
+          { text: '基礎', collapsed: true, items: [
+            { text: '放射光（シンクロトロン放射）の基礎', link: '/exp/sr' },
+            { text: 'ビームラインの光学設計', link: '/exp/sr-optics' },
+            { text: '放射光による構造解析', link: '/exp/sr-structure' },
+            { text: '放射光によるダイナミクス解析', link: '/exp/sr-dynamics' },
+            { text: 'アモルファスの構造・物性解析', link: '/exp/sr-amorphous' },
+            { text: 'フェルミの黄金律', link: '/exp/fermi-golden-rule' },
+            { text: '選択則とクレプシュ・ゴルダン係数', link: '/exp/clebsch-gordan' },
+          ]},
+          { text: '各手法の原理', collapsed: true, items: [
+            { text: 'X線吸収微細構造（XAFS）', link: '/exp/sr-xafs' },
+            { text: 'X線発光分光（XES）', link: '/exp/sr-xes' },
+            { text: '光電子ホログラフィー（PEH）', link: '/exp/sr-peh' },
+            { text: '小角X線散乱（SAXS）', link: '/exp/sr-saxs' },
+            { text: '硬X線光電子分光（HAXPES）', link: '/exp/sr-haxpes' },
+            { text: '共鳴軟Ｘ線非弾性散乱分光（RIXS）', link: '/exp/sr-rixs' },
+            { text: 'コヒーレント回折イメージング（CDI）', link: '/exp/sr-cdi' },
+            { text: 'X線磁気円二色性（XMCD）', link: '/exp/sr-xmcd' },
+            { text: 'スピン・角度分解光電子分光（SARPES）', link: '/exp/sr-sarpes' },
+            { text: 'X線自由電子レーザー（XFEL）', link: '/exp/sr-xfel' },
+          ]},
+        ]},
+
+        { text: '中性子散乱', collapsed: true, items: [
+          { text: '中性子ビームの基本', link: '/exp/neutron' },
+          { text: '中性子回折・小角中性子散乱の基礎と応用', link: '/exp/neutron-diff-scat' },
+          { text: '中性子散乱による磁気秩序解析', link: '/exp/neutron-mag' },
+        ]},
+      ]},
+
+      { text: 'データサイエンス', collapsed: true, items: [
+        { text: '教科書', collapsed: true, items: [
+          { text: 'Bishop - パターン認識と機械学習', link: '/data/bishop-prml' },
+          { text: 'Bishop - 深層学習', link: '/data/bishop-deep-learning' },
+        ]},
+
+        { text: '数理・統計・情報入門', collapsed: true, items: [
+          { text: '機械学習のための線形代数入門', link: '/data/basis-linear-algebra' },
+          { text: '機械学習のための微積分入門', link: '/data/basis-calculus' },
+          { text: '機械学習のためのベクトル解析入門', link: '/data/basis-vector-analysis' },
+          { text: '機械学習のための複素解析入門', link: '/data/basis-complex-analysis' },
+          { text: '機械学習のための多変量解析入門', link: '/data/basis-multivariate-analysis' },
+          { text: '機械学習のための確率・統計入門', link: '/data/basis-propability' },
+          { text: '機械学習のための最適化入門', link: '/data/basis-optimization' },
+          { text: '機械学習のための情報理論入門', link: '/data/basis-information-theory' },
+        ]},
+
+        { text: '特徴量エンジニアリング', collapsed: true, items: [
+          { text: '時系列解析', link: '/data/temporal' },
+          { text: 'スペクトル解析', link: '/data/spectral' },
+          { text: '直積・アダマール積', link: '/data/product' },
+          { text: 'パーシステントホモロジーと位相的データ解析', link: '/data/persistent' },
+        ]},
+
+        { text: '材料データベース', collapsed: true, items: [
+          { text: 'Materials Project（材料データベース）', link: '/data/db-materials-project' },
+          { text: 'Open Quantum Materials Database (OQMD)', link: '/data/db-oqmd' },
+        ]},
+
+        { text: 'マテリアルズ・インフォマティクス', collapsed: true, items: [
+          { text: 'AI for Science（AI4S）', link: '/data/info-ai4science' },
+          { text: 'マテリアルズ・インフォマティクスの動向と将来展望', link: '/data/info' },
+          { text: '材料インフォマティクス', link: '/data/info-materials' },
+          { text: '計測インフォマティクス', link: '/data/info-measure' },
+          { text: 'プロセスインフォマティクス', link: '/data/info-process' },
+          { text: '物理インフォマティクスとPINNs', link: '/data/info-physics' },
+        ]},
+
+        { text: '教師あり学習（予測・分類）', collapsed: true, items: [
+          { text: '決定木アンサンブル学習', link: '/data/decision-tree' },
+          { text: '勾配ブースティング決定木', link: '/data/boosting' },
+          { text: 'サポートベクターマシン', link: '/data/svm' },
+          { text: 'k近傍法', link: '/data/k-nn' },
+          { text: '半教師あり学習', link: '/data/semi-learning' },
+        ]},
+
+        { text: '次元削減手法・可視化', collapsed: true, items: [
+          { text: '線形次元削減（PCAなど）', link: '/data/dr-linear' },
+          { text: '非線形次元削減（U-MAPなど）', link: '/data/dr-nonlinear' },
+          { text: '確率モデル・ベイズ推論による次元削減', link: '/data/dr-probabilistic-bayse' },
+          { text: '深層学習ベースの次元削減 (VAEなど)', link: '/data/dr-deep-learning' },
+        ]},
+
+        { text: '深層学習フレームワーク', collapsed: true, items: [
+          { text: 'パーセプトロン', link: '/data/perceptron' },
+          { text: 'ニューラルネットワーク（NN）', link: '/data/nn' },
+          { text: '畳み込みニューラルネットワーク（CNN）', link: '/data/cnn' },
+          { text: '時間畳み込みネットワーク（TCN）', link: '/data/tcn' },
+          { text: 'リカレントニューラルネットワーク（RNN）', link: '/data/rnn' },
+          { text: 'ゲート付きRNNとしてのLSTMとGRU', link: '/data/rnn-lstm-gru' },
+          { text: 'グラフニューラルネットワーク（GNN）', link: '/data/gnn' },
+        ]},
+
+        { text: '説明可能 AI (XAI)', collapsed: true, items: [
+          { text: '特徴量重要度・寄与分解 (SHAP, LIMEなど)', link: '/data/importance' },
+          { text: 'アテンション機構と解釈性', link: '/data/attention' },
+          { text: 'Grad-CAMと局所的説明', link: '/data/gradcam' },
+          { text: 'シンボリック回帰', link: '/data/symbolic' },
+        ]},
+
+        { text: '生成 AI', collapsed: true, items: [
+          { text: 'GANとDiffusionモデル', link: '/data/gan-diffusion' },
+          { text: '変分オートエンコーダー(VAE)', link: '/data/vae' },
+          { text: 'Transformer', link: '/data/transformer' },
+          { text: '材料科学分野におけるLLM', link: '/data/llm-mat' },
+          { text: 'ファインマンLLM', link: '/data/llm-feynman' },
+        ]},
+
+        { text: '最適化手法', collapsed: true, items: [
+          { text: '実験計画法(DOE)', link: '/data/doe' },
+          { text: 'ベイズ最適化(BO)', link: '/data/bo' },
+          { text: 'アクティブラーニングと能動学習', link: '/data/active-learning' },
+          { text: '遺伝的アルゴリズム(GA)', link: '/data/genetic-algorithm' },
+        ]},
+
+        { text: '機械学習ポテンシャル', collapsed: true, items: [
+          { text: '機械学習ポテンシャルの基礎', link: '/data/ml-potential' },
+          { text: '機械学習ポテンシャルのファインチューニング', link: '/data/fine-tuning' },
+          { text: '汎用機械学習ポテンシャル', link: '/data/ml-potential-all' },
+        ]},
+
+        { text: 'その他', collapsed: true, items: [
+          { text: '自由エネルギー原理と情報理論', link: '/data/free-energy-principle' },
+          { text: 'サロゲートモデル', link: '/data/surrogate' },
+          { text: 'リザバーコンピューティング', link: '/data/reservoir' },
+          { text: '物理リザバー', link: '/data/reservoir-physical' },
+          { text: '逆設計モデル', link: '/data/inverse-design' },
+        ]},
+
+      ]},
+
+      { text: '情報基盤', collapsed: true, items: [
+        { text: 'データ解析環境', collapsed: true, items: [
+          { text: '研究・開発のためのデータ解析環境設計', link: '/sys/data-analysis' },
+          { text: 'Web開発でMCPを活かすための基礎', link: '/sys/mcp' },
+          { text: 'エッジコンピューティング', link: '/sys/edge-computing' },
+        ]},
+
+        { text: 'プログラミング(Python)', collapsed: true, items: [
+          { text: 'For文の高速化', link: '/sys/python-for' },
+        ]},
+
+        { text: 'スーパーコンピュータの利用', collapsed: true, items: [
+          { text: '東北大金研Masamune-II', link: '/sys/masamune' },
+        ]},
+
+        { text: 'サーバー・HPC管理', collapsed: true, items: [
+          { text: 'Linux基礎体系', link: '/sys/linux' },
+          { text: '数値計算のためのCPU・GPU・TPU入門', link: '/sys/cpu-gpu-tpu' },
+          { text: 'NASによるデータ管理設計', link: '/sys/nas' },
+          { text: '所有ワクステ (SHIMA/TANI/MORI/MBN)', link: '/sys/workstations' },
+          { text: '購入後の初期設定', link: '/sys/setup' },
+        ]},
+
+        { text: 'ホームページの管理', collapsed: true, items: [
+          { text: '研究室サイトをGitHub Pagesで立ち上げる', link: '/sys/website' },
+          { text: 'VitePressを用いた研究室Wikiの整備', link: '/sys/website-wiki' },
+          { text: 'GA4とGTMによるアクセス解析の基礎', link: '/sys/access-analysis' },
+        ]},
+
+      ]},
+
+      { text: 'Nobel Prize', collapsed: true, items: [
+        { text: '2025年', collapsed: true, items: [
+          { text: 'ノーベル物理学賞', link: '/other/nobel2025-phys' },
+          { text: 'ノーベル化学賞', link: '/other/nobel2025-chem' },
+        ]},
+        { text: '2024年', collapsed: true, items: [
+          { text: 'ノーベル物理学賞', link: '/other/nobel2024-phys' },
+          { text: 'ノーベル化学賞', link: '/other/nobel2024-chem' },
+        ]},
+      ]},
+
+
 
 
     // ],
@@ -278,32 +509,32 @@ export default defineConfig({
     //     ]},
     //   ]},
 
-      { text: '実験', collapsed: true, items: [
-          { text: '装置類の引っ越し', link: '/'},
-          { text: '土禁・フロアマット', link: '/'},
-      ]},
+      // { text: '実験', collapsed: true, items: [
+      //     { text: '装置類の引っ越し', link: '/'},
+      //     { text: '土禁・フロアマット', link: '/'},
+      // ]},
 
-      { text: 'データサイエンス', collapsed: true, items: [
-          // { text: '装置類の引っ越し', link: '/'},
-          // { text: '土禁・フロアマット', link: '/'},
-      ]},
+      // { text: 'データサイエンス', collapsed: true, items: [
+      //     // { text: '装置類の引っ越し', link: '/'},
+      //     // { text: '土禁・フロアマット', link: '/'},
+      // ]},
 
-      { text: '情報基盤', collapsed: true, items: [
-          // { text: '装置類の引っ越し', link: '/'},
-          // { text: '土禁・フロアマット', link: '/'},
-      ]},
+      // { text: '情報基盤', collapsed: true, items: [
+      //     // { text: '装置類の引っ越し', link: '/'},
+      //     // { text: '土禁・フロアマット', link: '/'},
+      // ]},
 
-      { text: 'ラボ運営', collapsed: true, items: [
-          // { text: '装置類の引っ越し', link: '/'},
-          // { text: '土禁・フロアマット', link: '/'},
-          // { text: '机・椅子（居室）', link: '/'},
-          // { text: '机・椅子（実験室）', link: '/'},
-          // { text: 'Wi-Fiのセットアップ', link: '/'},
-          // { text: '家電類', link: '/'},
-          // { text: 'サーバールーム', link: '/'},
-          // { text: 'クリーンベンチ', link: '/'},
-          // { text: 'シンク周り', link: '/'},
-      ]},
+      // { text: 'ラボ運営', collapsed: true, items: [
+      //     // { text: '装置類の引っ越し', link: '/'},
+      //     // { text: '土禁・フロアマット', link: '/'},
+      //     // { text: '机・椅子（居室）', link: '/'},
+      //     // { text: '机・椅子（実験室）', link: '/'},
+      //     // { text: 'Wi-Fiのセットアップ', link: '/'},
+      //     // { text: '家電類', link: '/'},
+      //     // { text: 'サーバールーム', link: '/'},
+      //     // { text: 'クリーンベンチ', link: '/'},
+      //     // { text: 'シンク周り', link: '/'},
+      // ]},
 
       // { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
