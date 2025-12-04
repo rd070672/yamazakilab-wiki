@@ -79,9 +79,9 @@ features:
 - [量子カオス理論](/calc/chaos-quantum.md)
 - [格子QCDシミュレーション入門](/calc/lattice-qcd.md)
 - [テンソルネットワーク入門](/calc/tensor-network.md)
+- [量子アニーリング](/calc/quantum-annealing.md)
 - [量子コンピュータの物理](/calc/quantum-computer.md)
 - [量子コンピュータ開発動向と展望](/calc/quantum-computer-trend.md)
-- [量子アニーリング](/calc/quantum-annealing.md)
 
 ### 第一原理分子動力学計算
 - [第一原理分子動力学（AIMD）の原理](/calc/aimd.md)
@@ -164,20 +164,13 @@ features:
 材料合成・熱処理・プロセス制御から、磁気計測・放射光・中性子ビームなどの先端計測までを整理します。再現性を高める手順や装置運用のコツなど、実験で役立つ知見を共有します。
 
 ### 材料合成
-- 物理蒸着法の基礎
-- 化学蒸着法の基礎
-<!-- - 多元スパッタ装置
-- PLD
-- MBE -->
+- [物理蒸着法（PVD）による薄膜形成の基礎](/exp/pvd.md)
+- [化学気相成長法（CVD）による薄膜形成の基礎](/exp/cvd.md)
 
 ### 熱処理・試料加工
 - [フォトリソグラフィの化学](/exp/photo-lithography.md)
 - [マスクレス露光装置の物理](/exp/maskless-lithography.md)
-<!-- - 赤外線ランプ炉
-- フォトリソグラフィ
-- 電子線リソグラフィ (EBL)
-- ドライエッチング / ウェットエッチング
-- ワイヤーボンディング・パッケージング -->
+- [鏡面研磨のノウハウ](/exp/mechanical-polishing.md)
 
 ### 磁気計測
 - [軟磁性体の物理](/exp/softmag-phys.md)
@@ -186,31 +179,24 @@ features:
 - [信号アナライザーの測定原理](/exp/softmag-rf-measurement.md)
 - [低ノイズ・高感度な電圧測定技術](/exp/low-noise.md)
 - [プリアンプの物理と基礎](/exp/pre-amp.md)
+- [振動試料型磁力計（VSM）による磁化測定の基礎](/exp/vsm.md)
+- [磁気特性測定システム（MPMS）とSQUID磁力計の基礎](/exp/mpms.md)
+- [磁気光学カー効果顕微鏡（MOKE）による磁区構造・磁化ダイナミクス観察入門](/exp/moke.md)
 - [パワーエレクトロニクス用受動素子](/exp/power-electronics-mag.md)
 - [パワーエレクトロニクス用半導体デバイス](/exp/power-electronics-semicon.md)
-<!-- - バルクハウゼンノイズ計測装置 (MBN)
-- 振動試料型磁力計 (VSM)
-- 磁気特性測定システム (MPMS)
-- 磁気光学カー効果顕微鏡　(MOKE) -->
 
 ### 構造・化学状態解析
-<!-- - X線回折装置 (XRD)
-- X線光電子分光法 (XPS)
-- 集束イオンビーム加工観察装置 (FIB-SEM)
-- 電子後方散乱回折 (EBSD)
-- 透過電子顕微鏡 (TEM)
-- 5D-STEM -->
 - [X線回折装置 (XRD)の基礎](/exp/xrd.md)
 - [リードベルド解析](/exp/xrd-rietveld.md)
+- [X線光電子分光法 (XPS)](/exp/xps.md)
+- [電子後方散乱回折 (EBSD)](/exp/ebsd.md)
+- [透過型電子顕微鏡（TEM）](/exp/tem.md)
 - [5D-STEMの基礎](/exp/5d-stem.md)
 - [電子線ホログラフィーの基礎](/exp/electron-holography.md)
 
 ### 汎用機器・治具設計
 - [電磁界シールドの基礎](/exp/mag-shield.md)
-<!-- - 3Dプリンター
-- アルミフレーム設計
-- DAQ (Data Acquisition) ボード
-- 回路設計 -->
+- [3Dプリンターと造形技術](/exp/3d-printer.md)
 
 ### 放射光計測
 - 基礎
@@ -229,21 +215,21 @@ features:
   - [硬X線光電子分光（HAXPES）](/exp/sr-haxpes.md)
   - [共鳴軟Ｘ線非弾性散乱分光（RIXS）](/exp/sr-rixs.md)
   - [コヒーレント回折イメージング（CDI）](/exp/sr-cdi.md)
-  - [X線磁気円二色性（XMCD）の原理](/exp/sr-xmcd.md)
+  - [X線磁気円二色性（XMCD）](/exp/sr-xmcd.md)
   - [スピン・角度分解光電子分光（SARPES）](/exp/sr-sarpes.md)
   - [X線自由電子レーザー（XFEL）](/exp/sr-xfel.md)
 
 ### 中性子散乱
-- 基礎
-  - [中性子ビームの基本](/exp/neutron.md)
-  - [中性子散乱による磁気秩序解析](/exp/neutron-mag.md)
+- [中性子ビームの基本](/exp/neutron.md)
+- [中性子散乱による磁気秩序解析](/exp/neutron-mag.md)
+
 
 ## データサイエンス {#データサイエンス}
 機械学習・統計解析・深層学習、機械学習ポテンシャルなど、データ解析に必要な基本知識や手法を扱います。材料応用の実例と実装、モデル解釈の勘所をまとめます。
 
 ### 教科書
-- [Bishop2006 - パターン認識と機械学習](/data/bishop-prml.md)
-- [Bishop2024 - 深層学習](/data/bishop-deep-learning.md)
+- [Bishop - パターン認識と機械学習](/data/bishop-prml.md)
+- [Bishop - 深層学習](/data/bishop-deep-learning.md)
 
 ### 数理・統計・情報入門
 - [機械学習のための線形代数入門](/data/basis-linear-algebra.md)
@@ -292,6 +278,7 @@ features:
 - [畳み込みニューラルネットワーク（CNN）](/data/cnn.md)
 - [時間畳み込みネットワーク（TCN）](/data/tcn.md)
 - [リカレントニューラルネットワーク（RNN）](/data/rnn.md)
+- [ゲート付きRNNとしてのLSTMとGRU](/data/rnn-lstm-gru.md)
 - [グラフニューラルネットワーク（GNN）](/data/gnn.md)
 
 ### 説明可能 AI (XAI)
@@ -315,24 +302,23 @@ features:
 
 ### 機械学習ポテンシャル
 - [機械学習ポテンシャルの基礎](/data/ml-potential.md)
-- [機械学習ポテンシャルの転移学習](/data/fine-tuning.md)
+- [機械学習ポテンシャルのファインチューニング](/data/fine-tuning.md)
 - [汎用機械学習ポテンシャル](/data/ml-potential-all.md)
 
 ### その他
+- [自由エネルギー原理と情報理論](/data/free-energy-principle.md)
 - [サロゲートモデル](/data/surrogate.md)
 - [リザバーコンピューティング](/data/reservoir.md)
 - [物理リザバー](/data/reservoir-physical.md)
-- [逆設計モデル](/data/inverse.md)
+- [逆設計モデル](/data/inverse-design.md)
 
 
 ## 情報基盤
 研究室の計算・解析環境を支える情報システムでは、プログラミング環境、ワークステーション管理、スパコン利用、ライセンス管理、データバックアップなど、研究活動を円滑に進めるための基盤技術を扱います。効率的で再現性の高い研究を実現するための運用ノウハウを体系的にまとめています。
 
 ### データ解析環境
-- プログラミング (Python, Matlab)
-- GUIツール (OriginPro, Igor)
-- クラウド (Colab)
-- IDE (Visual studio Code, Cursor) 
+- [研究・開発のためのデータ解析環境設計](/sys/data-analysis.md)
+- [Web開発でMCPを活かすための基礎](/sys/mcp.md)
 - [エッジコンピューティング](/sys/edge-computing.md)
 
 ### プログラミング(Python)
@@ -342,23 +328,18 @@ features:
 - [東北大金研Masamune-II](/sys/masamune.md)
 
 ### サーバー・HPC管理
-- Linuxの基本
-- CPU / GPU / TPU
-- リモートアクセス (Anydesk)
-- データ管理 (NAS)
+- [Linux基礎体系](/sys/linux.md)
+- [数値計算のためのCPU・GPU・TPU入門](/sys/cpu-gpu-tpu.md)
+- [NASによるデータ管理設計](/sys/nas.md)
 - [所有ワクステ (SHIMA/TANI/MORI/MBN)](/sys/workstations.md)
 - [購入後の初期設定](/sys/setup.md)
 
-### ソフトウェア管理
-- 無料・有料ライセンス
-- 大学提供ライセンス
-
 ### ホームページの管理
-- 研究室のウェブサイト(Github pages, html)
-- 研究室wikiのウェブサイト(Github pages, VitePress)
-- アクセス解析 (GA4, GTM)
+- [研究室サイトをGitHub Pagesで立ち上げる](/sys/website.md)
+- [VitePressを用いた研究室Wikiの整備](/sys/website-wiki.md)
+- [GA4とGTMによるアクセス解析の基礎](/sys/access-analysis.md)
 
-## ラボ運営 {#ラボ運営}
+<!-- ## ラボ運営 {#ラボ運営} -->
 <!-- 研究室運営に必要な体制づくり、安全管理、研究活動の進め方、設備立ち上げの要点をまとめています。日常運用から学生支援、装置管理まで、研究が円滑に進むための基本を整理しています。
 
 ### 研究室運営

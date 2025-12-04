@@ -7,10 +7,6 @@
   https://www.di.ens.fr/~fbach/courses/fall2005/Bishop_Tipping_1999_Probabilistic_PCA.pdf
 - Bishop, C. M., Bayesian PCA (NeurIPS, 1999)
   https://papers.neurips.cc/paper/1549-bayesian-pca.pdf
-- Lawrence, N. D., Probabilistic Non-linear Principal Component Analysis with Gaussian Process Latent Variable Models (JMLR, 2005)
-  https://www.jmlr.org/papers/volume6/lawrence05a/lawrence05a.pdf
-- MATLAB: ppca（確率的主成分分析の解説, 日本語）
-  https://jp.mathworks.com/help/stats/ppca.html
 - JASRI講演資料：ベイズ計測（日本語, PDF）
   https://www.jasri.jp/main/content/files/pdf/2023/okada_88thWS230307.pdf
 
@@ -51,7 +47,7 @@ $$
 - 小標本・高次元（高分解能スペクトルだが試料数が少ない）で過学習しやすい
 - 有効因子数（相数、局所環境数、独立な変動要因数）が未知である
 
-## 3. 代表的モデル群（線形・非線形・多変量拡張）
+## 3. 代表的モデル群
 確率モデル系の次元削減は、線形（解釈性）から非線形（表現力）へ体系化できる。
 
 | 系統 | 代表モデル | 低次元表現 | 何が得られるか | 材料科学での用途例 |
@@ -63,7 +59,7 @@ $$
 | 非負・混合 | Bayesian NMF / 混合モデル | 寄与率、成分スペクトル | 混相・混合の分解 | 混相XRD、重ね合わさるスペクトルの分離 |
 | マルチモーダル | Probabilistic CCA / 共有潜在変数モデル | 共有$z$ | 複数観測の共変動抽出 | XAFS↔XRD↔物性の統合、実験↔計算の整合 |
 
-## 4. 推論（Inference）：EM、変分推論、MCMC
+## 4. 推論（Inference）
 確率モデルは「推定手続き」込みで理解すると実装・運用が安定する。
 
 ### 4.1 EM（Expectation-Maximization）
@@ -90,7 +86,7 @@ $$
 ### 4.3 マルコフ連鎖モンテカルロ法（MCMC）
 MCMCは汎用であるが計算コストが重い。材料のハイスループットでは、変分推論または低次元近似と組み合わせる設計が現実的である。
 
-## 5. 材料科学で効く設計：事前分布に「物理」を入れる
+## 5. 事前分布に「物理」を入れる
 同じベイズでも、事前分布の設計で現実データに強くなる。
 
 ### 5.1 非負性と混合の事前
