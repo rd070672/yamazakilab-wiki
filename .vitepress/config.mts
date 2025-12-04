@@ -215,7 +215,7 @@ export default defineConfig({
         { text: '熱処理・試料加工', collapsed: true, items: [
           { text: 'フォトリソグラフィの化学', link: '/exp/photo-lithography' },
           { text: 'マスクレス露光装置の物理', link: '/exp/maskless-lithography' },
-          { text: '鏡面研磨のノウハウ', link: '/exp/mechanical-polishing' },
+          { text: '鏡面研磨のノウハウ', link: '/exp/millor-polishing' },
         ]},
 
         { text: '磁気計測', collapsed: true, items: [
