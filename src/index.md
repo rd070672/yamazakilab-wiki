@@ -363,10 +363,10 @@ features:
 - [物理学の未解決問題-2025](/other/problems-physics-2025.md)
 - [化学の未解決問題-2025](/other/problems-chemistry-2025.md)
 - [材料科学の未解決問題-2025](/other/problems-materials-2025.md)
-- Nobel Prize 2025
+- ノーベル賞2025
   - [物理学賞ー巨視的量子トンネル](/other/nobel2025-phys.md)
   - [化学賞ー金属有機構造体（MOF）](/other/nobel2025-chem.md)
-- Nobel Prize 2024
+- ノーベル賞2024
   - [物理学賞ー人工ニューラルネットワーク](/other/nobel2024-phys.md)
   - [化学賞ータンパク質設計と構造予測](/other/nobel2024-chem.md)
 
