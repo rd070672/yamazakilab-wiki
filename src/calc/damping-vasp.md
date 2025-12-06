@@ -226,7 +226,7 @@ VASPが直接与えるのは、SOC込みのKohn–Sham固有値・固有状態�
 表4：計算構成の整理
 | 区分 | 入力 | 出力 | 目的 |
 |---|---|---|---|
-| VASP（SOC計算） | 結晶構造、SOC設定、磁化方向、$\mathbf{k}$点 | $\varepsilon_{n\mathbf{k}}$、$|n\mathbf{k}\rangle$、$E_F$、$\mu_\mathrm{cell}$ | 電子状態の生成 |
+| VASP（SOC計算） | 結晶構造、SOC設定、磁化方向、$\mathbf{k}$点 | $\varepsilon_{n\mathbf{k}}$、$｜n\mathbf{k}\rangle$、$E_F$、$\mu_\mathrm{cell}$ | 電子状態の生成 |
 | Wannier90（内挿） | VASP→Wannier入出力 | $H_{ij}(\mathbf{R})$ | 密な$\mathbf{k}$点内挿 |
 | 後処理（線形応答） | $H$、（可能なら）$T_\mu$、$\eta$、$M_s$ | $\alpha$（または $\boldsymbol{\alpha}$） | トルク相関式の評価 |
 

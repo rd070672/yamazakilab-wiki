@@ -32,7 +32,7 @@ features:
 第一原理計算・数値シミュレーションを軸に、理論背景から環境構築、数値解法、解析例までを紹介します。材料物性の理解とデータ駆動解析につながる計算科学の基礎をまとめます。
 
 ### 第一原理計算
-- 基礎
+#### 基礎
   - [物理定数と単位系](/calc/physical-constants.md)
   - [量子力学とシュレディンガー方程式](/calc/dft-basis.md)
   - [ブラケット記法の体系](/calc/bra-ket.md)
@@ -68,7 +68,7 @@ features:
   - [量子コンピュータの物理](/calc/quantum-computer.md)
   - [量子コンピュータ開発動向と展望](/calc/quantum-computer-trend.md)
 
-- 磁性
+#### 磁性
   - [局在電子系の磁性](/calc/localized-electron-magnetism.md)
   - [遍歴電子系の磁性](/calc/itinerant-electron-magnetism.md)
   - [遍歴電子系のストーナー条件](/calc/stoner.md)
@@ -80,7 +80,7 @@ features:
   - [磁気ダンピングの内因的性質](/calc/damping-intrinsic.md)
   - [磁気ダンピング・磁歪・鉄損の関係性](/calc/damping-maelas-loss.md)
 
-- 第一原理計算
+第一原理計算
   - [第一原理計算の基本原理](/calc/dft.md)
   - [第一原理計算を支える数値解法](/calc/dft-calc.md)
   - [第一原理計算ソフトウェアと特徴](/calc/dft-software.md)
@@ -215,7 +215,7 @@ features:
 - [3Dプリンターと造形技術](/exp/3d-printer.md)
 
 ### 放射光計測
-- 基礎
+#### 基礎
   - [放射光（シンクロトロン放射）の基礎](/exp/sr.md)
   - [ビームラインの光学設計](/exp/sr-optics.md)
   - [放射光による構造解析](/exp/sr-structure.md)
@@ -223,7 +223,7 @@ features:
   - [アモルファスの構造・物性解析](/exp/sr-amorphous.md)
   - [フェルミの黄金律](/exp/fermi-golden-rule.md)
   - [選択則とクレプシュ・ゴルダン係数](/exp/clebsch-gordan.md)
-- 各手法の原理
+#### 各手法の原理
   - [X線吸収微細構造（XAFS）](/exp/sr-xafs.md)
   - [X線発光分光（XES）](/exp/sr-xes.md)
   - [X線異常散乱（AXS）](/exp/sr-axs.md)
@@ -359,18 +359,17 @@ features:
 - [GA4とGTMによるアクセス解析の基礎](/sys/access-analysis.md)
 
 ## その他
+#### 未解決問題
 - [ミレニアム懸賞問題](/other/problems-math.md)
-- [物理学の未解決問題-2025](/other/problems-physics-2025.md)
-- [化学の未解決問題-2025](/other/problems-chemistry-2025.md)
-- [材料科学の未解決問題-2025](/other/problems-materials-2025.md)
-- ノーベル賞2025
-  - [物理学賞ー巨視的量子トンネル](/other/nobel2025-phys.md)
-  - [化学賞ー金属有機構造体（MOF）](/other/nobel2025-chem.md)
-- ノーベル賞2024
-  - [物理学賞ー人工ニューラルネットワーク](/other/nobel2024-phys.md)
-  - [化学賞ータンパク質設計と構造予測](/other/nobel2024-chem.md)
-
-
+- [数学-2025](/other/problems-math-2025.md)
+- [物理学-2025](/other/problems-physics-2025.md)
+- [化学-2025](/other/problems-chemistry-2025.md)
+- [材料科学-2025](/other/problems-materials-2025.md)
+#### ノーベル賞
+  - [物理学賞2025-巨視的量子トンネル](/other/nobel2025-phys.md)
+  - [化学賞2025-金属有機構造体（MOF）](/other/nobel2025-chem.md)
+  - [物理学賞2024-人工ニューラルネットワーク](/other/nobel2024-phys.md)
+  - [化学賞2024-タンパク質設計と構造予測](/other/nobel2024-chem.md)
 
 <!-- ## ラボ運営 {#ラボ運営} -->
 <!-- 研究室運営に必要な体制づくり、安全管理、研究活動の進め方、設備立ち上げの要点をまとめています。日常運用から学生支援、装置管理まで、研究が円滑に進むための基本を整理しています。

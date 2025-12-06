@@ -425,21 +425,20 @@ export default defineConfig({
       { text: 'その他', collapsed: true, items: [
         { text: '未解決問題', collapsed: true, items: [
           { text: 'ミレニアム懸賞問題', link: '/other/problems-math' },
-          { text: '物理学の未解決問題-2025', link: '/other/problems-physics' },
-          { text: '化学の未解決問題-2025', link: '/other/problems-chemistry' },
-          { text: '材料科学の未解決問題-2025', link: '/other/problems-materials' },
+          { text: '数学-2025', link: '/other/problems-math-2025' },
+          { text: '物理学-2025', link: '/other/problems-physics-2025' },
+          { text: '化学-2025', link: '/other/problems-chemistry-2025' },
+          { text: '材料科学-2025', link: '/other/problems-materials-2025' },
         ]},
-        { text: 'ノーベル賞2025', collapsed: true, items: [
-          { text: '物理学賞ー巨視的量子トンネル', link: '/other/nobel2025-phys' },
-          { text: '化学賞ー金属有機構造体（MOF）', link: '/other/nobel2025-chem' },
-        ]},
-        { text: 'ノーベル賞2025', collapsed: true, items: [
-          { text: '物理学賞ー人工ニューラルネットワーク', link: '/other/nobel2024-phys' },
-          { text: '化学賞ータンパク質設計と構造予測', link: '/other/nobel2024-chem' },
+        { text: 'ノーベル賞', collapsed: true, items: [
+          { text: '物理学賞2025-巨視的量子トンネル', link: '/other/nobel2025-phys' },
+          { text: '化学賞2025-金属有機構造体（MOF）', link: '/other/nobel2025-chem' },
+          { text: '物理学賞2024-人工ニューラルネットワーク', link: '/other/nobel2024-phys' },
+          { text: '化学賞2024-タンパク質設計と構造予測', link: '/other/nobel2024-chem' },
         ]},
       ]},
 
-      // { text: 'Home', link: '/' },
+      { text: 'Home', link: '/' },
       { text: 'About', link: '/about' },
       { text: 'Changelog', link: '/changelog' },
       // { text: 'Website', link: 'https://tyamazaki.com' },

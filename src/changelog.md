@@ -1,13 +1,7 @@
 # Changelog
 
-<!-- ## 2025-11-23
-- [計算]に関する以下のwikiを追加しました。
-
-### 2025-11-20
-- [計算] VASPのインストールメモ を追加 -->
-
 ### 2025-11-24
-- Wiki文書を随時公開中
+- Wiki文書を随時追加・公開中
 
 ### 2025-11-19
-- Yamazaki Lab Wiki を作成・公開（VitePress.devのサイトを参考に）
+- tyamazaki Wiki を作成・公開（VitePress.devのサイトを参考に）
