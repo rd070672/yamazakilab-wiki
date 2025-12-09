@@ -219,25 +219,29 @@ features:
 
 ### 放射光計測
 #### 基礎
-  - [放射光（シンクロトロン放射）の基礎](/exp/sr.md)
-  - [ビームラインの光学設計](/exp/sr-optics.md)
-  - [放射光による構造解析](/exp/sr-structure.md)
-  - [放射光によるダイナミクス解析](/exp/sr-dynamics.md)
-  - [アモルファスの構造・物性解析](/exp/sr-amorphous.md)
-  - [フェルミの黄金律](/exp/fermi-golden-rule.md)
-  - [選択則とクレプシュ・ゴルダン係数](/exp/clebsch-gordan.md)
+- [放射光（シンクロトロン放射）の基礎](/exp/sr.md)
+- [ビームラインの光学設計](/exp/sr-optics.md)
+- [放射光による構造解析](/exp/sr-structure.md)
+- [放射光によるダイナミクス解析](/exp/sr-dynamics.md)
+- [アモルファスの構造・物性解析](/exp/sr-amorphous.md)
+- [フェルミの黄金律](/exp/fermi-golden-rule.md)
+- [選択則とクレプシュ・ゴルダン係数](/exp/clebsch-gordan.md)
+
 #### 各手法の原理
-  - [X線吸収微細構造（XAFS）](/exp/sr-xafs.md)
-  - [X線発光分光（XES）](/exp/sr-xes.md)
-  - [X線異常散乱（AXS）](/exp/sr-axs.md)
-  - [光電子ホログラフィー（PEH）](/exp/sr-peh.md)
-  - [小角X線散乱（SAXS）](/exp/sr-saxs.md)
-  - [硬X線光電子分光（HAXPES）](/exp/sr-haxpes.md)
-  - [共鳴軟Ｘ線非弾性散乱分光（RIXS）](/exp/sr-rixs.md)
-  - [コヒーレント回折イメージング（CDI）](/exp/sr-cdi.md)
-  - [X線磁気円二色性（XMCD）](/exp/sr-xmcd.md)
-  - [スピン・角度分解光電子分光（SARPES）](/exp/sr-sarpes.md)
-  - [X線自由電子レーザー（XFEL）](/exp/sr-xfel.md)
+- [X線吸収微細構造（XAFS）](/exp/sr-xafs.md)
+- [X線発光分光（XES）](/exp/sr-xes.md)
+- [X線異常散乱（AXS）](/exp/sr-axs.md)
+- [光電子ホログラフィー（PEH）](/exp/sr-peh.md)
+- [小角X線散乱（SAXS）](/exp/sr-saxs.md)
+- [硬X線光電子分光（HAXPES）](/exp/sr-haxpes.md)
+- [共鳴軟Ｘ線非弾性散乱分光（RIXS）](/exp/sr-rixs.md)
+- [コヒーレント回折イメージング（CDI）](/exp/sr-cdi.md)
+- [X線磁気円二色性（XMCD）](/exp/sr-xmcd.md)
+- [スピン・角度分解光電子分光（SARPES）](/exp/sr-sarpes.md)
+- [X線自由電子レーザー（XFEL）](/exp/sr-xfel.md)
+
+#### 試料準備
+- [表面洗浄のためのイオンミリング](/exp/ion-milling-bl25su.md)
 
 ### 中性子散乱
 - [中性子ビームの基本](/exp/neutron.md)
@@ -375,9 +379,13 @@ features:
 - [物理学賞2024-人工ニューラルネットワーク](/other/nobel2024-phys.md)
 - [化学賞2024-タンパク質設計と構造予測](/other/nobel2024-chem.md)
 
-<!-- ## ラボ運営 {#ラボ運営} -->
-<!-- 研究室運営に必要な体制づくり、安全管理、研究活動の進め方、設備立ち上げの要点をまとめています。日常運用から学生支援、装置管理まで、研究が円滑に進むための基本を整理しています。
+## ラボ運営 {#ラボ運営}
+研究室運営に必要な体制づくり、安全管理、研究活動の進め方、設備立ち上げの要点をまとめています。日常運用から学生支援、装置管理まで、研究が円滑に進むための基本を整理しています。
 
+#### 研究設備
+- [ポスター用プリンター](/other/poster-printer.md)
+- [ルーター](/other/rooter.md)
+<!-- 
 ### 研究室運営
 - 研究室の運営方針・指針
 - 年間スケジュール

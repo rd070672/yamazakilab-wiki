@@ -283,6 +283,7 @@ export default defineConfig({
             { text: 'X線磁気円二色性（XMCD）', link: '/exp/sr-xmcd' },
             { text: 'スピン・角度分解光電子分光（SARPES）', link: '/exp/sr-sarpes' },
             { text: 'X線自由電子レーザー（XFEL）', link: '/exp/sr-xfel' },
+            { text: '表面洗浄のためのイオンミリング', link: '/exp/ion-milling-bl25su' },
           ]},
         ]},
 
@@ -424,6 +425,12 @@ export default defineConfig({
           { text: 'GA4とGTMによるアクセス解析の基礎', link: '/sys/access-analysis' },
         ]},
 
+      ]},
+      { text: 'ラボ運営', collapsed: true, items: [
+        { text: '研究備品', collapsed: true, items: [
+          { text: 'ポスター用プリンター', link: '/lab/poster-printer' },
+          { text: 'ルーター', link: '/lab/rooter' },
+        ]},
       ]},
 
       { text: 'その他', collapsed: true, items: [
