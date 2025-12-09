@@ -46,10 +46,10 @@ export default defineConfig({
 
     returnToTopLabel: 'Return to top',
 
-    editLink: {
-      pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
-      text: 'Edit this page on GitHub'
-    },
+    // editLink: {
+    //   pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
+    //   text: 'Edit this page on GitHub'
+    // },
 
     nav: [
       { text: 'ホーム', link: '/' },
@@ -57,7 +57,7 @@ export default defineConfig({
       { text: '実験', link: '/#実験' },
       { text: 'データサイエンス', link: '/#データサイエンス'},
       { text: '情報基盤', link: '/#情報基盤'},
-      // { text: 'ラボ運営', link: '/#ラボ運営'},
+      { text: 'ラボ運営', link: '/#ラボ運営'},
       { text: 'その他', items: [
         { text: 'About', link: '/about' },
         { text: 'Changelog', link: '/changelog' },
