@@ -78,6 +78,7 @@ export default defineConfig({
           { text: 'ワニエ関数と局在軌道', link: '/calc/wannier' },
           { text: '最局在ワニエ関数（MLWF）の基礎と発展', link: '/calc/wannier-2' },
           { text: '低次元物質の電子状態', link: '/calc/low-dimentional' },
+          { text: 'キタエフ模型', link: '/calc/kitaev-honeycomb-model' },
           { text: 'ベリー位相とトポロジカル応答', link: '/calc/berry' },
           { text: 'ベリー曲率に基づく異常ホール効果・異常ネルンスト効果', link: '/calc/ahe-ane-calc' },
           { text: '応答理論入門', link: '/calc/response-theory' },

@@ -42,6 +42,7 @@ features:
   - [ワニエ関数と局在軌道](/calc/wannier.md)
   - [最局在ワニエ関数（MLWF）の基礎と発展](/calc/wannier-2.md)
   - [低次元物質の電子状態](/calc/low-dimentional.md)
+  - [キタエフ模型](/calc/kitaev-honeycomb-model.md)
   - [ベリー位相とトポロジカル応答](/calc/berry.md)
   - [ベリー曲率に基づく異常ホール効果・異常ネルンスト効果](/calc/ahe-ane-calc.md)
   - [応答理論入門](/calc/response-theory.md)
