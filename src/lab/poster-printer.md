@@ -1,4 +1,4 @@
-# 大型プリンター（ポスター用）使用法
+# ポスター用大型プリンターの使用法
 
 - 説明書  
 https://www2.epson.jp/support/manual/data/maxart/pxh7000_h9000/4123020_00.PDF

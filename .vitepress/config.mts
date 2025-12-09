@@ -424,8 +424,8 @@ export default defineConfig({
       ]},
       { text: 'ラボ運営', collapsed: true, items: [
         { text: '研究備品', collapsed: true, items: [
-          { text: 'ポスター用プリンター', link: '/lab/poster-printer' },
-          { text: 'ルーター', link: '/lab/rooter' },
+          { text: 'ポスター用大型プリンターの使用法', link: '/lab/poster-printer' },
+          { text: 'Wi-fiルーターの設置・設定', link: '/lab/rooter' },
         ]},
       ]},
 
