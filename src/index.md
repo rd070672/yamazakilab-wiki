@@ -62,7 +62,7 @@ features:
   - [格子ボルツマン法（LBM）入門](/calc/lattice-boltzmann-method.md)
   - [カオス理論と非線形ダイナミクス](/calc/chaos.md)
   - [量子カオス理論](/calc/chaos-quantum.md)
-  - [格子QCDシミュレーション入門](/calc/lattice-qcd.md)
+  <!-- - [格子QCDシミュレーション入門](/calc/quantum-dichroism.md) -->
   - [テンソルネットワーク入門](/calc/tensor-network.md)
   - [量子アニーリング](/calc/quantum-annealing.md)
   - [量子コンピュータの物理](/calc/quantum-computer.md)
@@ -94,6 +94,7 @@ features:
   - [AkaiKKRによる不規則系電子状態計算](/calc/akaikkr.md)
   - [SPR-KKRによる磁性計算](/calc/sprkkr.md)
   - [Ju-KKRによる局所電子状態計算](/calc/jukkr.md)
+  - [AiiDA-KKRを活用したハイスループット計算](/calc/aiida-kkr.md)
   - [TOMBOによる全電子混合基底法](/calc/tombo.md)
   - [第一原理計算に基づくフェーズフィールド計算](/calc/dft-pf.md)
   - [VASP計算による磁気ダンピング定数](/calc/damping-vasp.md)
@@ -122,6 +123,7 @@ features:
 - [MD 計算と機械学習](/calc/md-machine-learning.md)
 - [LAMMPS による MD 計算](/calc/md-lammps.md)
 - [ASE・JAX による MD 計算](/calc/md-ase-jax.md)
+- [HOOMD-blue入門](/calc/hoomd-blue.md)
 
 ### モンテカルロ計算
 - [モンテカルロ法の基礎](/calc/mc.md)
@@ -184,6 +186,7 @@ features:
 - [化学気相成長法（CVD）による薄膜形成の基礎](/exp/cvd.md)
 
 ### 熱処理・試料加工
+- [急速熱処理装置ミラー5050](/exp/rapid-annealing.md)
 - [フォトリソグラフィの化学](/exp/photo-lithography.md)
 - [マスクレス露光装置の物理](/exp/maskless-lithography.md)
 - [鏡面研磨のノウハウ](/exp/millor-polishing.md)
@@ -330,6 +333,7 @@ features:
 - [リザバーコンピューティング](/data/reservoir.md)
 - [物理リザバー](/data/reservoir-physical.md)
 - [逆設計モデル](/data/inverse-design.md)
+- [入れ子学習](/data/nested-learning.md)
 
 
 ## 情報基盤
@@ -366,10 +370,10 @@ features:
 - [化学-2025](/other/problems-chemistry-2025.md)
 - [材料科学-2025](/other/problems-materials-2025.md)
 #### ノーベル賞
-  - [物理学賞2025-巨視的量子トンネル](/other/nobel2025-phys.md)
-  - [化学賞2025-金属有機構造体（MOF）](/other/nobel2025-chem.md)
-  - [物理学賞2024-人工ニューラルネットワーク](/other/nobel2024-phys.md)
-  - [化学賞2024-タンパク質設計と構造予測](/other/nobel2024-chem.md)
+- [物理学賞2025-巨視的量子トンネル](/other/nobel2025-phys.md)
+- [化学賞2025-金属有機構造体（MOF）](/other/nobel2025-chem.md)
+- [物理学賞2024-人工ニューラルネットワーク](/other/nobel2024-phys.md)
+- [化学賞2024-タンパク質設計と構造予測](/other/nobel2024-chem.md)
 
 <!-- ## ラボ運営 {#ラボ運営} -->
 <!-- 研究室運営に必要な体制づくり、安全管理、研究活動の進め方、設備立ち上げの要点をまとめています。日常運用から学生支援、装置管理まで、研究が円滑に進むための基本を整理しています。

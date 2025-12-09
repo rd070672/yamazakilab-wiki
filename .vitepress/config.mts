@@ -98,7 +98,7 @@ export default defineConfig({
           { text: '格子ボルツマン法（LBM）入門', link: '/calc/lattice-boltzmann-method' },
           { text: 'カオス理論と非線形ダイナミクス', link: '/calc/chaos' },
           { text: '量子カオス理論', link: '/calc/chaos-quantum' },
-          { text: '格子QCDシミュレーション入門', link: '/calc/lattice-qcd' },
+          // { text: '格子QCDシミュレーション入門', link: '/calc/quantum-dichroism' },
           { text: 'テンソルネットワーク入門', link: '/calc/tensor-network' },
           { text: '量子アニーリング', link: '/calc/quantum-annealing' },
           { text: '量子コンピュータの物理', link: '/calc/quantum-computer' },
@@ -126,6 +126,7 @@ export default defineConfig({
           { text: 'AkaiKKRによる不規則系電子状態計算', link: '/calc/akaikkr' },
           { text: 'SPR-KKRによる磁性計算', link: '/calc/sprkkr' },
           { text: 'Ju-KKRによる局所電子状態計算', link: '/calc/jukkr' },
+          { text: 'AiiDA-KKRを活用したハイスループット計算', link: '/calc/aiida-kkr' },
           { text: 'TOMBOによる全電子混合基底法', link: '/calc/tombo' },
           { text: '第一原理計算に基づくフェーズフィールド計算', link: '/calc/dft-pf' },
           { text: 'VASP計算による磁気ダンピング定数', link: '/calc/damping-vasp' },
@@ -158,6 +159,7 @@ export default defineConfig({
           { text: 'MD 計算と機械学習', link: '/calc/md-machine-learning' },
           { text: 'LAMMPS による MD 計算', link: '/calc/md-lammps' },
           { text: 'ASE・JAX による MD 計算', link: '/calc/md-ase-jax' },
+          { text: 'AHOOMD-blue入門', link: '/calc/homjax' },
         ]},
 
         { text: 'モンテカルロ計算', collapsed: true, items: [
@@ -184,7 +186,7 @@ export default defineConfig({
           { text: 'フェーズフィールド法の数値解法', link: '/calc/pf-calc' },
           { text: 'Allen–Cahn 法で記述する金属組織シミュレーション', link: '/calc/pf-allen-cahn' },
           { text: 'デンドライト成長のPFシミュレーション', link: '/calc/dendrite' },
-          { text: 'Cahn–Hilliard 方程式で記述する金属組織シミュレーション', link: '/calc/pf-cahn-hilliard' },
+          { text: 'Cahn–\0Hilliard 方程式で記述する金属組織シミュレーション', link: '/calc/pf-cahn-hilliard' },
           { text: 'フェーズフィールドクリスタル（PFC）法の基礎と応用', link: '/calc/phase-field-crystal' },
         ]},
 
@@ -224,6 +226,7 @@ export default defineConfig({
         ]},
 
         { text: '熱処理・試料加工', collapsed: true, items: [
+          { text: '急速熱処理装置ミラー5050', link: '/exp/rapid-annealing' },
           { text: 'フォトリソグラフィの化学', link: '/exp/photo-lithography' },
           { text: 'マスクレス露光装置の物理', link: '/exp/maskless-lithography' },
           { text: '鏡面研磨のノウハウ', link: '/exp/millor-polishing' },
@@ -387,6 +390,7 @@ export default defineConfig({
           { text: 'リザバーコンピューティング', link: '/data/reservoir' },
           { text: '物理リザバー', link: '/data/reservoir-physical' },
           { text: '逆設計モデル', link: '/data/inverse-design' },
+          { text: '入れ子学習', link: '/data/nested-learning' },
         ]},
 
       ]},
