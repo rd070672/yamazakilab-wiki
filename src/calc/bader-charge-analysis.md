@@ -3,15 +3,15 @@
 Bader電荷解析は、第一原理計算で得られる電子密度を「原子ごとの領域（Bader basin）」に分割し、各原子に帰属する電子数や体積を定量化する手法である。結合性・電荷移動・欠陥や界面の局所状態を、空間分解した量として整理できる点が利点である。
 
 ## 参考ドキュメント
-- Henkelman group: Bader charge analysis code
+- Henkelman group: Bader charge analysis code  
   https://theory.cm.utexas.edu/henkelman/code/bader/
 - VASP Wiki: CHGCAR
-  https://www.vasp.at/wiki/CHGCAR
-- MateriApps Live!（日本語）：Bader Charge Analysis
+  https://www.vasp.at/wiki/CHGCAR  
+- MateriApps Live!（日本語）：Bader Charge Analysis  
   https://ma.issp.u-tokyo.ac.jp/app/bader/
 
 ## 1. Bader電荷とは何か
-電子密度を $ρ(r)$ とする。Bader（QTAIM: Quantum Theory of Atoms in Molecules）では、各原子Aの領域 $Ω_A$ を「電子密度勾配の流れ（gradient flow）」で定義し、領域境界 S_A はゼロフラックス条件を満たすものとする。
+電子密度を $ρ(r)$ とする。Bader（QTAIM: Quantum Theory of Atoms in Molecules）では、各原子Aの領域 $Ω_A$ を「電子密度勾配の流れ（gradient flow）」で定義し、領域境界 $S_A$ はゼロフラックス条件を満たすものとする。
 
 ゼロフラックス条件：
 $$
@@ -70,14 +70,14 @@ bader CHGCAR -ref CHGCAR_sum # CHGCARをBader領域で積分
 
 この「参照密度で領域（basin）を決め、擬（CHGCAR）密度を積分する」流儀は、PAWにおける実用上の折衷として広く用いられる。
 
-## 6. 磁性体での取り扱い（スピン密度）
+## 6. 磁性体での取り扱い
 スピン分極計算では、電荷密度 $ρ(r)$ に加えて磁化密度 $m(r)=ρ↑(r)−ρ↓(r)$ を解析したい場面がある。
 - CHGCARに電荷密度とスピン密度が併記される場合がある
 - その場合、電荷とスピンを別ファイルに分離して可視化・解析する補助ツールが実務上有用である
 
 Bader領域を用いて $m(r)$ を積分すれば、原子ごとの“領域積分された磁化”が得られる（局在の強い系では直感と対応しやすいが、金属では解釈に注意が必要である）。
 
-## 7. 精度・再現性のチェックリスト
+## 7. チェックリスト
 - グリッド収束：FFTグリッドやENCUT（または等価な設定）を上げて $N_A$ が十分収束するか確認する
 - 近接原子・短結合：密度の急峻さが増すため、粗いグリッドで誤差が増えやすい
 - 真空を含む系（表面・2D）：真空側に“未割当領域”が出ることがあるため、合計電荷（全領域和）と残差の確認を行う
@@ -85,7 +85,7 @@ Bader領域を用いて $m(r)$ を積分すれば、原子ごとの“領域積�
 
 収束の目安は系に依るが、系列比較では「差分がグリッド変更で符号反転しない」「変化が 0.01 e 程度以下で安定」などを最低条件にする運用が多い。
 
-## 8. 他の電荷分割法との位置づけ
+## 8. 他の電荷分割法との比較
 | 手法 | 入力 | 特徴 | 注意点 |
 |---|---|---|---|
 | Bader（QTAIM） | 実空間の$ρ(r)$ | “ゼロフラックス面”で原子領域を定義 | グリッド依存、密度の選び方で解釈が変わる |
