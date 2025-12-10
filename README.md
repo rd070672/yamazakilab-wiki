@@ -1,1 +1,1 @@
-### Welcome to tyamazaki wiki
+Welcome to tyamazaki wiki
