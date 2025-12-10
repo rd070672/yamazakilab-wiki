@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 
-  base: '/yamazakilab-wiki/',
+  base: '/tyamazaki-wiki/',
   srcDir: 'src',
   title: "tyamazaki | Wiki",
   description: "山崎研究室における知見や経験をwikiとして共有します",
