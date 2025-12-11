@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/tyamazaki-wiki/',
   srcDir: 'src',
   title: "tyamazaki | Wiki",
-  description: "山崎研究室における知見や経験をwikiとして共有します",
+  description: "tyamazakiの知見や経験をwikiとして共有します",
   lastUpdated: {text: 'Last updated', formatOptions: {dateStyle: 'short', timeStyle: 'medium'}},
   cleanUrls: true,
   markdown: {
@@ -23,19 +23,19 @@ export default defineConfig({
       })(window,document,'script','dataLayer','GTM-M4Z2H3LQ');`
     ],
 
-    ["link", { rel: "icon", href: "https://rd070672.github.io/yamazakilab-wiki/images/favicon.png" }],
+    ["link", { rel: "icon", href: "https://rd070672.github.io/tyamazaki-wiki/images/favicon.png" }],
     ['link', { 
       rel: 'stylesheet', 
       href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css'
     }],
 
-    ["meta", { property: "og:image", content: "https://rd070672.github.io/yamazakilab-wiki/images/top.jpg" }],
+    ["meta", { property: "og:image", content: "https://rd070672.github.io/tyamazaki-wiki/images/top.jpg" }],
     ["meta", { property: "og:site_name", content: "山崎研究室" }],
     ["meta", { property: "twitter:card", content: "summary" }],
-    ["meta", { property: "twitter:site", content: "@yamazakilab"}],
+    ["meta", { property: "twitter:site", content: "@tyamazaki"}],
     ["meta", { property: "twitter:title", content: "山崎研究室"}],
     ["meta", { property: "twitter:description", content: "山崎研究室における知見や経験をwikiとして共有します"}],
-    ["meta", { property: "twitter:image", content: "https://rd070672.github.io/yamazakilab-wiki/images/top.jpg" }]
+    ["meta", { property: "twitter:image", content: "https://rd070672.github.io/tyamazaki-wiki/images/top.jpg" }]
   ],
 
   // https://vitepress.dev/reference/default-theme-config
@@ -47,7 +47,7 @@ export default defineConfig({
     returnToTopLabel: 'Return to top',
 
     // editLink: {
-    //   pattern: 'https://github.com/rd070672/yamazakilab-wiki/edit/main/src/:path',
+    //   pattern: 'https://github.com/rd070672/tyamazaki-wiki/edit/main/src/:path',
     //   text: 'Edit this page on GitHub'
     // },
 
@@ -62,7 +62,7 @@ export default defineConfig({
         { text: 'About', link: '/about' },
         { text: 'Changelog', link: '/changelog' },
         { text: 'Website', link: '/#' },
-        { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
+        { text: 'Github', link: 'https://github.com/rd070672/tyamazaki-wiki' },
       ]},
     ],
 
@@ -455,7 +455,7 @@ export default defineConfig({
       { text: 'About', link: '/about' },
       { text: 'Changelog', link: '/changelog' },
       // { text: 'Website', link: 'https://tyamazaki.com' },
-      // { text: 'Github', link: 'https://github.com/rd070672/yamazakilab-wiki' },
+      // { text: 'Github', link: 'https://github.com/rd070672/tyamazaki-wiki' },
     ],
 
     socialLinks: [
