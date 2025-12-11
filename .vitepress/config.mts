@@ -6,8 +6,8 @@ export default defineConfig({
 
   base: '/tyamazaki-wiki/',
   srcDir: 'src',
-  title: "tyamazaki | Wiki",
-  description: "tyamazakiの知見や経験をwikiとして共有します",
+  title: "tyamazaki | wiki",
+  description: "tyamazakiの研究取り組みからの知見や経験をwikiとして共有します",
   lastUpdated: {text: 'Last updated', formatOptions: {dateStyle: 'short', timeStyle: 'medium'}},
   cleanUrls: true,
   markdown: {
@@ -464,7 +464,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: '© 2025- tyamazaki.com',
+      copyright: '© 2025- tyamazaki',
     },
   },
 

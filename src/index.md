@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Wiki"
-  text: "tyamazaki" #"Yamazaki Lab"
+  name: "wiki"
+  text: "tyamazaki"
   tagline: # 国立大学<br>材料工学
   actions:
     - theme: brand
@@ -13,7 +13,7 @@ hero:
 
     - theme: alt
       text: Github
-      link: / # https://github.com/rd070672/yamazakilab-wiki
+      link: / # https://github.com/rd070672/tyamazaki-wiki
 
 features:
   - title: 計算
