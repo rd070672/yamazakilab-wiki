@@ -94,6 +94,7 @@ export default defineConfig({
           { text: '時間依存密度汎関数理論（TDDFT）', link: '/calc/dft-td' },
           { text: '量子電子動力学（QED）法の原理と活用', link: '/calc/qed' },
           { text: '虚数時間発展法（ITE）の基礎', link: '/calc/dft-imarginary' },
+          { text: 'フォノン物性の基礎', link: '/calc/phonon' },
           { text: '非調和フォノン理論と有限温度物性', link: '/calc/self-consistent-phonon' },
           { text: '核量子効果（NQE）と量子統計', link: '/calc/nuclear-quantum-effects' },
           { text: '格子ボルツマン法（LBM）入門', link: '/calc/lattice-boltzmann-method' },
@@ -108,6 +109,7 @@ export default defineConfig({
           { text: '遍歴電子系の磁性', link: '/calc/itinerant-electron-magnetism' },
           { text: '遍歴電子系のストーナー条件', link: '/calc/stoner' },
           { text: 'RKKY相互作用と磁気秩序', link: '/calc/rkky' },
+          { text: 'キュリー・ワイス則と平均場理論', link: '/calc/curie-weiss-law' },
           { text: 'RKKY起源スピングラスの数値モデル', link: '/calc/rkky-calc' },
           { text: 'スピン軌道相互作用と行列要素', link: '/calc/spin-orbit-coupling' },
           { text: 'マグノン-フォノン相互作用の計算', link: '/calc/magnon-phonon' },
@@ -431,6 +433,23 @@ export default defineConfig({
       // ]},
 
       { text: 'その他', collapsed: true, items: [
+        { text: '初歩', collapsed: true, items: [
+          { text: '線形代数の初歩', link: '/other/enter-algebra' },
+          { text: 'ベクトル解析の初歩', link: '/other/enter-vector' },
+          { text: '微積分の初歩', link: '/other/enter-calculus' },
+          { text: '物理数学の初歩', link: '/other/enter-physics-math' },
+          { text: '電磁気学の初歩', link: '/other/enter-electrodynamics' },
+          { text: '量子力学の初歩', link: '/other/enter-quantum' },
+          { text: '統計物理学の初歩', link: '/other/statistical-physics' },
+          { text: '固体物理学の初歩', link: '/other/solid-state-physics' },
+          { text: '放射光科学の初歩', link: '/other/enter-synchrotron' },
+          { text: 'プログラミングの初歩', link: '/other/enter-programming' },
+          { text: '数値解法の初歩', link: '/other/enter-numerical-method' },
+          { text: '電子回路の初歩', link: '/other/enter-electronic-method' },
+          { text: 'データサイエンスの初歩', link: '/other/enter-data-science' },
+          { text: 'ハイパフォーマンス計算（HPC）の初歩', link: '/other/enter-hpc' },          
+        ]},
+        
         { text: '教科書', collapsed: true, items: [
           { text: 'Kittel - 固体物理学入門', link: '/other/kittel-solid-state' },
           { text: 'Bishop - パターン認識と機械学習', link: '/other/bishop-prml' },

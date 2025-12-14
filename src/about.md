@@ -6,7 +6,7 @@
 
 Github pages × VitePress × VSCode でこのwebsiteを運用しており、編集や更新が容易なマークダウン形式で記述・更新しています。
 
-なお、ChatGPT-5.1 thinkingの出力や関連資料を参考にwikiを作成しています。随時、修正点や情報のアップデートしていきます。
+なお、ChatGPT (5.1/5.2 extended thinking) の出力や関連資料を参考にwikiを作成しています。随時、修正点や情報のアップデートしていきます。
 
 ## コンテンツ構成
 

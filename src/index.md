@@ -58,6 +58,7 @@ features:
   - [時間依存密度汎関数理論（TDDFT）](/calc/dft-td.md)
   - [量子電子動力学（QED）法の原理と活用](/calc/qed.md)
   - [虚数時間発展法（ITE）の基礎](/calc/dft-imarginary.md)
+  - [フォノン物性の基礎](/calc/phonon.md)
   - [非調和フォノン理論と有限温度物性](/calc/self-consistent-phonon.md)
   - [核量子効果（NQE）と量子統計](/calc/nuclear-quantum-effects.md)
   - [格子ボルツマン法（LBM）入門](/calc/lattice-boltzmann-method.md)
@@ -74,6 +75,7 @@ features:
   - [遍歴電子系の磁性](/calc/itinerant-electron-magnetism.md)
   - [遍歴電子系のストーナー条件](/calc/stoner.md)
   - [RKKY相互作用と磁気秩序](/calc/rkky.md)
+  - [キュリー・ワイス則と平均場理論](/calc/curie-weiss-law.md)
   - [RKKY起源スピングラスの数値モデル](/calc/rkky-calc.md)
   - [スピン軌道相互作用と行列要素](/calc/spin-orbit-coupling.md)
   - [マグノン-フォノン相互作用の計算](/calc/magnon-phonon.md)
@@ -364,6 +366,23 @@ features:
 - [GA4とGTMによるアクセス解析の基礎](/sys/access-analysis.md)
 
 ## その他
+
+### 初歩
+- [線形代数の初歩](/other/enter-algebra.md)
+- [ベクトル解析の初歩](/other/enter-vector.md)
+- [微積分の初歩](/other/enter-calculus.md)
+- [物理数学の初歩](/other/enter-physics-math.md)
+- [電磁気学の初歩](/other/enter-electrodynamics.md)
+- [量子力学の初歩](/other/enter-quantum.md)
+- [統計物理学の初歩](/other/enter-statistical-physics.md)
+- [固体物理学の初歩](/other/enter-solid-state-physics.md)
+- [放射光科学の初歩](/other/enter-synchrotron.md)
+- [プログラミングの初歩](/other/enter-programming.md)
+- [数値解法の初歩](/other/enter-numerical-method.md)
+- [電子回路の初歩](/other/enter-electronic-circuit.md)
+- [データサイエンスの初歩](/other/enter-data-science.md)
+- [ハイパフォーマンス計算（HPC）の初歩](/other/enter-hpc.md)
+
 ### 教科書
 - [Kittel - 固体物理学入門](/other/kittel-solid-state.md)
 - [Bishop - パターン認識と機械学習](/other/bishop-prml.md)
